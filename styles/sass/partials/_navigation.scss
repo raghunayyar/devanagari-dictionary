@@ -1,0 +1,24 @@
+/* Styles related to Navigation Bar */
+
+.navbar {
+	background: $navbar-background-color;
+	border-radius:0;
+	box-shadow:none;
+	border:none;
+	li {
+		border-bottom: 0 solid transparent;
+		@include transition(0.05s, 0.05s);
+		a {
+			color: $white !important;
+			@include transition(0.05s, 0.05s);
+			&:hover {
+				color: $white * 8;
+				@include transition(0.05s, 0.05s);
+			}
+		}
+		&:hover {
+			text-shadow: 0 0 2px $white;
+			@include transition(0.05s, 0.05s);
+		}
+	}
+}

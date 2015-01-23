@@ -1,0 +1,13 @@
+
+{
+  "name": "Devanagari Type Design Dictionary",
+  "version": "0.1",
+  "dependencies": {
+    "backbone": "",
+    "jquery": "",
+    "fontawesome":"",
+    "bootstrap": "",
+    "modernizr": "",
+    "normalize.css": ""
+  }
+}

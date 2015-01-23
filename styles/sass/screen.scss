@@ -1,0 +1,29 @@
+/* This is the index of the stylesheet and should
+   only consist of the global stuff required to
+   run the project. Rest everything should come from
+   it's respective partial.
+*/
+
+@import "compass/reset";
+
+/* Global imports happen here */
+
+@import "partials/global/variables";
+@import "partials/global/mixins";
+
+
+/* File wise imports happen here */
+
+@import "partials/navigation";
+
+
+
+
+/* Global Styles Start here */
+
+body {
+	font-family: $default-font-stack;
+	font-size: $default-font-size;
+	color: $default-font-color;
+	background-color: $default-background-color;
+}
