@@ -1,5 +1,11 @@
 		
 		</div><!-- Ends Body Container here -->
+
+		<footer class="footer">
+			<div class="container">
+				<p class="attribution">&copy; IDC, IIT Bombay - 2015</p>
+			</div>
+		</footer>
         
         <script src="<?php echo base_url(); ?>3rdparty/jquery/dist/jquery.js"></script>
         <script src="<?php echo base_url(); ?>3rdparty/underscore/underscore.js"></script>

@@ -4,31 +4,47 @@ class Home extends CI_Controller {
 
 	/* Majority of the widgets will go here */
 	public function index() {
-		$this->load->view('templates/header');
-		$this->load->view('search');
+
+		$data['title'] = 'Home'; 
+		$this->load->view('templates/header', $data);
+		$this->load->view('widgets/search');
+		$this->load->view('widgets/widget1');
+		$this->load->view('widgets/widget2');
+		$this->load->view('widgets/widget3');
+		$this->load->view('widgets/widget4');
+		$this->load->view('widgets/widget5');
+		$this->load->view('widgets/widget6');
 		$this->load->view('templates/footer');
 	}
 
 	public function terminologies() {
-		$this->load->view('templates/header');
+
+		$data['title'] = 'Learn More'; 
+		$this->load->view('templates/header', $data);
 		$this->load->view('partials/terminology');
 		$this->load->view('templates/footer');
 	}
 
 	public function about() {
-		$this->load->view('templates/header');
+
+		$data['title'] = 'About Us'; 
+		$this->load->view('templates/header', $data);
 		$this->load->view('partials/about');
 		$this->load->view('templates/footer');
 	}
 
 	public function contact() {
-		$this->load->view('templates/header');
+
+		$data['title'] = 'Contact Us';
+		$this->load->view('templates/header', $data);
 		$this->load->view('partials/contact');
 		$this->load->view('templates/footer');
 	}
 
 	public function contribute() {
-		$this->load->view('templates/header');
+
+		$data['title'] = 'Contribute'; 
+		$this->load->view('templates/header', $data);
 		$this->load->view('partials/contribute');
 		$this->load->view('templates/footer');
 	}

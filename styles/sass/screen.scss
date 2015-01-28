@@ -4,6 +4,8 @@
    it's respective partial.
 */
 
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,600,700);
+
 @import "compass/reset";
 
 /* Global imports happen here */
@@ -15,6 +17,8 @@
 /* File wise imports happen here */
 
 @import "partials/navigation";
+
+@import "partials/footer";
 
 
 

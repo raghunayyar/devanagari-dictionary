@@ -3,6 +3,7 @@
    run the project. Rest everything should come from
    it's respective partial.
 */
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,600,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -100,9 +101,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 
+/* Styles related to Footer */
+.footer .attribution {
+  text-align: center;
+}
+
 /* Global Styles Start here */
 body {
-  font-family: "PT Sans", helvetica;
+  font-family: "Ek Mukta", helvetica;
   font-size: 16px;
   color: #0d0f01;
   background-color: #f8f8f8;
