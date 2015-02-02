@@ -21,6 +21,26 @@
 		}
 	}
 
+	.people {
+		.thumbnail {
+			img {
+				border-radius:50%;
+			}
+			.caption {
+				margin:10px 0;
+				text-align: center;
+				font-weight: 500;
+			}
+			.work {
+				text-align: center;
+				font-size:12px;
+			}
+
+			padding:40px 0;
+			border: none;
+		}
+	}
+
 	#contactusform {
 		padding: 20px 0 20px 0;
 	}

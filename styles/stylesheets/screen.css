@@ -120,6 +120,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .page-content .table td {
   border: none;
 }
+.page-content .people .thumbnail {
+  padding: 40px 0;
+  border: none;
+}
+.page-content .people .thumbnail img {
+  border-radius: 50%;
+}
+.page-content .people .thumbnail .caption {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 500;
+}
+.page-content .people .thumbnail .work {
+  text-align: center;
+  font-size: 12px;
+}
 .page-content #contactusform {
   padding: 20px 0 20px 0;
 }

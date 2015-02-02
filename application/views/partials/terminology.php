@@ -1,4 +1,4 @@
-<section id="contactpage">
+<section id="learnmorepage">
 	<div class="page-header col-lg-12">
 		<h1>Learn More</h1>
 	</div>
