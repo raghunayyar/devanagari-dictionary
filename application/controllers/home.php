@@ -48,6 +48,14 @@ class Home extends CI_Controller {
 		$this->load->view('partials/contribute');
 		$this->load->view('templates/footer');
 	}
+
+	public function credit() {
+		
+		$data['title'] = 'Credits'; 
+		$this->load->view('templates/header', $data);
+		$this->load->view('partials/credit');
+		$this->load->view('templates/footer');
+	}
 }
 
 /* End of file homecontroller.php */

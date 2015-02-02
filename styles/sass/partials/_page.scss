@@ -1,0 +1,31 @@
+.page-header {
+	h1 {
+		font-weight: 700;
+		font-size: 36px;
+	}
+	text-align: center;
+}
+
+.page-content {
+	h3 {
+		span {
+			font-weight: 500;
+			margin-left: 10px;
+		}
+		padding: 10px;
+		border-bottom: 1px dotted #eee;
+	}
+	.table {
+		td {
+			border: none;
+		}
+	}
+
+	#contactusform {
+		padding: 20px 0 20px 0;
+	}
+
+	#addresstable {
+		margin-top:20px;
+	}
+}

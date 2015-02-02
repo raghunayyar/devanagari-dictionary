@@ -3,7 +3,13 @@
 
 		<footer class="footer">
 			<div class="container">
-				<p class="attribution">&copy; IDC, IIT Bombay - 2015</p>
+				<p class="attribution">
+					<span>&copy; IDC, IIT Bombay - 2015</span>
+					<span> | </span>
+					<span><a href="<?php echo base_url() ?>index.php/home/credit">Credits</a></span>
+					<span> | </span>
+					<span><a href="<?php echo base_url() ?>index.php/home/contact">Feedback</a></span>
+				</p>
 			</div>
 		</footer>
         

@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li a {
-  color: #f8f8f8 !important;
+  color: #ffffff !important;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
@@ -94,11 +94,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li:hover {
-  text-shadow: 0 0 2px #f8f8f8;
+  text-shadow: 0 0 2px #ffffff;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
+}
+
+.page-header {
+  text-align: center;
+}
+.page-header h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.page-content h3 {
+  padding: 10px;
+  border-bottom: 1px dotted #eee;
+}
+.page-content h3 span {
+  font-weight: 500;
+  margin-left: 10px;
+}
+.page-content .table td {
+  border: none;
+}
+.page-content #contactusform {
+  padding: 20px 0 20px 0;
+}
+.page-content #addresstable {
+  margin-top: 20px;
 }
 
 /* Styles related to Footer */
@@ -111,5 +137,5 @@ body {
   font-family: "Ek Mukta", helvetica;
   font-size: 16px;
   color: #0d0f01;
-  background-color: #f8f8f8;
+  background-color: #fefefe;
 }
