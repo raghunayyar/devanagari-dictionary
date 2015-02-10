@@ -16,6 +16,10 @@
 		text-transform: capitalize;
 	}
 
+	.widget-header.widget-header-custom {
+		float: none;
+	}
+
 	.widget-content {
 		padding: 15px;
 		margin: 20px 0;
@@ -26,6 +30,17 @@
 		.widget-readmore {
 			float: right;
 			margin-bottom:$padding-standard/2;
+		}
+	}
+
+	.widget-element-list {
+		margin-top: $padding-standard;
+		li {
+			float: left;
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+			padding: $padding-standard 0;
 		}
 	}
 }
@@ -51,4 +66,12 @@
 			}
 		}
 	}
+}
+
+.widget-half {
+	width:48%;
+}
+
+#popularglyphwidget {
+	margin-left: 4%;
 }

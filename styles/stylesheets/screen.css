@@ -165,6 +165,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .well.widget .widget-header h3 {
   color: #ffffff;
 }
+.well.widget .widget-header.widget-header-custom {
+  float: none;
+}
 .well.widget .widget-content {
   padding: 15px;
   margin: 20px 0;
@@ -176,6 +179,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .well.widget .widget-content .widget-readmore {
   float: right;
   margin-bottom: 10px;
+}
+.well.widget .widget-element-list {
+  margin-top: 20px;
+}
+.well.widget .widget-element-list li {
+  float: left;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
 }
 
 #ofthedaywidget {
@@ -195,6 +208,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #ofthedaywidget .rightcontent .imagearea img {
   display: block;
   float: left;
+}
+
+.widget-half {
+  width: 48%;
+}
+
+#popularglyphwidget {
+  margin-left: 4%;
 }
 
 /* Styles related to Footer */
