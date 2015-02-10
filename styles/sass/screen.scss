@@ -18,6 +18,7 @@
 
 @import "partials/navigation";
 @import "partials/page";
+@import "partials/widget";
 @import "partials/footer";
 
 
@@ -30,4 +31,15 @@ body {
 	font-size: $default-font-size;
 	color: $default-font-color;
 	background-color: $default-background-color;
+	line-height:25px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 30px;
+}
+
+.container {
+	//width: $default-container-width;
 }

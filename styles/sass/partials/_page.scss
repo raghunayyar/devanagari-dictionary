@@ -24,7 +24,7 @@
 	.people {
 		.thumbnail {
 			img {
-				border-radius:50%;
+				@include border-radius(50%);
 			}
 			.caption {
 				margin:10px 0;

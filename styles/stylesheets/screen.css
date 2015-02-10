@@ -62,6 +62,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Global imports happen here */
 /* All your variable names will go here */
+/* Dimensions and Positioning */
 /* Navigation Related Colors */
 /* All mixins go here */
 /* File wise imports happen here */
@@ -125,6 +126,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
 }
 .page-content .people .thumbnail img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 .page-content .people .thumbnail .caption {
@@ -143,6 +147,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 20px;
 }
 
+.well.widget {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  border: 5px solid #ddd;
+}
+.well.widget .widget-header {
+  background: #374256;
+  float: right;
+  display: block;
+  margin: -19px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.well.widget .widget-header h3 {
+  color: #ffffff;
+}
+.well.widget .widget-content {
+  padding: 15px;
+  margin: 20px 0;
+}
+.well.widget .widget-content .widget-subheading {
+  font-size: 24px;
+  font-weight: 600;
+}
+.well.widget .widget-content .widget-readmore {
+  float: right;
+  margin-bottom: 10px;
+}
+
+#ofthedaywidget {
+  background: #eee;
+}
+#ofthedaywidget .leftcontent img {
+  margin: 20px;
+}
+#ofthedaywidget .rightcontent {
+  margin: 20px 0;
+}
+#ofthedaywidget .rightcontent .imagearea .label {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+#ofthedaywidget .rightcontent .imagearea img {
+  display: block;
+  float: left;
+}
+
 /* Styles related to Footer */
 .footer .attribution {
   text-align: center;
@@ -154,4 +208,9 @@ body {
   font-size: 16px;
   color: #0d0f01;
   background-color: #fefefe;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 30px;
 }
