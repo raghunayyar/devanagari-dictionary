@@ -43,6 +43,12 @@
 			padding: $padding-standard 0;
 		}
 	}
+
+	.label {
+		color: $default-font-color;
+		font-size: $default-font-size;
+		text-transform: capitalize;
+	}
 }
 
 #ofthedaywidget {
@@ -68,10 +74,12 @@
 	}
 }
 
-.widget-half {
-	width:48%;
-}
+@media screen and (min-width: 992px) {
+	.widget-half {
+		width:48%;
+	}
 
-#popularglyphwidget {
-	margin-left: 4%;
+	#popularglyphwidget {
+		margin-left: 4%;
+	}
 }

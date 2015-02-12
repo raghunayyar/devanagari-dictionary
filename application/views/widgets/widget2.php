@@ -15,7 +15,7 @@
 					<span class="letter">B</span>
 				</div>
 				<div class="widgetgroup">
-					<span class="label">Language</span>
+					<span class="label">Language:</span>
 					<span class="value">Hindi, Marathi</span>
 				</div>
 				<div class="widgetgroup">
@@ -36,7 +36,7 @@
 					<span class="letter">B</span>
 				</div>
 				<div class="widgetgroup">
-					<span class="label">Language</span>
+					<span class="label">Language:</span>
 					<span class="value">Hindi, Marathi</span>
 				</div>
 				<div class="widgetgroup">
@@ -56,7 +56,7 @@
 					<span class="letter">B</span>
 				</div>
 				<div class="widgetgroup">
-					<span class="label">Language</span>
+					<span class="label">Language:</span>
 					<span class="value">Hindi, Marathi</span>
 				</div>
 				<div class="widgetgroup">

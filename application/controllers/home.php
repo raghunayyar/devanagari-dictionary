@@ -54,6 +54,18 @@ class Home extends CI_Controller {
 		$this->load->view('partials/credit');
 		$this->load->view('templates/footer');
 	}
+
+	public function search() {
+
+		$data['title'] = 'Search Results';
+
+		$this->load->model("devanagari");
+		$data2['results'] = $this->devanagari->getAll();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('partials/searchresults', $data2);
+		$this->load->view('templates/footer');
+	}
 }
 
 /* End of file homecontroller.php */

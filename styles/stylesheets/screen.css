@@ -190,6 +190,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
+.well.widget .label {
+  color: #0d0f01;
+  font-size: 16px;
+  text-transform: capitalize;
+}
 
 #ofthedaywidget {
   background: #eee;
@@ -210,14 +215,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
 }
 
-.widget-half {
-  width: 48%;
-}
+@media screen and (min-width: 992px) {
+  .widget-half {
+    width: 48%;
+  }
 
-#popularglyphwidget {
-  margin-left: 4%;
+  #popularglyphwidget {
+    margin-left: 4%;
+  }
 }
-
 /* Styles related to Footer */
 .footer .attribution {
   text-align: center;
