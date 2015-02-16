@@ -55,7 +55,7 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function search() {
+	public function searchresults() {
 
 		$data['title'] = 'Search Results';
 

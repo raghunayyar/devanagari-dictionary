@@ -6,6 +6,7 @@
 			echo form_open('/home/search', '', '');
 
 			$searchinput = array (
+				'name' => 'searchinput',
 				'type' => 'text',
 				'class' => 'form-control keyboardInput',
 				'placeholder' => 'Search for..'
@@ -22,10 +23,10 @@
 					$searchbutton = array (
 						'type' => 'button',
 						'class' => 'btn btn-primary',
+						'name' => 'searchbutton'
 					);
-					$searchicon = '<span class="glyphicon glyphicon-search" aria-hidden="true"></span>';
 
-					echo form_button($searchbutton, $searchicon, '');		
+					echo form_submit($searchbutton,'Search', '');		
 					echo form_close();
 				?>
 			</span>
