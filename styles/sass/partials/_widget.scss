@@ -52,7 +52,7 @@
 }
 
 #ofthedaywidget {
-	background: #eee;
+
 	.leftcontent {
 		img {
 			margin: $padding-standard;
@@ -72,6 +72,14 @@
 			}
 		}
 	}
+}
+
+/* The classes for the image for the keyboard */
+.keyboardInputInitiator {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  z-index: 100;
 }
 
 @media screen and (min-width: 992px) {

@@ -196,9 +196,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: capitalize;
 }
 
-#ofthedaywidget {
-  background: #eee;
-}
 #ofthedaywidget .leftcontent img {
   margin: 20px;
 }
@@ -213,6 +210,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #ofthedaywidget .rightcontent .imagearea img {
   display: block;
   float: left;
+}
+
+/* The classes for the image for the keyboard */
+.keyboardInputInitiator {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  z-index: 100;
 }
 
 @media screen and (min-width: 992px) {
