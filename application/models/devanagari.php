@@ -15,6 +15,12 @@
 			return $query->result();
 		}
 
+		public function searchdevanagari($searchedtext) {
+			$query = $this->db->query("SELECT * from devanagarimaintable WHERE completealphabet LIKE '%$searchedtext%' OR seperated LIKE '%$searchedtext%'");
+
+			return $query->result();
+		}
+
 		/*
 			Returns searched element
 		*/

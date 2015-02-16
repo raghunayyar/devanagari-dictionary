@@ -1,4 +1,4 @@
-<section id="creditspage">
+<section id="creditspage" class="page">
 	<div class="page-header col-lg-12">
 		<h1>Credits</h1>
 	</div>

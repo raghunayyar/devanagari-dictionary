@@ -3,7 +3,9 @@
 
 		<?php
 			echo validation_errors();
-			echo form_open('/home/search', '', '');
+
+			$formattributes = array('method' => 'POST');
+			echo form_open('/home/search', $formattributes, '');
 
 			$searchinput = array (
 				'name' => 'searchinput',
