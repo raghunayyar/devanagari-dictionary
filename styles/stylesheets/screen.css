@@ -140,6 +140,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   font-size: 12px;
 }
+.page-content .resultcard {
+  padding: 40px 20px;
+  text-align: center;
+  max-height: 400px;
+  width: 20%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.1s ease-out 0.1s;
+  -moz-transition: 0.1s ease-out 0.1s;
+  -ms-transition: 0.1s ease-out 0.1s;
+  transition: 0.1s ease-out 0.1s;
+}
+.page-content .resultcard .cardlabel {
+  font-style: italic;
+}
+.page-content .resultcard .cardheadholder {
+  background: #eee;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.page-content .resultcard .cardheadholder .completealphabet {
+  font-size: 72px;
+  padding: 60px 0;
+}
+.page-content .resultcard .separated {
+  margin: 20px 0;
+  font-size: 24px;
+}
+.page-content .resultcard .example {
+  margin: 20px 0;
+}
+.page-content .resultcard:hover {
+  background: #f8f8f8;
+  box-shadow: 0 0 5px #ddd;
+  -webkit-transition: 0.1s ease-out 0.1s;
+  -moz-transition: 0.1s ease-out 0.1s;
+  -ms-transition: 0.1s ease-out 0.1s;
+  transition: 0.1s ease-out 0.1s;
+}
+.page-content .cardspacer {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
 .page-content #contactusform {
   padding: 20px 0 20px 0;
 }
@@ -147,6 +197,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .resultcard {
+    width: 20%;
+  }
+
+  .cardspacer {
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cardspacer {
+    margin-left: 4%;
+  }
+}
 .well.widget {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;

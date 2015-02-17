@@ -7,11 +7,24 @@
 		<div class="row">
 
 		<?php
+			$numberofcards = 0;
 			foreach ($results as $key) {
+			$numberofcards++;
 		?>
-		<div class='col-md-4 resultcard' data-id=''>
-			<img src='http://placehold.it/150x150' alt='Girish Dalvi' />
-			<h2><?php echo $key->completealphabet; ?></h2>
+		<div
+			class='col-sm-3 resultcard cardspacer'
+			data-id="<?php echo $key->Sno; ?>"
+			data-card="<?php echo $numberofcards; ?>">
+			<div class="cardheadholder">
+				<h1 class="completealphabet"><?php echo $key->completealphabet; ?></h1>
+			</div>
+			<p class="separated"><?php echo str_replace(' ', '+', $key->seperated); ?></p>
+			
+			<div class="example">
+				<span class="cardlabel">Example(s)</span>
+				<p class="examples"><?php if (strlen($key->examples) > 1) echo $key->examples; else echo '-'; ?></p>
+			</div>
+			<a href='<?php echo base_url(); ?>' class="btn btn-primary">Read More</a>
 		</div>
 		<?php } ?>
 	</div>

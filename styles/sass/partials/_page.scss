@@ -41,11 +41,78 @@
 		}
 	}
 
+	.resultcard {
+
+		.cardlabel {
+			font-style: italic;
+		}
+
+		padding: $padding-standard*2 $padding-standard;
+		text-align: center;
+		max-height: 400px;
+		width:20%;
+		border: 1px solid #ccc;
+		box-shadow: 0 0 5px transparent;
+		@include border-radius(5px);
+		@include transition(0.1s, 0.1s);
+
+		.cardheadholder {
+			background: #eee;
+			width: 150px;
+			height: 150px;
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+
+			.completealphabet {
+				font-size: 72px;
+				padding: 3*$padding-standard 0;
+			}
+		}
+
+		.separated {
+			margin: 20px 0;
+  			font-size: 24px;
+		}
+
+		.example {
+			margin: 20px 0;
+		}
+
+		&:hover {
+			background: #f8f8f8;
+			box-shadow: 0 0 5px #ddd;
+			@include transition(0.1s, 0.1s);
+		}
+	}
+
+	.cardspacer {
+		margin-bottom: 20px;
+		min-width: 200px;
+	}
+
 	#contactusform {
 		padding: 20px 0 20px 0;
 	}
 
 	#addresstable {
 		margin-top:20px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.resultcard {
+		width: 20%;
+	}
+
+	.cardspacer {
+		margin-left: 4%;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.cardspacer {
+		margin-left: 4%;
 	}
 }
