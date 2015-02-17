@@ -21,20 +21,13 @@
 			return $query->result();
 		}
 
-		/*
-			Returns searched element
-		*/
-
-		public function get() {
-
-		}
-
 		public function highestrated() {
 
 		}
 
 		public function recentlyadded() {
-			
+			$query = $this->db->query("SELECT * from devanagarimaintable ORDER BY Sno DESC LIMIT 0,5");
+			return $query->result();
 		}
 
 	}

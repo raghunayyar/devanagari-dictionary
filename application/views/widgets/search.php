@@ -5,7 +5,7 @@
 			echo validation_errors();
 
 			$formattributes = array('method' => 'POST');
-			echo form_open('/home/search', $formattributes, '');
+			echo form_open('home/search', $formattributes, '');
 
 			$searchinput = array (
 				'name' => 'searchinput',
@@ -23,7 +23,6 @@
 			<span class="input-group-btn">
 				<?php
 					$searchbutton = array (
-						'type' => 'button',
 						'class' => 'btn btn-primary',
 						'name' => 'searchbutton'
 					);

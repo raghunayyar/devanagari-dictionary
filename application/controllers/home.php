@@ -60,9 +60,9 @@ class Home extends CI_Controller {
 		$data['title'] = 'Search Results';
 		$this->load->model("devanagari");
 
-		$matchedentry['staticquery'] = 'क्क्';
+		$matchedentry['staticquery'] = $this->input->post('searchinput');
 
-		$matchedentry['results'] = $this->devanagari->searchdevanagari('क्क्');
+		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry['staticquery']);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/searchresults',$matchedentry);
@@ -70,17 +70,6 @@ class Home extends CI_Controller {
 
 	}
 
-	public function searchresults() {
-
-		$data['title'] = 'Search Results';
-
-		$this->load->model("devanagari");
-		$data2['results'] = $this->devanagari->getAll();
-
-		$this->load->view('templates/header', $data);
-		$this->load->view('partials/searchresults', $data2);
-		$this->load->view('templates/footer');
-	}
 }
 
 /* End of file homecontroller.php */
