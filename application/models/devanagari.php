@@ -7,6 +7,17 @@
 		}
 
 		/*
+			Returns One required row.
+		*/		
+
+		public function get ($id) {
+
+			$query = $this->db->query("SELECT * from devanagarimaintable WHERE  Sno = $id ");
+
+			return $query->result();
+		}
+
+		/*
 			Returns everything
 		*/
 		public function getAll() {

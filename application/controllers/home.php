@@ -70,6 +70,22 @@ class Home extends CI_Controller {
 
 	}
 
+	public function result() {
+
+		$data['title'] = 'Conjunct';
+
+		$uri = $this->uri->segment(3, 1);
+
+		$this->load->model("devanagari");
+		$matchedentry['result'] = $this->devanagari->get($uri);
+		
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('partials/conjunct', $matchedentry);
+		$this->load->view('templates/footer');
+	
+	}
+
 }
 
 /* End of file homecontroller.php */

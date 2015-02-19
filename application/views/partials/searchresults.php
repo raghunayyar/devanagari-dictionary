@@ -24,7 +24,7 @@
 				<span class="cardlabel">Example(s)</span>
 				<p class="examples"><?php if (strlen($key->examples) > 1) echo $key->examples; else echo '-'; ?></p>
 			</div>
-			<a href='<?php echo base_url(); ?>' class="btn btn-primary">Read More</a>
+			<a href='<?php echo base_url(); ?>index.php/home/result/<?php echo $key->Sno; ?>' class="btn btn-primary">Read More</a>
 		</div>
 		<?php } ?>
 	</div>
