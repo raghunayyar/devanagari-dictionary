@@ -1,4 +1,4 @@
-<section id="creditspage" class="page">
+<section id="searchresultspage" class="page">
 	<div class="page-header col-lg-12">
 		<h1>Search Results for '<?php echo $staticquery; ?>'</h1>
 	</div>

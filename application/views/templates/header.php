@@ -46,7 +46,6 @@
 					<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
 					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Learn More</a></li>
 					<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
-					<li><a href="http://www.dsource.in" target="_blank">DSource</a></li>
 				</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

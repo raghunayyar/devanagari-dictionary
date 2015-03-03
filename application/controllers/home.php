@@ -65,6 +65,7 @@ class Home extends CI_Controller {
 		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry['staticquery']);
 
 		$this->load->view('templates/header', $data);
+		$this->load->view('widgets/search');
 		$this->load->view('partials/searchresults',$matchedentry);
 		$this->load->view('templates/footer');
 
@@ -78,7 +79,10 @@ class Home extends CI_Controller {
 
 		$this->load->model("devanagari");
 		$matchedentry['result'] = $this->devanagari->get($uri);
-		
+
+		$similarresults = 3;
+
+		print_r($matchedentry);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/conjunct', $matchedentry);

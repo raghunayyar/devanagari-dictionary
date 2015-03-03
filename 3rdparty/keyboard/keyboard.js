@@ -68,12 +68,12 @@ var VKI_attach, VKI_close;
   this.VKI_deadkeysOn = false;  // Turn dead keys on by default
   this.VKI_numberPad = true;  // Allow user to open and close the number pad
   this.VKI_numberPadOn = false;  // Show number pad by default
-  this.VKI_kts = this.VKI_kt = "US International";  // Default keyboard layout
+  this.VKI_kts = this.VKI_kt = '\u0939\u093f\u0902\u0926\u0940';  // Default keyboard layout
   this.VKI_langAdapt = true;  // Use lang attribute of input to select keyboard
   this.VKI_size = 2;  // Default keyboard size (1-5)
   this.VKI_sizeAdj = false;  // Allow user to adjust keyboard size
   this.VKI_clearPasswords = false;  // Clear password fields on focus
-  this.VKI_imageURI = "3rdparty/keyboard/keyboard.png";  // If empty string, use imageless mode
+  this.VKI_imageURI = "http://localhost:8888/devanagari-dictionary/3rdparty/keyboard/keyboard.png";  // If empty string, use imageless mode
   this.VKI_clickless = 0;  // 0 = disabled, > 0 = delay in ms
   this.VKI_activeTab = 0;  // Tab moves to next: 1 = element, 2 = keyboard enabled element
   this.VKI_enterSubmit = true;  // Submit forms when Enter is pressed

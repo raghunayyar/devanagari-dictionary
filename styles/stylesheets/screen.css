@@ -112,7 +112,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .page-content h3 {
   padding: 10px;
-  border-bottom: 1px dotted #eee;
 }
 .page-content h3 span {
   font-weight: 500;
@@ -212,6 +211,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 4%;
   }
 }
+#conjunctspage .massive {
+  font-size: 144px;
+}
+#conjunctspage .completealphabet {
+  padding: 20px;
+  text-align: center;
+}
+
 .well.widget {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
