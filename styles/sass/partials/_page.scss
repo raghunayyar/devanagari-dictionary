@@ -76,6 +76,12 @@
 
 		.example {
 			margin: 20px 0;
+
+			.examples {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
 		}
 
 		&:hover {

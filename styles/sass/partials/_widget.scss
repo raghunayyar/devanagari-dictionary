@@ -1,9 +1,8 @@
 // All Widget Styles go here
 
 .well.widget {
-	@include border-radius(0px);
 	border:5px solid #ddd;
-	
+	@include border-radius(0px);
 	.widget-header {
 		h3 {
 			color: $white;

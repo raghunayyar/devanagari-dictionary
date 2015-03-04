@@ -80,10 +80,6 @@ class Home extends CI_Controller {
 		$this->load->model("devanagari");
 		$matchedentry['result'] = $this->devanagari->get($uri);
 
-		$similarresults = 3;
-
-		print_r($matchedentry);
-
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/conjunct', $matchedentry);
 		$this->load->view('templates/footer');
