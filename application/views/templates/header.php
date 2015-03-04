@@ -13,7 +13,7 @@
 		<!-- 3rdParty: Stylesheets here -->
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/normalize.css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/fontawesome/css/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/cosmo/cosmo.css" />
 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/keyboard/keyboard.css" />
 
