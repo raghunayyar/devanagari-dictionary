@@ -48,17 +48,33 @@
 		font-size: $default-font-size;
 		text-transform: capitalize;
 	}
-}
 
-#ofthedaywidget {
+	.separated {
+		font-size: 24px;
+	}
 
-	.leftcontent {
-		img {
-			margin: $padding-standard;
+	.completealphabet {
+		font-size: 48px;
+		text-align: center;
+		padding: 32px 0;
+		background: #fefefe;
+		height: 90px;
+		width: 90px;
+	}
+
+	.widgetgroup {
+		.label {
+			padding: 0;
 		}
 	}
+}
+
+#ofthedaywidget, #recentglyphwidget {
+
+	.leftcontent {
+		margin: 10px 0;
+	}
 	.rightcontent {
-		margin: $padding-standard 0;
 		.imagearea {
 			.label {
 				display: block;

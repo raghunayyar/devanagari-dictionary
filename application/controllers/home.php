@@ -7,9 +7,13 @@ class Home extends CI_Controller {
 
 		$data['title'] = 'Home'; 
 		$this->load->view('templates/header', $data);
+
 		$this->load->view('widgets/search');
 		$this->load->view('widgets/widget1');
-		$this->load->view('widgets/widget2');
+
+		$data['recentwidgetdata'] = $this->recentadditions();
+		$this->load->view('widgets/recentwidget', $data);
+		
 		$this->load->view('widgets/widget3');
 		$this->load->view('widgets/widget6');
 		$this->load->view('templates/footer');
@@ -61,14 +65,36 @@ class Home extends CI_Controller {
 		$this->load->model("devanagari");
 
 		$matchedentry['staticquery'] = $this->input->post('searchinput');
+		$matchedentry['allcomb'] = $this->input->post('allcomb');
+		$matchedentry['twocomb'] = $this->input->post('twocomb');
+		$matchedentry['threecomb'] = $this->input->post('threecomb');
+		$matchedentry['fourcomb'] = $this->input->post('fourcomb');
 
-		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry['staticquery']);
+		$matchedentry['results'] = $this->devanagari->searchdevanagari(
+			$matchedentry);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('widgets/search');
 		$this->load->view('partials/searchresults',$matchedentry);
 		$this->load->view('templates/footer');
 
+	}
+
+	public function recentadditions() {
+		
+		$this->load->model("devanagari");
+		$result = $this->devanagari->recentlyadded();
+		return $result;
+	}
+
+	public function glyphoftheday() {
+
+		$this->load->model("devanagari");
+	}
+
+	public function topglyphs() {
+
+		$this->load->model("devanagari");
 	}
 
 	public function result() {
@@ -87,6 +113,5 @@ class Home extends CI_Controller {
 	}
 
 }
-
 /* End of file homecontroller.php */
 /* Location: ./application/controllers/homecontroller.php */

@@ -32,10 +32,13 @@
 			TODO: Currently only searchs via complete alphabet or separated alphabets.
 		*/		
 
-		public function searchdevanagari($searchedtext) {
+		public function searchdevanagari($searchedresult) {
+
+			$searchedtext = $searchedresult['staticquery'];
+			$searchedall = $searchedresult['allcomb'];
+			print_r($searchedall);
 
 			$query = $this->db->query("SELECT * from devanagarimaintable WHERE completealphabet LIKE '%$searchedtext%' OR seperated LIKE '%$searchedtext%'");
-
 			return $query->result();
 		}
 
@@ -53,7 +56,7 @@
 
 		public function recentlyadded() {
 
-			$query = $this->db->query("SELECT * from devanagarimaintable ORDER BY Sno DESC LIMIT 0,5");
+			$query = $this->db->query("SELECT * from devanagarimaintable ORDER BY Sno DESC LIMIT 0,3");
 			return $query->result();
 		}
 

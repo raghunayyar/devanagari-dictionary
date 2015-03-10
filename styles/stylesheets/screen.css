@@ -280,19 +280,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 16px;
   text-transform: capitalize;
 }
+.well.widget .separated {
+  font-size: 24px;
+}
+.well.widget .completealphabet {
+  font-size: 48px;
+  text-align: center;
+  padding: 32px 0;
+  background: #fefefe;
+  height: 90px;
+  width: 90px;
+}
+.well.widget .widgetgroup .label {
+  padding: 0;
+}
 
-#ofthedaywidget .leftcontent img {
-  margin: 20px;
+#ofthedaywidget .leftcontent, #recentglyphwidget .leftcontent {
+  margin: 10px 0;
 }
-#ofthedaywidget .rightcontent {
-  margin: 20px 0;
-}
-#ofthedaywidget .rightcontent .imagearea .label {
+#ofthedaywidget .rightcontent .imagearea .label, #recentglyphwidget .rightcontent .imagearea .label {
   display: block;
   width: 100%;
   text-align: left;
 }
-#ofthedaywidget .rightcontent .imagearea img {
+#ofthedaywidget .rightcontent .imagearea img, #recentglyphwidget .rightcontent .imagearea img {
   display: block;
   float: left;
 }
