@@ -118,103 +118,79 @@
 						'name' => 'searchbutton'
 					);
 
-					echo form_submit($searchbutton,'Search', '');		
-					echo form_close();
+					echo form_submit($searchbutton,'Search', '');
 				?>
 			</span>
 
 		</div>
 
 		<div class="more-options">
-			<h4 class="h5 pull-left">More Options</h4>
-			<div class="pull-left">
-				<?php
-					$voweloption = array (
-						'name'=> 'voweloption',
-						'id' => 'voweloption',
-						'value' => 'voweloption',
-						'checked' => TRUE
-					);
-				?>
-				<?php echo form_checkbox($voweloption); ?>
-				<?php echo form_label('Vowels', 'voweloption'); ?>
+			<p class="pull-left">Also Show: </h4>
+			<div>
+				<div class="btn btn-default btn-sm">
+					<?php
+						$voweloption = array (
+							'name'=> 'voweloption',
+							'id' => 'voweloption',
+							'value' => 'voweloption',
+							'checked' => TRUE
+						);
+					?>
+					<?php echo form_checkbox($voweloption); ?>
+					<?php echo form_label('Vowels', 'voweloption'); ?>
+				</div>
 
-				<?php
-					$independantoption = array (
-						'name'=> 'independantoption',
-						'id' => 'independantoption',
-						'value' => 'independantoption',
-						'checked' => FALSE
-					);
-				?>
-				<?php echo form_checkbox($independantoption); ?>
-				<?php echo form_label('Independant', 'independantoption'); ?>
+				<div class="btn btn-default btn-sm">
+					<?php
+						$consonantsoption = array (
+							'name'=> 'consonantsoption',
+							'id' => 'consonantsoption',
+							'value' => 'consonantsoption',
+							'checked' => TRUE
+						);
+					?>
+					<?php echo form_checkbox($consonantsoption); ?>
+					<?php echo form_label('Consonants', 'consonantsoption'); ?>
+				</div>
 
-				<?php
-					$dependantoption = array (
-						'name'=> 'dependantoption',
-						'id' => 'dependantoption',
-						'value' => 'dependantoption',
-						'checked' => FALSE
-					);
-				?>
-				<?php echo form_checkbox($dependantoption); ?>
-				<?php echo form_label('Dependant', 'dependantoption'); ?>
-				
+				<div class="btn btn-default btn-sm">
+					<?php
+						$numbersoption = array (
+							'name'=> 'numbersoption',
+							'id' => 'numbersoption',
+							'value' => 'numbersoption',
+							'checked' => FALSE
+						);
+					?>
+					<?php echo form_checkbox($numbersoption); ?>
+					<?php echo form_label('Numbers', 'numbersoption'); ?>
+				</div>
+
+				<div class="btn btn-default btn-sm">
+					<?php
+						$symbolsoption = array (
+							'name'=> 'symbolsoption',
+							'id' => 'symbolsoption',
+							'value' => 'symbolsoption',
+							'checked' => FALSE
+						);
+					?>
+					<?php echo form_checkbox($symbolsoption); ?>
+					<?php echo form_label('Symbols', 'symbolsoption'); ?>
+				</div>
+				<div class="btn btn-default btn-sm">
+					<?php
+						$consonentclustersoption = array (
+							'name'=> 'consonentclustersoption',
+							'id' => 'consonentclustersoption',
+							'value' => 'consonentclustersoption',
+							'checked' => FALSE
+						);
+					?>
+					<?php echo form_checkbox($consonentclustersoption); ?>
+					<?php echo form_label('Consonent Clusters', 'consonentclustersoption'); ?>
+				</div>
 			</div>
-
-		<div class="pull-right">
-
-			<button class="btn btn-default btn-sm">
-				<?php
-					$consonantsoption = array (
-						'name'=> 'consonantsoption',
-						'id' => 'consonantsoption',
-						'value' => 'consonantsoption',
-						'checked' => TRUE
-					);
-				?>
-				<?php echo form_checkbox($consonantsoption); ?>
-				<?php echo form_label('Consonants', 'consonantsoption'); ?>
-			</button>
-
-			<button class="btn btn-default btn-sm">
-				<?php
-					$numbersoption = array (
-						'name'=> 'numbersoption',
-						'id' => 'numbersoption',
-						'value' => 'numbersoption',
-						'checked' => FALSE
-					);
-				?>
-				<?php echo form_checkbox($numbersoption); ?>
-				<?php echo form_label('Numbers', 'numbersoption'); ?>
-			</button>
-
-			<button class="btn btn-default btn-sm">
-				<?php
-					$symbolsoption = array (
-						'name'=> 'symbolsoption',
-						'id' => 'symbolsoption',
-						'value' => 'symbolsoption',
-						'checked' => FALSE
-					);
-				?>
-				<?php echo form_checkbox($symbolsoption); ?>
-				<?php echo form_label('Symbols', 'symbolsoption'); ?>
-			</button>
-			<button class="btn btn-default btn-sm">
-				<?php
-					$consonentclustersoption = array (
-						'name'=> 'consonentclustersoption',
-						'id' => 'consonentclustersoption',
-						'value' => 'consonentclustersoption',
-						'checked' => FALSE
-					);
-				?>
-				<?php echo form_checkbox($consonentclustersoption); ?>
-				<?php echo form_label('Consonent Clusters', 'consonentclustersoption'); ?>
-			</button>
 		</div>
-		</div>
+		<?php echo form_close(); ?>
 </section>

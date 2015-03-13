@@ -1,7 +1,9 @@
 .more-options {
 	width: 100%;
-	margin: $padding-standard/2 0;
 	display: block;
-	height: 50px;
 	padding: $padding-standard 0;
+
+	p {
+		margin: 4px 10px 4px 0;
+	}
 }

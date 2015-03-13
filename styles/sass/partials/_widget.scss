@@ -84,7 +84,26 @@
 			img {
 				display: block;
 				float: left;
+				margin:10px;
 			}
+		}
+	}
+}
+
+#ofthedaywidget {
+
+	.leftcontent {
+	
+		.completealphabet {
+
+			font-size: 72px;
+			height: auto;
+			width: auto;
+			padding: 60px 0;
+		}
+
+		.separated {
+			font-size: 24px;
 		}
 	}
 }

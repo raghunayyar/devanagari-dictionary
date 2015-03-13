@@ -9,7 +9,9 @@ class Home extends CI_Controller {
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('widgets/search');
-		$this->load->view('widgets/widget1');
+
+		$data['glyphofthedaydata'] = $this->glyphoftheday();
+		$this->load->view('widgets/glyphofthedaywidget', $data);
 
 		$data['recentwidgetdata'] = $this->recentadditions();
 		$this->load->view('widgets/recentwidget', $data);
@@ -90,6 +92,8 @@ class Home extends CI_Controller {
 	public function glyphoftheday() {
 
 		$this->load->model("devanagari");
+		$result = $this->devanagari->glyphofthedaymodel();
+		return $result;
 	}
 
 	public function topglyphs() {

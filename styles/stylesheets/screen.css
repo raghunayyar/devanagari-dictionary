@@ -68,12 +68,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* File wise imports happen here */
 /* Styles related to Navigation Bar */
 .navbar {
-  background: #273c4a;
+  background: #000000;
   border-radius: 0;
   box-shadow: none;
   border: none;
 }
 .navbar li {
+  font-size: 14px;
+  text-transform: uppercase;
   border-bottom: 0 solid transparent;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
@@ -81,21 +83,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li a {
-  color: #ffffff !important;
+  background: transparent;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li a:hover {
-  color: white;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li:hover {
-  text-shadow: 0 0 2px #ffffff;
+  background: transparent !important;
+  text-decoration: underline;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
@@ -226,10 +228,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .more-options {
   width: 100%;
-  margin: 10px 0;
   display: block;
-  height: 50px;
   padding: 20px 0;
+}
+.more-options p {
+  margin: 4px 10px 4px 0;
 }
 
 .well.widget {
@@ -306,6 +309,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #ofthedaywidget .rightcontent .imagearea img, #recentglyphwidget .rightcontent .imagearea img {
   display: block;
   float: left;
+  margin: 10px;
+}
+
+#ofthedaywidget .leftcontent .completealphabet {
+  font-size: 72px;
+  height: auto;
+  width: auto;
+  padding: 60px 0;
+}
+#ofthedaywidget .leftcontent .separated {
+  font-size: 24px;
 }
 
 /* The classes for the image for the keyboard */
@@ -341,4 +355,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
+}
+
+.container-fluid {
+  max-width: 960px;
 }

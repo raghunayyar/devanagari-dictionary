@@ -36,7 +36,6 @@
 
 			$searchedtext = $searchedresult['staticquery'];
 			$searchedall = $searchedresult['allcomb'];
-			print_r($searchedall);
 
 			$query = $this->db->query("SELECT * from devanagarimaintable WHERE completealphabet LIKE '%$searchedtext%' OR seperated LIKE '%$searchedtext%'");
 			return $query->result();
@@ -51,8 +50,18 @@
 		}
 
 		/*
+			Returns a randomly selected row.
+		*/		
+
+		public function glyphofthedaymodel() {
+
+			$query = $this->db->query("SELECT * FROM devanagarimaintable ORDER BY RAND() LIMIT 1");
+			return $query->result();
+		}
+
+		/*
 			Returns the last 5 entries of the table.
-		*/	
+		*/		
 
 		public function recentlyadded() {
 

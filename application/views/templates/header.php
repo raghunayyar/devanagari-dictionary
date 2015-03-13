@@ -28,7 +28,7 @@
 		<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
+		<nav id="navigation" class="navbar navbar-default">
 			<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -37,17 +37,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button><a class="navbar-brand" href="#">Devanagari Dictionary</a>
+				</button><a class="navbar-brand" href="#">Devanagari Glyph Dictionary</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Learn More</a></li>
+					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Terminologies</a></li>
+					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
 					<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
 				</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		<div class="container">
+		<div class="container-fluid">

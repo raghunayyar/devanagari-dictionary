@@ -1,23 +1,25 @@
 /* Styles related to Navigation Bar */
 
 .navbar {
-	background: $navbar-background-color;
+	background: $black;
 	border-radius:0;
 	box-shadow:none;
 	border:none;
 	li {
+		font-size: 14px;
+		text-transform: uppercase;
 		border-bottom: 0 solid transparent;
 		@include transition(0.05s, 0.05s);
 		a {
-			color: $white !important;
+			background: transparent;
 			@include transition(0.05s, 0.05s);
 			&:hover {
-				color: $white * 8;
 				@include transition(0.05s, 0.05s);
 			}
 		}
 		&:hover {
-			text-shadow: 0 0 2px $white;
+			background: transparent !important;
+			text-decoration: underline;
 			@include transition(0.05s, 0.05s);
 		}
 	}
