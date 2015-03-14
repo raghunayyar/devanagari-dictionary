@@ -23,9 +23,7 @@
 
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-			<![endif]-->
-			<!-- JQuery goes here -->
-			<script src="<?php echo base_url(); ?>3rdparty/jquery/dist/jquery.min.js"></script>			
+			<![endif]-->		
 			<!-- Modernizr goes here -->
 			<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 		</head>
