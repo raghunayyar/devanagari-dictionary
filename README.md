@@ -1,2 +1,6 @@
-# devanagari-dictionary
-Currently in heavy development
+#Dictionary of Devanagari Glyphs
+
+**Status:** Currently in heavy development
+
+
+
