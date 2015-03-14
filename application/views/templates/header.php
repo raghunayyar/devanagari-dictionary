@@ -1,54 +1,54 @@
 <!doctype html>
 <html class="no-js" lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title><?php echo $title ?> - Devanagari Dictionary</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><?php echo $title ?> - Devanagari Dictionary</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<!-- Place favicon.ico in the root directory -->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
 
-		<!-- 3rdParty: Stylesheets here -->
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/normalize.css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/fontawesome/css/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/cosmo/cosmo.css" />
+	<!-- 3rdParty: Stylesheets here -->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/normalize.css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/fontawesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/cosmo/cosmo.css" />
 
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/keyboard/keyboard.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/keyboard/keyboard.css" />
 
-		<!-- Custom: Stylesheets here -->
-		<link href="<?php echo base_url(); ?>styles/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<link href="<?php echo base_url(); ?>styles/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!-- Custom: Stylesheets here -->
+	<link href="<?php echo base_url(); ?>styles/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url(); ?>styles/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  		<![endif]-->
-		<!-- Modernizr goes here -->
-		<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
-	</head>
-	<body>
-		<nav id="navigation" class="navbar navbar-default">
-			<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button><a class="navbar-brand" href="#">Devanagari Glyph Dictionary</a>
-			</div>
+			<![endif]-->
+			<!-- Modernizr goes here -->
+			<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
+		</head>
+		<body>
+			<nav id="navigation" class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button><a class="navbar-brand" href="#">Devanagari Glyph Dictionary</a>
+					</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Terminologies</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
-				</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-		<div class="container-fluid">
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Terminologies</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<div class="container-fluid">
