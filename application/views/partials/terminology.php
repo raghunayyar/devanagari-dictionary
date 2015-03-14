@@ -17,7 +17,7 @@
 						</div>
 						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<ul class="nav nav-tabs nav-stacked affix-top">
+								<ul class="nav nav-tabs nav-stacked">
 									<li><a href="#basic-tool">Basic tool</a></li>
 									<li><a href="#construction">Construction</a></li>
 									<li><a href="#grey-value">Grey value</a></li>
