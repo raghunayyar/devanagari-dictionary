@@ -23,7 +23,8 @@
 
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-			<![endif]-->		
+		<![endif]-->
+		
 			<!-- Modernizr goes here -->
 			<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 		</head>

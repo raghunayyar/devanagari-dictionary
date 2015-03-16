@@ -3927,14 +3927,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs > li > a:hover {
   /*border-color: #e6e6e6 #e6e6e6 #dddddd;*/
-  background-color: #cccccc;
   color:#000000;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #000000;
-  background-color: #cccccc;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -6732,10 +6730,4 @@ a.list-group-item-danger.active:focus {
 }
 .popover {
   color: #333333;
-}
-
-#terms {
-  overflow-y:auto;
-  height: 500px;
-  margin-top:2%;
 }
