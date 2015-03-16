@@ -1,23 +1,23 @@
-<section id="learnmorepage">
+<section id="terminologypage" class="page">
 	<div class="page-header col-lg-12">
 		<h1>Terminologies</h1>
 	</div>
 	<!-- Credits -->
 	<div class="page-content">
 		<div class="row">
-			<div class="col-md-3" id="spyNav">
-				<div class="panel-group" id="accordion">
-					<div class="panel"> <!-- Tool facet -->
+			<div class="col-lg-4" id="spyNav">
+				<div id="accordion">
+					<div class="panel panel-default"> <!-- Tool facet -->
 						<div class="panel-heading" role="tab" id="headingOne">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									+ Tool Facet
+									<i class="fa fa-angle-right fa-1x"></i><span>Tool Facet</span>
 								</a>
 							</h4>
 						</div>
 						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 							<div class="panel-body">
-								<ul class="nav nav-tabs nav-stacked affix-top">
+								<ul class="nav nav-pills nav-stacked affix-top">
 									<li>
 										<a href="#basic-tool">Basic tool</a>
 									</li>
@@ -47,11 +47,11 @@
 						</div>
 					</div> <!-- Tool facet ends -->
 
-					<div class="panel"> <!-- Hand facet -->
+					<div class="panel panel-default"> <!-- Hand facet -->
 						<div class="panel-heading" role="tab" id="headingTwo">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									+ Hand Facet
+									<i class="fa fa-angle-right fa-1x"></i><span>Hand Facet</span>
 								</a>
 							</h4>
 						</div>
@@ -98,11 +98,11 @@
 							</div>
 						</div>
 					</div> <!-- Hand facet ends -->
-					<div class="panel"> <!-- Proportion facet -->
+					<div class="panel panel-default"> <!-- Proportion facet -->
 						<div class="panel-heading" role="tab" id="headingThree">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									+ Proportion Facet
+									<i class="fa fa-angle-right fa-1x"></i><span>Proportion Facet</span>
 								</a>
 							</h4>
 						</div>
@@ -133,7 +133,7 @@
 					</div> <!-- Proportion facet ends -->
 				</div><!-- END PANEL GROUP -->
 			</div>
-			<div class="col-md-9">
+			<div class="col-lg-8">
 				<div id="terms" data-spy="scroll" data-target="#spyNav">
 
 					<h2 id="tool-facet">Devanagari Font Terminology</h2>

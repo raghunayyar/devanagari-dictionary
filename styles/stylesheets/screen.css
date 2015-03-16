@@ -104,9 +104,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 
-.page-header {
-  text-align: center;
-}
 .page-header h1 {
   font-weight: 700;
   font-size: 36px;
@@ -232,6 +229,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: 4%;
   }
 }
+#terminologypage #accordion .panel {
+  margin-bottom: -1px;
+  padding: 0;
+}
+#terminologypage #accordion .panel a {
+  display: block;
+  padding: 10px;
+}
+#terminologypage #accordion .panel-heading {
+  padding: 0;
+  border-bottom: none;
+}
+#terminologypage #accordion .panel-heading a {
+  text-decoration: none;
+}
+#terminologypage #accordion .panel-heading a i {
+  margin-left: 2px;
+  margin-right: 10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+#terminologypage #accordion .panel-heading a:hover i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+#terminologypage #accordion .panel-body {
+  padding: 0;
+}
+#terminologypage #accordion .panel-body ul {
+  padding-left: 20px;
+}
+
 #conjunctspage .massive {
   font-size: 144px;
 }

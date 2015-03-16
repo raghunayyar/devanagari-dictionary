@@ -13,3 +13,10 @@
       -ms-transition: $time-in ease-out $time-delay;
           transition: $time-in ease-out $time-delay;
 }
+
+@mixin rotation($angle) {
+  -webkit-transform: rotate($angle);
+     -moz-transform: rotate($angle);
+      -ms-transform: rotate($angle);
+          transform: rotate($angle);
+}
