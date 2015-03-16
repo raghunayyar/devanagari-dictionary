@@ -1,6 +1,6 @@
 <section id="contactpage">
 	<div class="page-header col-lg-12">
-		<h1>Contact Us</h1>
+		<h1>Contact Us &amp; Feedback</h1>
 	</div>
 	<!-- Address -->
 	<div class="col-lg-3 page-content">

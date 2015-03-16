@@ -235,9 +235,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #conjunctspage .massive {
   font-size: 144px;
 }
+#conjunctspage .label {
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
+}
 #conjunctspage .completealphabet {
   padding: 20px;
   text-align: center;
+}
+#conjunctspage .examplealphabet {
+  padding: 20px;
+  text-align: left;
+}
+#conjunctspage .primary-details tr td {
+  padding: 20px 0;
+}
+#conjunctspage .primary-details tr td.name {
+  padding-right: 100px;
+}
+#conjunctspage .primary-details tr td.definition {
+  font-weight: 300;
 }
 
 .more-options {
@@ -360,7 +378,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Global Styles Start here */
 body {
-  font-family: "Ek Mukta", helvetica;
+  font-family: "Ek Mukta", "Source Sans Pro", Arial;
   font-size: 16px;
   color: #0d0f01;
   background-color: #fefefe;

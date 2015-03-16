@@ -3,8 +3,34 @@
 		font-size: 144px;
 	}
 
+	.label {
+		color: #333;
+		font-weight: 300;
+		font-size: 24px;
+	}
+
 	.completealphabet {
 		padding: 20px;
 		text-align: center;
+	}
+
+	.examplealphabet {
+		padding: 20px;
+		text-align: left;
+	}
+
+	.primary-details {
+		tr {
+			td {
+				padding: 20px 0;
+			}
+
+			td.name {
+				padding-right: 100px;
+			}
+			td.definition {
+				font-weight: 300;
+			}
+		}
 	}
 }
