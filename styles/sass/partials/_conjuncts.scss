@@ -3,23 +3,67 @@
 		font-size: 144px;
 	}
 
-	.label {
-		color: #333;
-		font-weight: 300;
-		font-size: 24px;
+	.primary-search-container {
+		background: #d1e3ec;
+		min-height: 290px;
+
+		.leftcontent {
+			margin-top:15px;
+
+			.completealphabet {
+				padding: 20px;
+				text-align: center;
+				padding: 50px 10px;
+				margin: 0;
+				background: $white;
+				color: $black;
+			}
+		}
 	}
 
-	.completealphabet {
-		padding: 20px;
-		text-align: center;
+	.heading-column {
+		border-top: 1px solid #ddd;
+
+		.conjunct-heading {
+			padding: 0;
+			margin-left: -15px;
+			margin-top: 12px;
+
+			span {
+				background: #D0C697;
+				color: $white;
+				padding: 10px;
+			}
+
+		}
+	}
+
+	.combination-container {
+		min-height: 275px;
+
+		div {
+			margin-top: 15px;
+		}
+
+		.combination-possibility {
+			text-align: center 
+		}
 	}
 
 	.examplealphabet {
-		padding: 20px;
+		padding: 20px 50px;
 		text-align: left;
 	}
 
 	.primary-details {
+		margin-top: 35px;
+
+		.label {
+			color: #333;
+			font-weight: 300;
+			font-size: 24px;
+		}
+		
 		tr {
 			td {
 				padding: 20px 0;
@@ -30,6 +74,22 @@
 			}
 			td.definition {
 				font-weight: 300;
+			}
+		}
+	}
+
+	.meaning-details {
+		margin-left: 60px;
+
+		.label {
+			color: #333;
+			font-weight: 500;
+			font-size: 18px;
+		}
+
+		tr {
+			td {
+				padding: 10px 0;
 			}
 		}
 	}

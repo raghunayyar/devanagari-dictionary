@@ -276,18 +276,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #conjunctspage .massive {
   font-size: 144px;
 }
-#conjunctspage .label {
-  color: #333;
-  font-weight: 300;
-  font-size: 24px;
+#conjunctspage .primary-search-container {
+  background: #d1e3ec;
+  min-height: 290px;
 }
-#conjunctspage .completealphabet {
+#conjunctspage .primary-search-container .leftcontent {
+  margin-top: 15px;
+}
+#conjunctspage .primary-search-container .leftcontent .completealphabet {
   padding: 20px;
+  text-align: center;
+  padding: 50px 10px;
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+}
+#conjunctspage .heading-column {
+  border-top: 1px solid #ddd;
+}
+#conjunctspage .heading-column .conjunct-heading {
+  padding: 0;
+  margin-left: -15px;
+  margin-top: 12px;
+}
+#conjunctspage .heading-column .conjunct-heading span {
+  background: #D0C697;
+  color: #ffffff;
+  padding: 10px;
+}
+#conjunctspage .combination-container {
+  min-height: 275px;
+}
+#conjunctspage .combination-container div {
+  margin-top: 15px;
+}
+#conjunctspage .combination-container .combination-possibility {
   text-align: center;
 }
 #conjunctspage .examplealphabet {
-  padding: 20px;
+  padding: 20px 50px;
   text-align: left;
+}
+#conjunctspage .primary-details {
+  margin-top: 35px;
+}
+#conjunctspage .primary-details .label {
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
 }
 #conjunctspage .primary-details tr td {
   padding: 20px 0;
@@ -297,6 +333,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 #conjunctspage .primary-details tr td.definition {
   font-weight: 300;
+}
+#conjunctspage .meaning-details {
+  margin-left: 60px;
+}
+#conjunctspage .meaning-details .label {
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
+#conjunctspage .meaning-details tr td {
+  padding: 10px 0;
 }
 
 .more-options {
