@@ -68,10 +68,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* File wise imports happen here */
 /* Styles related to Navigation Bar */
 .navbar {
-  background: #000000;
+  background: #181818;
+  min-height: 65px;
+  color: #e1e1e1;
   border-radius: 0;
   box-shadow: none;
   border: none;
+}
+.navbar .navbar-brand {
+  height: 65px;
+  padding: 19.5px 15px;
+}
+.navbar .navbar-toggle {
+  margin-right: 12px;
+  padding: 17px 10px;
 }
 .navbar li {
   font-size: 14px;
@@ -103,7 +113,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
 }
+.navbar li:last-child a {
+  padding-right: 0;
+}
 
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+  }
+}
 .page-header h1 {
   font-weight: 700;
   font-size: 36px;
