@@ -6,7 +6,9 @@ $default-font-color: #0d0f01;
 $default-background-color: #fefefe;
 $white : #ffffff;
 $black : #000000;
-
+$dark-grey: #181818;
+$medium-grey: #646464;
+$light-grey: #868686;
 
 /* Dimensions and Positioning */
 $default-container-width: 960px;
@@ -23,6 +25,11 @@ $navbar-font-color: #e1e1e1;
 
 /* Widget specific Variables */
 
+$top-widget-background-header: #336E8E;
+$top-widget-border: #336E8E;
+$top-widget-background-box: #D1E3EC;
+$top-widget-background-hover: #89c19a;
+
 $left-widget-background-header: #50A674;
 $left-widget-border: #50A674;
 $left-widget-background-box: #CAE9D5;
@@ -33,7 +40,7 @@ $right-widget-border: #BBAB57;
 $right-widget-background-box: #E9E4C9;
 $right-widget-background-hover: #CCC28A;
 
-$bottom-widget-background-header: #BBAB57;
+$bottom-widget-background-header: #B25259;
 $bottom-widget-border: #BBAB57;
-$bottom-widget-background-box: #E9E4C9;
+$bottom-widget-background-box: #E0C4C5;
 $bottom-widget-background-hover: #CCC28A;

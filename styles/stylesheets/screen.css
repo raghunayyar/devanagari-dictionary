@@ -376,6 +376,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .well.widget {
+  border: 0;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -410,10 +411,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .well.widget .widget-content .widget-subheading {
   font-size: 24px;
   font-weight: 600;
-}
-.well.widget .widget-content .widget-readmore {
-  float: right;
-  margin-bottom: 10px;
 }
 .well.widget .widget-element-list {
   margin-top: 20px;
@@ -500,6 +497,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
 }
+.well.widget.widget-bottom {
+  background: #E0C4C5;
+}
+.well.widget.widget-bottom .widget-header {
+  background: #B25259;
+}
+.well.widget.widget-bottom .widget-subheading {
+  margin-bottom: 17px;
+}
+.well.widget.widget-bottom .widget-readmore {
+  float: left;
+  margin: 10px 0;
+  border: 2px solid #181818;
+  background: transparent;
+  color: #181818;
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+.well.widget.widget-bottom .widget-readmore:hover {
+  background: #181818;
+  color: #ffffff;
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+.well.widget.widget-top {
+  background: #D1E3EC;
+}
+.well.widget.widget-top .leftcontent .completealphabet {
+  font-size: 72px;
+  height: auto;
+  width: 185px;
+  padding: 75px 0 30px 0;
+}
+.well.widget.widget-top .leftcontent .completealphabet h1 {
+  margin-bottom: 30px;
+}
+.well.widget.widget-top .widget-header {
+  background: #336E8E;
+}
+.well.widget.widget-top .spacer {
+  margin-bottom: 30px;
+}
+.well.widget.widget-top .imagearea {
+  height: 115px;
+}
+.well.widget.widget-top .imagearea .moreforms {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
 
 #ofthedaywidget .leftcontent, #recentglyphwidget .leftcontent, #popularglyphwidget .leftcontent {
   margin-top: 10px;
@@ -514,16 +566,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   float: left;
   margin: 10px;
-}
-
-#ofthedaywidget .leftcontent .completealphabet {
-  font-size: 72px;
-  height: auto;
-  width: auto;
-  padding: 60px 0;
-}
-#ofthedaywidget .leftcontent .separated {
-  font-size: 24px;
 }
 
 /* The classes for the image for the keyboard */
@@ -563,4 +605,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-fluid {
   max-width: 960px;
+}
+
+.italicise, .well.widget.widget-top .imagearea {
+  font-style: italic;
 }

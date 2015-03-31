@@ -17,7 +17,7 @@ class Home extends CI_Controller {
 		$this->load->view('widgets/recentwidget', $data);
 		
 		$this->load->view('widgets/popularglyphwidget');
-		$this->load->view('widgets/widget6');
+		$this->load->view('widgets/terminologywidget');
 		$this->load->view('templates/footer');
 	}
 

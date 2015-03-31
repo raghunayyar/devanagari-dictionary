@@ -1,6 +1,8 @@
 // All Widget Styles go here
 
 .well.widget {
+
+	border: 0;
 	@include border-radius(0px);
 	.widget-header {
 		h3 {
@@ -33,10 +35,6 @@
 		.widget-subheading {
 			font-size: 24px;
 			font-weight: 600;
-		}
-		.widget-readmore {
-			float: right;
-			margin-bottom:$padding-standard/2;
 		}
 	}
 
@@ -133,6 +131,75 @@
 			}
 		}
 	}
+
+	&.widget-bottom {
+
+		background: $bottom-widget-background-box;
+
+		.widget-header {
+			background: $bottom-widget-background-header;
+		}
+
+		.widget-subheading {
+			margin-bottom: 17px;
+		}
+
+		.widget-readmore {
+
+			float: left;
+			margin:$padding-standard/2 0;
+			border: 2px solid $dark-grey;
+			background: transparent;
+			color: $dark-grey;
+			@include transition(0.05s,0.05s);
+			
+			&:hover {
+				background: $dark-grey;
+				color: $white;
+				@include transition(0.05s,0.05s);
+			}
+		}
+	}
+
+	&.widget-top {
+
+		background: $top-widget-background-box;
+
+		.leftcontent {
+
+			.completealphabet {
+				font-size: 72px;
+				height: auto;
+				width: 185px;
+				padding: 75px 0 30px 0;
+
+				 h1 {
+				 	margin-bottom: 30px;
+				 }
+			}
+		}
+
+		.widget-header {
+			background: $top-widget-background-header;
+		}
+
+		.spacer {
+			margin-bottom: 30px;
+		}
+
+		.imagearea {
+			height: 115px;
+			
+			.moreforms {
+				color: $medium-grey;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 8px;
+				margin-left: 10px;
+				@extend .italicise;
+			}
+		}
+	}
 }
 
 #ofthedaywidget, #recentglyphwidget, #popularglyphwidget {
@@ -157,24 +224,6 @@
 	}
 }
 
-#ofthedaywidget {
-
-	.leftcontent {
-	
-		.completealphabet {
-
-			font-size: 72px;
-			height: auto;
-			width: auto;
-			padding: 60px 0;
-		}
-
-		.separated {
-			font-size: 24px;
-		}
-	}
-}
-
 /* The classes for the image for the keyboard */
 .keyboardInputInitiator {
   position: absolute;
@@ -185,10 +234,10 @@
 
 @media screen and (min-width: 992px) {
 	.widget-half {
-		width:48%;
+		width:49%;
 	}
 
 	#popularglyphwidget {
-		margin-left: 4%;
+		margin-left: 2%;
 	}
 }

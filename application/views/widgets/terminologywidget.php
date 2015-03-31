@@ -1,5 +1,5 @@
 <!-- Todo : Implement Widget 6 Here -->
-<div class="col-md-12 well widget">
+<div class="col-md-12 widget well widget-full widget-bottom" id="terminologywidget">
 	
 	<div class="widget-header">
 		<h3>Terminology</h3>
