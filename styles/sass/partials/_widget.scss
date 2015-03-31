@@ -68,7 +68,6 @@
 		background: #fefefe;
 		height: 75px;
 		width: 75px;
-		border: 2px solid $left-widget-border;
 	}
 
 	.widgetgroup {
@@ -80,6 +79,10 @@
 	&.widget-left {
 		padding-bottom: 0;
 		background: $left-widget-background-box;
+
+		.completealphabet {
+			border: 2px solid $left-widget-border;
+		}
 
 		.widget-header {
 			background: $left-widget-background-header;
@@ -101,9 +104,38 @@
 			}
 		}
 	}
+
+	&.widget-right {
+		padding-bottom: 0;
+		background: $right-widget-background-box;
+
+		.completealphabet {
+			border: 2px solid $right-widget-border;
+		}
+
+		.widget-header {
+			background: $right-widget-background-header;
+		}
+
+		.widget-element-list {
+			background: $right-widget-background-box;
+			margin-left: -19px;
+			margin-right: -19px;
+
+			li {
+
+				@include transition(0.05s,0.05s);
+
+				&:hover {
+					background: $right-widget-background-hover;
+					@include transition(0.05s,0.05s);
+				}
+			}
+		}
+	}
 }
 
-#ofthedaywidget, #recentglyphwidget {
+#ofthedaywidget, #recentglyphwidget, #popularglyphwidget {
 
 	.leftcontent {
 		margin-top:10px;

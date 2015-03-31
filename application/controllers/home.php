@@ -16,7 +16,7 @@ class Home extends CI_Controller {
 		$data['recentwidgetdata'] = $this->recentadditions();
 		$this->load->view('widgets/recentwidget', $data);
 		
-		$this->load->view('widgets/widget3');
+		$this->load->view('widgets/popularglyphwidget');
 		$this->load->view('widgets/widget6');
 		$this->load->view('templates/footer');
 	}

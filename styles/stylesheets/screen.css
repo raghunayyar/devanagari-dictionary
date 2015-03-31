@@ -440,7 +440,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #fefefe;
   height: 75px;
   width: 75px;
-  border: 2px solid #50A674;
 }
 .well.widget .widgetgroup .label {
   padding: 0;
@@ -448,6 +447,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .well.widget.widget-left {
   padding-bottom: 0;
   background: #CAE9D5;
+}
+.well.widget.widget-left .completealphabet {
+  border: 2px solid #50A674;
 }
 .well.widget.widget-left .widget-header {
   background: #50A674;
@@ -470,17 +472,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transition: 0.05s ease-out 0.05s;
   transition: 0.05s ease-out 0.05s;
 }
+.well.widget.widget-right {
+  padding-bottom: 0;
+  background: #E9E4C9;
+}
+.well.widget.widget-right .completealphabet {
+  border: 2px solid #BBAB57;
+}
+.well.widget.widget-right .widget-header {
+  background: #BBAB57;
+}
+.well.widget.widget-right .widget-element-list {
+  background: #E9E4C9;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+.well.widget.widget-right .widget-element-list li {
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+.well.widget.widget-right .widget-element-list li:hover {
+  background: #CCC28A;
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
 
-#ofthedaywidget .leftcontent, #recentglyphwidget .leftcontent {
+#ofthedaywidget .leftcontent, #recentglyphwidget .leftcontent, #popularglyphwidget .leftcontent {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#ofthedaywidget .rightcontent .imagearea .label, #recentglyphwidget .rightcontent .imagearea .label {
+#ofthedaywidget .rightcontent .imagearea .label, #recentglyphwidget .rightcontent .imagearea .label, #popularglyphwidget .rightcontent .imagearea .label {
   display: block;
   width: 100%;
   text-align: left;
 }
-#ofthedaywidget .rightcontent .imagearea img, #recentglyphwidget .rightcontent .imagearea img {
+#ofthedaywidget .rightcontent .imagearea img, #recentglyphwidget .rightcontent .imagearea img, #popularglyphwidget .rightcontent .imagearea img {
   display: block;
   float: left;
   margin: 10px;
