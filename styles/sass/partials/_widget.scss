@@ -1,7 +1,6 @@
 // All Widget Styles go here
 
 .well.widget {
-	border:5px solid #ddd;
 	@include border-radius(0px);
 	.widget-header {
 		h3 {
@@ -11,8 +10,17 @@
 		float: $right;
 		display: block;
 		margin: -19px;
-		padding: $padding-standard/2;
+		padding: 5px;
 		text-transform: capitalize;
+	}
+
+	.widget-link {
+		color: $black;
+		display: block;
+		float: left;
+		width: 100%;
+		padding: 10px 0;
+		height: 115px;
 	}
 
 	.widget-header.widget-header-custom {
@@ -39,7 +47,6 @@
 			display: block;
 			width: 100%;
 			border-bottom: 1px solid #ccc;
-			padding: $padding-standard 0;
 		}
 	}
 
@@ -47,6 +54,7 @@
 		color: $default-font-color;
 		font-size: $default-font-size;
 		text-transform: capitalize;
+		font-weight: 200;
 	}
 
 	.separated {
@@ -54,12 +62,13 @@
 	}
 
 	.completealphabet {
-		font-size: 48px;
+		font-size: 32px;
 		text-align: center;
-		padding: 32px 0;
+		padding: 25px 0;
 		background: #fefefe;
-		height: 90px;
-		width: 90px;
+		height: 75px;
+		width: 75px;
+		border: 2px solid $left-widget-border;
 	}
 
 	.widgetgroup {
@@ -67,12 +76,38 @@
 			padding: 0;
 		}
 	}
+
+	&.widget-left {
+		padding-bottom: 0;
+		background: $left-widget-background-box;
+
+		.widget-header {
+			background: $left-widget-background-header;
+		}
+
+		.widget-element-list {
+			background: $left-widget-background-box;
+			margin-left: -19px;
+			margin-right: -19px;
+
+			li {
+
+				@include transition(0.05s,0.05s);
+
+				&:hover {
+					background: $left-widget-background-hover;
+					@include transition(0.05s,0.05s);
+				}
+			}
+		}
+	}
 }
 
 #ofthedaywidget, #recentglyphwidget {
 
 	.leftcontent {
-		margin: 10px 0;
+		margin-top:10px;
+		margin-bottom: 10px;
 	}
 	.rightcontent {
 		.imagearea {

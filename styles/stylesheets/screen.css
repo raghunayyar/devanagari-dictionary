@@ -64,6 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* All your variable names will go here */
 /* Dimensions and Positioning */
 /* Navigation Related Colors */
+/* Widget specific Variables */
 /* All mixins go here */
 /* File wise imports happen here */
 /* Styles related to Navigation Bar */
@@ -375,7 +376,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .well.widget {
-  border: 5px solid #ddd;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -386,11 +386,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: right;
   display: block;
   margin: -19px;
-  padding: 10px;
+  padding: 5px;
   text-transform: capitalize;
 }
 .well.widget .widget-header h3 {
   color: #ffffff;
+}
+.well.widget .widget-link {
+  color: #000000;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  height: 115px;
 }
 .well.widget .widget-header.widget-header-custom {
   float: none;
@@ -415,30 +423,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   width: 100%;
   border-bottom: 1px solid #ccc;
-  padding: 20px 0;
 }
 .well.widget .label {
   color: #0d0f01;
   font-size: 16px;
   text-transform: capitalize;
+  font-weight: 200;
 }
 .well.widget .separated {
   font-size: 24px;
 }
 .well.widget .completealphabet {
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
-  padding: 32px 0;
+  padding: 25px 0;
   background: #fefefe;
-  height: 90px;
-  width: 90px;
+  height: 75px;
+  width: 75px;
+  border: 2px solid #50A674;
 }
 .well.widget .widgetgroup .label {
   padding: 0;
 }
+.well.widget.widget-left {
+  padding-bottom: 0;
+  background: #CAE9D5;
+}
+.well.widget.widget-left .widget-header {
+  background: #50A674;
+}
+.well.widget.widget-left .widget-element-list {
+  background: #CAE9D5;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+.well.widget.widget-left .widget-element-list li {
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
+.well.widget.widget-left .widget-element-list li:hover {
+  background: #89c19a;
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
+}
 
 #ofthedaywidget .leftcontent, #recentglyphwidget .leftcontent {
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #ofthedaywidget .rightcontent .imagearea .label, #recentglyphwidget .rightcontent .imagearea .label {
   display: block;
