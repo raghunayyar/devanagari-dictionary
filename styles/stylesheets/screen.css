@@ -547,6 +547,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 115px;
 }
 .well.widget.widget-top .imagearea .moreforms {
+  color: #646464;
   position: absolute;
   bottom: 0;
   margin-bottom: 8px;
@@ -578,11 +579,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @media screen and (min-width: 992px) {
   .widget-half {
-    width: 48%;
+    width: 49%;
   }
 
   #popularglyphwidget {
-    margin-left: 4%;
+    margin-left: 2%;
   }
 }
 /* Styles related to Footer */
@@ -607,6 +608,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 960px;
 }
 
-.italicise, .well.widget.widget-top .imagearea {
+.italicise, .well.widget.widget-top .imagearea .moreforms {
   font-style: italic;
 }
