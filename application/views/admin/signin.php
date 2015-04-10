@@ -2,11 +2,9 @@
 <div class="jumbotron">
 
 	<?php
-		
-		echo validation_errors();
 
 		$formattributes = array('method' => 'POST', 'class' => 'form-horizontal');
-		echo form_open('home/search', $formattributes, '');
+		echo form_open('admin/validate', $formattributes, '');
 
 		$usernamelabel = array (
 			'for' => 'username',
@@ -66,6 +64,7 @@
 		</fieldset>
 	
 	<?php
+		echo validation_errors("<p class='error'></p>");
 		echo form_close();
 	?>
 </div>

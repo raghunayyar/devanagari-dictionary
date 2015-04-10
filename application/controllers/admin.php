@@ -9,6 +9,23 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function validate() {
+		$this->load->model('AdminModel');
+		$query = $this->AdminModel->validate();
+
+		if ($query) {
+			$data = array(
+				'username' => $this->input->post('username'),
+				'is_logged_in' => true
+				);
+
+			$this->session->set_userdata($data);
+			redirect('admin/dashboard');
+		} else {
+			$this->signin();
+		}
+	}
+
 	public function dashboard () {
 		$data['title'] = 'Dashboard'; 
 		$this->load->view('templates/header', $data);
@@ -16,11 +33,9 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function signout () {
-		$data['title'] = 'Sign out'; 
-		$this->load->view('templates/header', $data);
-		$this->load->view('admin/signout');
-		$this->load->view('templates/footer');
+	public function signout() {
+		$this->session->sess_destroy();
+		redirect('admin/signin');
 	}
 
 }
