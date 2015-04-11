@@ -17,6 +17,13 @@
 			}
 		}
 
+		public function initsession() {
+
+			$query = $this->db->query("SELECT `user_data` FROM `ci_sessions` ORDER BY `user_data` ASC LIMIT 1");
+			return $query->result();
+
+		}
+
 	}
 
 ?>
