@@ -6,18 +6,13 @@ class Admin extends CI_Controller {
 
 		$data['title'] = 'Admin Panel';
 		$this->load->model('AdminModel');
-
-		$query = $this->AdminModel->validate();
-		print_r($query);
-		if ($query) {
-			$loggedindata = array(
-				'is_logged_in' => true
-			);
-
-			redirect('admin/dashboard');
+		$query = $this->AdminModel->initsession();
 		
+		if (!empty($query[0]->user_data)) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('admin/dashboard');
+			$this->load->view('templates/footer');
 		} else {
-
 			$this->load->view('templates/header', $data);
 			$this->load->view('admin/signin');
 			$this->load->view('templates/footer');
