@@ -7,12 +7,14 @@ class Admin extends CI_Controller {
 		$data['title'] = 'Admin Panel';
 		$this->load->model('AdminModel');
 		$query = $this->AdminModel->initsession();
-		
+
 		if (!empty($query[0]->user_data)) {
+			$data['title'] = 'Dashboard';
 			$this->load->view('templates/header', $data);
 			$this->load->view('admin/dashboard');
 			$this->load->view('templates/footer');
 		} else {
+			$data['title'] = 'Admin Panel';
 			$this->load->view('templates/header', $data);
 			$this->load->view('admin/signin');
 			$this->load->view('templates/footer');
