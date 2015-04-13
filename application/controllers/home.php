@@ -47,7 +47,7 @@ class Home extends CI_Controller {
 
 	public function contribute() {
 
-		$data['title'] = 'Contribute'; 
+		$data['title'] = 'Contributors'; 
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/contribute');
 		$this->load->view('templates/footer');

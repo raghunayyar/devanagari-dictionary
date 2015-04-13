@@ -47,6 +47,7 @@
 							<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Terminologies</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/home/contribute">Contributors</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
