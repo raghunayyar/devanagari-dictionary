@@ -33,7 +33,7 @@ class Admin extends CI_Controller {
 			$this->session->set_userdata($data);
 			redirect('admin/dashboard');
 		} else {
-			$this->signin();
+			redirect('admin/signin');
 		}
 	}
 
@@ -43,6 +43,8 @@ class Admin extends CI_Controller {
 		$query = $this->AdminModel->initsession();
 
 		if (!empty($query[0]->user_data)) {
+
+			$data['name'] = $query[0]->user_data;
 			$this->load->view('templates/header', $data);
 			$this->load->view('admin/dashboard');
 			$this->load->view('templates/footer');
