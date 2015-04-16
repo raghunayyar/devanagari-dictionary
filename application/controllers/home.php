@@ -46,10 +46,26 @@ class Home extends CI_Controller {
 	}
 
 	public function contribute() {
+		$this->load->model("AdminModel");
 
-		$data['title'] = 'Contributors'; 
+		$contributeentry['name'] = $this->input->post('name');
+		$contributeentry['email'] = $this->input->post('email');
+		$contributeentry['url'] = $this->input->post('url');
+		$contributeentry['acceptance'] = $this->input->post('acceptance');
+		$contributeentry['feedback'] = $this->input->post('feedbacktextarea');
+
+		$contributeentry['results'] = $this->AdminModel->postcontribute($contributeentry);
+		
+	}
+
+	public function contributors() {
+		$data['title'] = 'Contributors';
+
+		$this->load->model("AdminModel");
+		$data['listofcontributors'] = $this->AdminModel->getcontributors();
+
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/contribute');
+		$this->load->view('partials/contribute',$data);
 		$this->load->view('templates/footer');
 	}
 

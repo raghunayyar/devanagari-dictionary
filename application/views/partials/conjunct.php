@@ -187,11 +187,14 @@
 									$url = array (
 										'name' => 'url',
 										'type' => 'hidden',
-										'class' => 'form-control',
-										'value' => current_url(),
-										'autocomplete' => 'off',
-										'disabled' => 'true'
+										'value' => current_url()
 									);
+
+									$acceptance = array (
+										'name' => 'acceptance',
+										'type' => 'hidden',
+										'value' => false
+									);									
 
 									$feedback = array (
 										'class' => 'form-control keyboardInput',
@@ -217,11 +220,10 @@
 										<?php echo form_input($email, '', ''); ?>
 									</div>
 								</div>
-								<div class="form-group">
-									<div class="col-sm-12">
-										<?php echo form_input($url, '', ''); ?>
-									</div>
-								</div>
+								
+								<?php echo form_input($url, '', ''); ?>
+								<?php echo form_input($acceptance, '', ''); ?>
+								
 								<div class="form-group">
 									<div class="col-sm-12">
 										<?php echo form_textarea($feedback); ?>
@@ -231,6 +233,7 @@
 							<div class="modal-footer">
 								<?php echo form_submit($submitbutton, 'Submit'); ?>
 							</div>
+							
 							<?php echo form_close(); ?>
 						</div>
 					</div>

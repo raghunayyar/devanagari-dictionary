@@ -14,18 +14,18 @@
 				</tr>
 			</thead>
 			<tbody>
+				<?php
+					$numberofcards = 0;
+					foreach ($listofcontributors as $key) {
+						$numberofcards++;
+				?>
 				<tr>
-					<td>1</td>
-					<td>Pradnya Naik</td>
-					<td>pradnyanaik17@gmail.com</td>
-					<td>Ka</td>
+					<td><?php echo $numberofcards; ?></td>
+					<td><?php echo $key->contributorname; ?></td>
+					<td><?php echo $key->contributoremail; ?></td>
+					<td><?php echo $key->conjuctcontribution; ?></td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>Raghu Nayyar</td>
-					<td>hey@raghunayyar.com</td>
-					<td>Ka</td>
-				</tr>
+				<?php } ?>
 			</tbody>
 		</table>
 	</div>
