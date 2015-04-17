@@ -5,19 +5,10 @@
 			<div class="col-md-3">
 				<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
 					<ul class="dropdown">
-						<li>
-							<input type="checkbox" id="language-1" name="language-1" value="hindi">
-							<label for="language-1">Hindi</label>
+						<li ng-repeat="one in listoflanguages">
+							<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel">
+							<label for="language-{{one.value}}">{{ one.language }}</label>
 						</li>
-						<li>
-							<input type="checkbox" id="language-2" name="language-2" value="marathi">
-							<label for="language-2">Marathi</label>
-						</li>
-						<li>
-							<input type="checkbox" id="language-3" name="language-3" value="sanskrit">
-							<label for="language-3">Sanskrit</label>
-						</li>
-					
 					</ul>
 				</div>
 			</div>
@@ -50,21 +41,9 @@
 			<div class="col-md-3">
 				<div id="combinationsearch" class="custom-dropdown-wrapper">Combination
 					<ul class="dropdown">
-						<li>
-							<input type="checkbox" id="combination-1" name="combination-1" value="1">
-							<label for="combination-1">1</label>
-						</li>
-						<li>
-							<input type="checkbox" id="combination-2" name="combination-2" value="2">
-							<label for="combination-2">2</label>
-						</li>
-						<li>
-							<input type="checkbox" id="combination-3" name="combination-3" value="3">
-							<label for="combination-3">3</label>
-						</li>
-						<li>
-							<input type="checkbox" id="combination-4" name="combination-4" value="4">
-							<label for="combination-4">4</label>
+						<li ng-repeat="one in listofcombinations">
+							<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel">
+							<label for="combination-{{ one.value }}">{{ one.value }}</label>
 						</li>
 					</ul>
 				</div>
@@ -93,7 +72,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<button type="submit" class="btn btn-danger btn-lg">
+		<button type="submit" class="btn btn-danger btn-lg" ng-click="resetcheckboxes()">
 			<i class="fa fa-undo fa-1x"></i>
 			Reset
 		</button>
