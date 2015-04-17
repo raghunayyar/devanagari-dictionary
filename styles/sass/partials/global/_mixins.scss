@@ -7,6 +7,13 @@
           border-radius: $radius;
 }
 
+@mixin background-size($param) {
+  -webkit-background-size: $param;
+     -moz-background-size: $param;
+       -o-background-size: $param;
+          background-size: $param;
+}
+
 @mixin transition($time-in,$time-delay) {
   -webkit-transition: $time-in ease-out $time-delay;
      -moz-transition: $time-in ease-out $time-delay;

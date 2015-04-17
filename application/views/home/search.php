@@ -1,6 +1,6 @@
-<section class="home-jumbo home-search">
+<section class="home-jumbo home-search" ng-controller="SearchController">
 	<form class="form search-form">
-		<input type="text" class="input form-control input-lg" placeholder="Search.." />
+		<input type="text" class="input form-control input-lg" placeholder="Search.." ng-model="yolo" />
 		<div class="row">
 			<div class="col-md-3">
 				<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
@@ -22,6 +22,26 @@
 				</div>
 			</div>
 			<div class="col-md-9">
+				<ul class="chosen-container">
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>Hindi</span>
+						</div>
+					</li>
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>Marathi</span>
+						</div>
+					</li>
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>Sanskrit</span>
+						</div>
+					</li>										
+				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -50,18 +70,36 @@
 				</div>
 			</div>
 			<div class="col-md-9">
+				<ul class="chosen-container">
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>1</span>
+						</div>
+					</li>
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>2</span>
+						</div>
+					</li>
+					<li class="custom-chosen">
+						<div class="custom-chosen-interior">
+							<i class="fa fa-1x fa-close"></i>
+							<span>3</span>
+						</div>
+					</li>
+				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div class="row">
-			<button type="submit" class="btn btn-danger btn-lg">
-				<i class="fa fa-undo fa-1x"></i>
-				Reset
-			</button>
-			<button type="submit" class="btn btn-success btn-lg">
-				<i class="fa fa-search fa-1x"></i>
-				Search
-			</button>
-		</div>
+		<button type="submit" class="btn btn-danger btn-lg">
+			<i class="fa fa-undo fa-1x"></i>
+			Reset
+		</button>
+		<button type="submit" class="btn btn-success btn-lg">
+			<i class="fa fa-search fa-1x"></i>
+			Search
+		</button>
 	</form>
 </section>

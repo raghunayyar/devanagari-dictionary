@@ -133,9 +133,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 .home-page .home-search {
-  margin: 100px 100px;
-  background: rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
   padding: 50px;
+  width: 800px;
 }
 .home-page .home-search .search-input {
   margin: 20px 0;
@@ -765,6 +765,7 @@ input[type="email"]:focus {
   border-width: 0 6px 6px 6px;
 }
 
+/* Custom Button Styles */
 .btn {
   opacity: 0.8;
   border: none;
@@ -784,4 +785,23 @@ input[type="email"]:focus {
 .btn-lg {
   font-weight: 100;
   font-size: 16px;
+}
+
+/* Chosen Styles */
+.chosen-container {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  height: 35px;
+}
+
+.custom-chosen {
+  float: left;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background: #4d4d4d;
+  color: #A0A1A1;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
