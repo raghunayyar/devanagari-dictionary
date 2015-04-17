@@ -17,17 +17,39 @@
 			}
 		}
 
+		/*
+			List of contributors to be displayed
+		*/		
+
 		public function getcontributors() {
 			$query = $this->db->get('devanagaricontributions');
-			$test = $query->result();
+			$allcontributors = $query->result();
 			$acceptednumber = 0;
-			foreach ($test as $i) {
+			foreach ($allcontributors as $i) {
 				if ($i->acception == '1') {
 					$acceptednumber++;
 					$acceptedlist[$acceptednumber] = $i;
 				} 
 			}
 			return $acceptedlist;
+		}
+
+		/*
+			List of contributors to be approved by the admin
+			TODO - optimise it, DRY.
+		*/
+
+		public function approvelist() {
+			$query = $this->db->get('devanagaricontributions');
+			$allcontributors = $query->result();
+			$unacceptednumber = 0;
+			foreach ($allcontributors as $i) {
+				if ($i->acception == '0') {
+					$unacceptednumber++;
+					$unacceptedlist[$unacceptednumber] = $i;
+				} 
+			}
+			return $unacceptedlist;
 		}
 
 		public function initsession() {

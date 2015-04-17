@@ -34,34 +34,23 @@
 			</tr>
 		</thead>
 		<tbody>
+		<tbody>
+			<?php
+				$numberofcards = 0;
+				foreach ($approvelist as $key) {
+					$numberofcards++;
+			?>
 			<tr>
-				<td>Pradnya Naik</td>
-				<td>Ka</td>
-				<td>Lorem Ipsum is simply dummy text of the printing and 
-					typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an unknown
-					printer took a galley of type and scrambled it to make a type
-					specimen PageMaker including versions of Lorem Ipsum.</td>
+				<td><?php echo $key->contributorname; ?></td>
+				<td><?php echo $key->conjuctcontribution; ?></td>
+				<td><?php echo $key->feedback; ?></td>
 				<td>
 					<button type="submit" class="btn btn-danger btn-xs">
 						<i class="fa fa-trash fa-1x"></i>
 					</button>
 				</td>
 			</tr>
-			<tr>
-				<td>Raghu Nayyar</td>
-				<td>Ka</td>
-				<td>Lorem Ipsum is simply dummy text of the printing and 
-					typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an unknown
-					printer took a galley of type and scrambled it to make a type
-					specimen PageMaker including versions of Lorem Ipsum.</td>
-				<td>
-					<button type="submit" class="btn btn-danger btn-xs">
-						<i class="fa fa-trash fa-1x"></i>
-					</button>
-				</td>
-			</tr>
+			<?php } ?>
 		</tbody>
 	</table>
 	<fieldset>

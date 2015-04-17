@@ -41,7 +41,7 @@ class Admin extends CI_Controller {
 		$data['title'] = 'Dashboard';
 		$this->load->model('AdminModel');
 		$query = $this->AdminModel->initsession();
-
+		$data['approvelist'] = $this->AdminModel->approvelist();
 		if (!empty($query[0]->user_data)) {
 
 			$data['name'] = $query[0]->user_data;
