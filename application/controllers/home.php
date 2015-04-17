@@ -5,19 +5,12 @@ class Home extends CI_Controller {
 	/* Majority of the widgets will go here */
 	public function index() {
 
-		$data['title'] = 'Home'; 
+		$data['title'] = 'Home';
+		$data['bodyclass'] = 'home-page';
 		$this->load->view('templates/header', $data);
 
-		$this->load->view('widgets/search');
-
-		$data['glyphofthedaydata'] = $this->glyphoftheday();
-		$this->load->view('widgets/glyphofthedaywidget', $data);
-
-		$data['recentwidgetdata'] = $this->recentadditions();
-		$this->load->view('widgets/recentwidget', $data);
-		
-		$this->load->view('widgets/popularglyphwidget');
-		$this->load->view('widgets/terminologywidget');
+		$this->load->view('home/search');
+		$this->load->view('home/content');
 		$this->load->view('templates/footer');
 	}
 

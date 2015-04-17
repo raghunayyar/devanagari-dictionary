@@ -69,7 +69,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* File wise imports happen here */
 /* Styles related to Navigation Bar */
 .navbar {
-  background: #181818;
+  z-index: 9999;
+  background: transparent;
   min-height: 65px;
   color: #e1e1e1;
   border-radius: 0;
@@ -124,6 +125,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-bottom: 21.5px;
   }
 }
+.home-page {
+  background: url("../../images/home-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home-page .home-search {
+  margin: 100px 100px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+.home-page .home-search .search-input {
+  margin: 20px 0;
+}
+
 .page-header h1 {
   font-weight: 700;
   font-size: 36px;
@@ -592,6 +609,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Global Styles Start here */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Ek Mukta", "Source Sans Pro", Arial;
   font-size: 16px;
@@ -610,4 +633,155 @@ h1, h2, h3, h4, h5, h6 {
 
 .italicise, .well.widget.widget-top .imagearea .moreforms {
   font-style: italic;
+}
+
+/* Forms Base */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border-radius: 0;
+  outline: none;
+  border: 0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border: none;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::-moz-placeholder {
+  color: #eee;
+}
+
+/* Custom custom-dropdowns */
+.select {
+  position: relative;
+}
+
+.select select {
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #A0A1A1;
+  font-size: 16px;
+  background: #2B2D2E;
+  width: 150px;
+  padding: 15px 10px;
+  margin: 10px 0;
+  border: 0;
+  border-radius: 2px;
+  -webkit-appearance: none;
+}
+
+.custom-dropdown-wrapper {
+  /* Size and position */
+  position: relative;
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  /* Styles */
+  background: #2B2D2E;
+  border-bottom: 1px solid #2B2D2E;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  color: #A0A1A1;
+  margin: 10px 0px;
+  opacity: 0.8;
+  z-index: 999;
+}
+.custom-dropdown-wrapper .dropdown {
+  position: absolute;
+  top: 100%;
+  margin-top: 1px;
+  left: 0;
+  right: 0;
+  background: white;
+  border: inherit;
+  border-top: none;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  pointer-events: none;
+}
+.custom-dropdown-wrapper .dropdown li {
+  position: relative;
+  /* Enable absolute positioning for checkboxes */
+  background: #2B2D2E;
+}
+.custom-dropdown-wrapper .dropdown li label {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  /* Same padding as the button */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.custom-dropdown-wrapper .dropdown li input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  margin-top: -8px;
+}
+.custom-dropdown-wrapper .dropdown li:last-of-type label {
+  border: none;
+  border-radius: 0 0 2px 2px;
+}
+.custom-dropdown-wrapper .dropdown li:hover label {
+  background: black;
+}
+.custom-dropdown-wrapper:hover {
+  opacity: 0.9;
+}
+.custom-dropdown-wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #A0A1A1 transparent;
+}
+.custom-dropdown-wrapper.active {
+  border-radius: 2px 2px 0 0;
+  opacity: 0.9;
+}
+.custom-dropdown-wrapper.active .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+.custom-dropdown-wrapper.active:after {
+  border-width: 0 6px 6px 6px;
+}
+
+.btn {
+  opacity: 0.8;
+  border: none;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: none;
+}
+
+.btn:focus {
+  opacity: 1;
+  box-shadow: none;
+}
+
+.btn-lg {
+  font-weight: 100;
+  font-size: 16px;
 }

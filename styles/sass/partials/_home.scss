@@ -1,0 +1,19 @@
+.home-page {
+  
+  background: url('../../images/home-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  .home-search {
+    margin: 100px 100px;
+    background: rgba(0,0,0,0.1);
+    padding: 50px;
+
+
+    .search-input {
+      margin: 20px 0;
+    }
+  }
+}

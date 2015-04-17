@@ -1,7 +1,8 @@
 /* Styles related to Navigation Bar */
 
 .navbar {
-	background: $navbar-background-color;
+	z-index: 9999;
+	background: transparent;
 	min-height: $navigation-height;
 	color: $navbar-font-color;
 	border-radius:0;

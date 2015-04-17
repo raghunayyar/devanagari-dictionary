@@ -13,7 +13,7 @@
 	<!-- 3rdParty: Stylesheets here -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/normalize.css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/fontawesome/css/font-awesome.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/cosmo/cosmo.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/bootstrap/dist/css/bootstrap.css" />
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>3rdparty/keyboard/keyboard.css" />
 
@@ -28,7 +28,7 @@
 			<!-- Modernizr goes here -->
 			<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 		</head>
-		<body>
+		<body class="<?php echo $bodyclass; ?>">
 			<nav id="navigation" class="navbar navbar-default">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -38,15 +38,13 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-						</button><a class="navbar-brand" href="#">Devanagari Glyph Dictionary</a>
+						</button><a class="navbar-brand" href="#">Glyph Diares</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Terminologies</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/home/contributors">Contributors</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
 						</ul>
