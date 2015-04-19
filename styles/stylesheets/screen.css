@@ -73,7 +73,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 9999;
   background: transparent;
   min-height: 65px;
-  color: #e1e1e1;
   border-radius: 0;
   box-shadow: none;
   border: none;
@@ -81,6 +80,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .navbar .navbar-brand {
   height: 65px;
   padding: 19.5px 15px;
+  color: #eeeeee;
+}
+.navbar .navbar-brand:hover {
+  color: rgba(238, 238, 238, 0.7);
 }
 .navbar .navbar-toggle {
   margin-right: 12px;
@@ -618,14 +621,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 10px;
 }
 
-/* The classes for the image for the keyboard */
-.keyboardInputInitiator {
-  position: absolute;
-  right: 90px;
-  top: 15px;
-  z-index: 100;
-}
-
 @media screen and (min-width: 992px) {
   .widget-half {
     width: 49%;
@@ -877,4 +872,12 @@ input[type="email"]:focus {
 
 .negative-spacer {
   margin-top: -15px;
+}
+
+/* The classes for the image for the keyboard */
+.keyboardInputInitiator {
+  position: absolute;
+  right: 45px;
+  top: 16px;
+  z-index: 100;
 }

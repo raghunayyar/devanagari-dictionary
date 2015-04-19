@@ -4,7 +4,6 @@
 	z-index: 9999;
 	background: transparent;
 	min-height: $navigation-height;
-	color: $navbar-font-color;
 	border-radius:0;
 	box-shadow:none;
 	border:none;
@@ -12,6 +11,11 @@
 	.navbar-brand {
 		height: $navigation-height;
 		padding: 19.5px 15px;
+		color: rgba(238,238,238,1);
+
+		&:hover {
+			color: rgba(238,238,238, 0.7);
+		}
 	}
 
 	.navbar-toggle {

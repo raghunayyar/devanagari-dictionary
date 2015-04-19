@@ -291,3 +291,11 @@ input[type="email"] {
 .negative-spacer {
 	margin-top: -15px;
 }
+
+/* The classes for the image for the keyboard */
+.keyboardInputInitiator {
+	position: absolute;
+	right: 45px;
+	top: 16px;
+	z-index: 100;
+}

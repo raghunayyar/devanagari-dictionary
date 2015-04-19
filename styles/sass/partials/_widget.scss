@@ -224,14 +224,6 @@
 	}
 }
 
-/* The classes for the image for the keyboard */
-.keyboardInputInitiator {
-  position: absolute;
-  right: 90px;
-  top: 15px;
-  z-index: 100;
-}
-
 @media screen and (min-width: 992px) {
 	.widget-half {
 		width:49%;

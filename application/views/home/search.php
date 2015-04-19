@@ -5,11 +5,29 @@
 				<h3>Welcome to</h3>
 				<h1>Devanagari Glyph Diaries</h1>
 			</div>
-			<form class="form search-form" name="homesearchform">
-				<input type="text" class="input form-control input-lg search-input" placeholder="Search.." ng-model="searchinput" required/>
-				<button type="submit" class="btn input-button" ng-click="resetcheckboxes()">
+
+			<?php 
+				$formattributes = array(
+					'method' => 'POST',
+					'class' => 'form search-form',
+					'name' => 'homesearchform'
+				);
+				$searchinput = array (
+					'name' => 'searchinput',
+					'type' => 'text',
+					'class' => 'form-control keyboardInput input input-lg search-input',
+					'placeholder' => 'Search for..',
+					'ng-model' => 'searchinput'
+				);
+				echo form_open('home/search', $formattributes, '');
+			?>
+
+			<?php
+				echo form_input($searchinput, '', '');
+			?>
+				<a class="btn input-button" ng-click="resetcheckboxes()" href="#">
 					<i class="fa fa-undo fa-1x"></i>
-				</button>				
+				</a>				
 				<div class="row negative-spacer">
 					<div class="col-md-4">
 						<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
@@ -32,9 +50,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<button type="submit" class="btn btn-success btn-lg search-button" ng-disabled="homesearchform.$invalid">
-							Search
-						</button>
+						<input type="submit" class="btn btn-success btn-lg search-button" value="Submit" />
 					</div>
 				</div>
 				<div class="row">
@@ -64,9 +80,7 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-
-				<!---->
-			</form>
+			<?php echo form_close(); ?>
 		</section>
 	</div>
 </div>

@@ -68,3 +68,19 @@ $("#know-more").on('click', function(e) {
      });
 
 });
+
+$(function() {
+	var element = $('.home-page');
+	var backgrounds = new Array('#333', '#3e6373', '#564c4c');
+
+	var current = 0;
+
+	function nextBackground() {
+		element.css("background", backgrounds[current = ++current % backgrounds.length]);
+
+		setTimeout(nextBackground, 7000);
+	}
+	
+	setTimeout(nextBackground, 7000);
+	element.css("background", backgrounds[0]);
+});
