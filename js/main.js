@@ -37,7 +37,8 @@ app.controller('SearchController', ['$scope',
 			});
 			$scope.languagearray = [];
 			$scope.listofcombinationtabs = [];
-			$scope.listoflanguagetabs = [];	
+			$scope.listoflanguagetabs = [];
+			$scope.searchinput = '';
 		};
 
 		/*
