@@ -3,9 +3,15 @@
 		<div class="row spacer">
 			<div class="col-md-12" id="about">
 				<h3 class="h3">About Devanagari Conjuncts</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. 
+				<p class="small-spacer">
+					Lorem ipsum dolor sit amet, consectetusgue. Naorem lacibero sed arcu vehicula
+					consectetusgue. Naorem lacibero sed arcu vehicula consectetusgue. Naorem
+					lacibero sed arcu consectetusgue. Naorem lacibero sed arcu vehicula 
+					ultricies a non tortor. 
 				</p>
+				<a href="<?php echo base_url() ?>index.php/home/about" class="btn btn-primary">
+					Know More
+				</a>
 			</div>
 		</div>
 		<div class="clear"></div>

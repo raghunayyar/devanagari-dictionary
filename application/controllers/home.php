@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 
 		$data['title'] = 'Home';
 		$data['bodyclass'] = 'home-page';
+		$data['pageclass'] = 'home';
 		$this->load->view('templates/header', $data);
 
 		$this->load->view('home/search', $data);
@@ -16,7 +17,8 @@ class Home extends CI_Controller {
 
 	public function terminologies() {
 
-		$data['title'] = 'Learn More'; 
+		$data['title'] = 'Learn More';
+		$data['pageclass'] = 'terminologies';
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/terminology');
 		$this->load->view('templates/footer');
@@ -24,7 +26,8 @@ class Home extends CI_Controller {
 
 	public function about() {
 
-		$data['title'] = 'About Us'; 
+		$data['title'] = 'About Us';
+		$data['pageclass'] = 'aboutus';
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/about');
 		$this->load->view('templates/footer');
@@ -33,6 +36,7 @@ class Home extends CI_Controller {
 	public function contact() {
 
 		$data['title'] = 'Contact Us';
+		$data['pageclass'] = 'contactus';
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/contact');
 		$this->load->view('templates/footer');
@@ -53,7 +57,7 @@ class Home extends CI_Controller {
 
 	public function contributors() {
 		$data['title'] = 'Contributors';
-
+		$data['pageclass'] = 'contributors';
 		$this->load->model("AdminModel");
 		$data['listofcontributors'] = $this->AdminModel->getcontributors();
 
@@ -64,7 +68,8 @@ class Home extends CI_Controller {
 
 	public function credit() {
 		
-		$data['title'] = 'Credits'; 
+		$data['title'] = 'Credits';
+		$data['pageclass'] = 'credits';
 		$this->load->view('templates/header', $data);
 		$this->load->view('partials/credit');
 		$this->load->view('templates/footer');
@@ -73,6 +78,7 @@ class Home extends CI_Controller {
 	public function search() {
 
 		$data['title'] = 'Search Results';
+		$data['pageclass'] = 'searchresults';
 		$this->load->model("devanagari");
 
 		$matchedentry['staticquery'] = $this->input->post('searchinput');
@@ -113,7 +119,7 @@ class Home extends CI_Controller {
 	public function result() {
 
 		$data['title'] = 'Conjunct';
-
+		$data['pageclass'] = 'resultpage';
 		$uri = $this->uri->segment(3, 1);
 
 		$this->load->model("devanagari");

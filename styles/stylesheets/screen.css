@@ -80,10 +80,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .navbar .navbar-brand {
   height: 65px;
   padding: 19.5px 15px;
-  color: #eeeeee;
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
 }
 .navbar .navbar-brand:hover {
-  color: rgba(238, 238, 238, 0.7);
+  -webkit-transition: 0.05s ease-out 0.05s;
+  -moz-transition: 0.05s ease-out 0.05s;
+  -ms-transition: 0.05s ease-out 0.05s;
+  transition: 0.05s ease-out 0.05s;
 }
 .navbar .navbar-toggle {
   margin-right: 12px;
@@ -121,6 +127,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .navbar li:last-child a {
   padding-right: 0;
+}
+
+.home .navbar-brand {
+  color: #eeeeee;
+}
+.home .navbar-brand:hover {
+  color: rgba(238, 238, 238, 0.7);
 }
 
 @media (min-width: 768px) {
@@ -864,6 +877,10 @@ input[type="email"]:focus {
   margin-left: 0;
   margin-right: 0;
   padding: 0 10px;
+}
+
+.small-spacer {
+  margin: 20px 0 10px 0;
 }
 
 .spacer {

@@ -28,7 +28,7 @@
 				<!-- Modernizr goes here -->
 				<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 			</head>
-			<body class="">
+			<body class="<?php echo $pageclass; ?>">
 				<nav id="navigation" class="navbar navbar-default">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->

@@ -11,10 +11,10 @@
 	.navbar-brand {
 		height: $navigation-height;
 		padding: 19.5px 15px;
-		color: rgba(238,238,238,1);
-
+		@include transition(0.05s, 0.05s);
+		
 		&:hover {
-			color: rgba(238,238,238, 0.7);
+			@include transition(0.05s, 0.05s);
 		}
 	}
 
@@ -44,6 +44,17 @@
 			a {
 				padding-right: 0;
 			}
+		}
+	}
+}
+
+.home {
+	.navbar-brand {
+
+		color: rgba(238,238,238,1);
+
+		&:hover {
+			color: rgba(238,238,238, 0.7);
 		}
 	}
 }
