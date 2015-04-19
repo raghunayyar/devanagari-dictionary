@@ -6,7 +6,7 @@
 				<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
 					<ul class="dropdown">
 						<li ng-repeat="one in listoflanguages">
-							<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel">
+							<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel" ng-change="changelanguage(one.language,one.value,one.languagemodel)" />
 							<label for="language-{{one.value}}">{{ one.language }}</label>
 						</li>
 					</ul>
@@ -14,22 +14,10 @@
 			</div>
 			<div class="col-md-9">
 				<ul class="chosen-container">
-					<li class="custom-chosen">
+					<li class="custom-chosen" ng-repeat="tab in listoflanguagetabs">
 						<div class="custom-chosen-interior">
 							<i class="fa fa-1x fa-close"></i>
-							<span>Hindi</span>
-						</div>
-					</li>
-					<li class="custom-chosen">
-						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
-							<span>Marathi</span>
-						</div>
-					</li>
-					<li class="custom-chosen">
-						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
-							<span>Sanskrit</span>
+							<span>{{ tab.language }}</span>
 						</div>
 					</li>										
 				</ul>
@@ -42,7 +30,7 @@
 				<div id="combinationsearch" class="custom-dropdown-wrapper">Combination
 					<ul class="dropdown">
 						<li ng-repeat="one in listofcombinations">
-							<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel">
+							<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)">
 							<label for="combination-{{ one.value }}">{{ one.value }}</label>
 						</li>
 					</ul>
@@ -50,22 +38,10 @@
 			</div>
 			<div class="col-md-9">
 				<ul class="chosen-container">
-					<li class="custom-chosen">
+					<li class="custom-chosen" ng-repeat="tab in listofcombinationtabs">
 						<div class="custom-chosen-interior">
 							<i class="fa fa-1x fa-close"></i>
-							<span>1</span>
-						</div>
-					</li>
-					<li class="custom-chosen">
-						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
-							<span>2</span>
-						</div>
-					</li>
-					<li class="custom-chosen">
-						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
-							<span>3</span>
+							<span>{{ tab }}</span>
 						</div>
 					</li>
 				</ul>
