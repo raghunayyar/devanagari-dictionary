@@ -1,8 +1,7 @@
 .home-page {
 	margin-top: -0.85*$hundred;
-	background-color: #fff;
+	background-color: #333333;
 	height: 600px;
-	background: url('../../images/home-bg.jpg') no-repeat center center fixed;
 	@include background-size(cover);
 
 	.home-search {
@@ -17,15 +16,43 @@
 		.search-input {
 			margin: 2*$ten 0;
 			background: url("../../images/search.svg") no-repeat scroll 2*$ten 1.5*$ten;
-			background-color: $white;
+			background-color: rgb(238,238,238);
 			background-size: 2*$ten;
 			padding-left: 5*$ten;
 			padding-right: 5*$ten;
 			font-size: 16px;
+		}
+
+		.search-button {
+			float: right;
+			margin-top: 10px;
+			padding: 8px 40px;
+		}
+	}
+
+	.welcome-message {
+		text-align: center;
+		color: rgb(238,238,238);
+		font-weight: 700;
+
+		h1 {
+			font-size: 44px;
+			line-height: 45px;
+		}
+		h3 {
+			font-size: 32px;
+			line-height: 45px;
 		}
 	}
 }
 
 .home-content-area {
 	margin-bottom: 5*$ten;
+	.h3 {
+		color: #3E6373;
+	}
+	p {
+		font-size: 18px;
+		font-family: Georgia;
+	}
 }

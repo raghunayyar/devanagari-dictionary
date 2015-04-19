@@ -3,8 +3,8 @@
    run the project. Rest everything should come from
    it's respective partial.
 */
-@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,600,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,9 +128,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .home-page {
   margin-top: -85px;
-  background-color: #fff;
+  background-color: #333333;
   height: 600px;
-  background: url("../../images/home-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -147,15 +146,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .home-page .home-search .search-input {
   margin: 20px 0;
   background: url("../../images/search.svg") no-repeat scroll 20px 15px;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   background-size: 20px;
   padding-left: 50px;
   padding-right: 50px;
   font-size: 16px;
 }
+.home-page .home-search .search-button {
+  float: right;
+  margin-top: 10px;
+  padding: 8px 40px;
+}
+.home-page .welcome-message {
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 700;
+}
+.home-page .welcome-message h1 {
+  font-size: 44px;
+  line-height: 45px;
+}
+.home-page .welcome-message h3 {
+  font-size: 32px;
+  line-height: 45px;
+}
 
 .home-content-area {
   margin-bottom: 50px;
+}
+.home-content-area .h3 {
+  color: #3E6373;
+}
+.home-content-area p {
+  font-size: 18px;
+  font-family: Georgia;
 }
 
 .page-header h1 {
@@ -687,8 +711,8 @@ input[type="email"]:focus {
 .custom-dropdown-wrapper {
   /* Size and position */
   position: relative;
-  width: 150px;
-  padding: 10px 10px 10px 10px;
+  width: 180px;
+  padding: 5px 10px;
   /* Styles */
   background: #2B2D2E;
   border-bottom: 1px solid #2B2D2E;
@@ -725,7 +749,7 @@ input[type="email"]:focus {
 }
 .custom-dropdown-wrapper .dropdown li label {
   display: block;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 10px 5px 10px;
   /* Same padding as the button */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -818,26 +842,39 @@ input[type="email"]:focus {
 }
 
 .custom-chosen {
+  width: 100%;
+  float: left;
+}
+
+.custom-chosen:first-child {
+  margin-top: -20px;
+}
+
+.custom-chosen-interior {
   float: left;
   margin-right: 10px;
   padding: 5px 10px;
   background: #2B2D2E;
   color: #A0A1A1;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   opacity: 0.9;
 }
 
 .delete-tab {
   cursor: pointer;
-  float: left;
+  float: right;
   display: block;
   width: 20px;
   text-align: center;
-  margin-left: -10px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0 10px;
 }
 
 .spacer {
-  margin: 50px 0;
+  margin: 10px 100px;
+}
+
+.negative-spacer {
+  margin-top: -15px;
 }
