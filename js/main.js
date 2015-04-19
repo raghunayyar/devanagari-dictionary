@@ -35,6 +35,7 @@ app.controller('SearchController', ['$scope',
 			angular.forEach($scope.listofcombinations, function (one) {
 				one.combinationmodel = $scope.resetvalue;
 			});
+			$scope.languagearray = [];
 			$scope.listofcombinationtabs = [];
 			$scope.listoflanguagetabs = [];	
 		};
@@ -81,5 +82,6 @@ app.controller('SearchController', ['$scope',
 				$scope.listofcombinationtabs.splice(p,1);
 			}
 		};
+
 	}
 ]);

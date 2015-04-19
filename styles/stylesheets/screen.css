@@ -383,15 +383,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px 0;
 }
 
-.more-options {
-  width: 100%;
-  display: block;
-  padding: 20px 0;
-}
-.more-options p {
-  margin: 4px 10px 4px 0;
-}
-
 .well.widget {
   border: 0;
   -webkit-border-radius: 0px;
@@ -800,8 +791,19 @@ input[type="email"]:focus {
   float: left;
   margin-right: 10px;
   padding: 5px 10px;
-  background: #4d4d4d;
+  background: #2B2D2E;
   color: #A0A1A1;
   margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.delete-tab {
   cursor: pointer;
+  float: left;
+  display: block;
+  width: 20px;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: 10px;
+  padding: 0 10px;
 }

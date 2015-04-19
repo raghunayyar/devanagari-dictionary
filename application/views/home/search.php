@@ -1,6 +1,6 @@
 <section class="home-jumbo home-search" ng-controller="SearchController">
-	<form class="form search-form">
-		<input type="text" class="input form-control input-lg" placeholder="Search.." ng-model="yolo" />
+	<form class="form search-form" name="homesearchform">
+		<input type="text" class="input form-control input-lg" placeholder="Search.." ng-model="searchinput" required/>
 		<div class="row">
 			<div class="col-md-3">
 				<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
@@ -16,7 +16,9 @@
 				<ul class="chosen-container">
 					<li class="custom-chosen" ng-repeat="tab in listoflanguagetabs">
 						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
+							<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+								<i class="fa fa-1x fa-close"></i>
+							</div>
 							<span>{{ tab.language }}</span>
 						</div>
 					</li>										
@@ -40,7 +42,9 @@
 				<ul class="chosen-container">
 					<li class="custom-chosen" ng-repeat="tab in listofcombinationtabs">
 						<div class="custom-chosen-interior">
-							<i class="fa fa-1x fa-close"></i>
+							<div class="delete-tab" ng-click="deletecombinationtab(tab)">
+								<i class="fa fa-1x fa-close"></i>
+							</div>
 							<span>{{ tab }}</span>
 						</div>
 					</li>
@@ -52,7 +56,7 @@
 			<i class="fa fa-undo fa-1x"></i>
 			Reset
 		</button>
-		<button type="submit" class="btn btn-success btn-lg">
+		<button type="submit" class="btn btn-success btn-lg" ng-disabled="homesearchform.$invalid">
 			<i class="fa fa-search fa-1x"></i>
 			Search
 		</button>
