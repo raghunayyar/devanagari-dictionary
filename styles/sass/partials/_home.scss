@@ -1,16 +1,21 @@
 .home-page {
-  
-  background: url('../../images/home-bg.jpg') no-repeat center center fixed;
-  @include background-size(cover);
+	margin-top: -0.85*$hundred;
+	background-color: #fff;
+	height: 600px;
+	background: url('../../images/home-bg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
 
-  .home-search {
-    margin: $hundred auto;
-    padding: 50px;
-    width:8 * $hundred;
+	.home-search {
+		margin: 1.5*$hundred auto;
+		padding: 50px;
+		width:8 * $hundred;
 
+		.search-input {
+			margin: 2 * $ten 0;
+		}
+	}
+}
 
-    .search-input {
-      margin: 2 * $ten 0;
-    }
-  }
+.home-content-area {
+	margin-bottom: 5*$ten;
 }

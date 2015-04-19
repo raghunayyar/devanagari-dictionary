@@ -28,7 +28,7 @@
 				<!-- Modernizr goes here -->
 				<script src="<?php echo base_url(); ?>3rdparty/modernizr/modernizr.js"></script>
 			</head>
-			<body class="<?php echo $bodyclass; ?>">
+			<body class="">
 				<nav id="navigation" class="navbar navbar-default">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -42,13 +42,12 @@
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
 								<li><a href="<?php echo base_url() ?>index.php/home/contributors">Contributors</a></li>
 								<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
+							</ul>-->
+						<!--</div>--><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
 				</nav>
-				<div class="container-fluid">

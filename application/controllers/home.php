@@ -9,7 +9,7 @@ class Home extends CI_Controller {
 		$data['bodyclass'] = 'home-page';
 		$this->load->view('templates/header', $data);
 
-		$this->load->view('home/search');
+		$this->load->view('home/search', $data);
 		$this->load->view('home/content');
 		$this->load->view('templates/footer');
 	}

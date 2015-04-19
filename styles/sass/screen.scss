@@ -235,14 +235,14 @@ input[type="email"] {
 	display: block;
 	float: left;
 	width: 100%;
-	margin-top: 15px;
+	margin-top: 1.5*$ten;
 	height: 35px;
 }
 
 .custom-chosen {
 	float: left;
-	margin-right: 10px;
-	padding: 5px 10px;
+	margin-right: $ten;
+	padding: 5px $ten;
 	background: #2B2D2E;
 	color: #A0A1A1;
 	margin-bottom: 20px;
@@ -253,9 +253,14 @@ input[type="email"] {
 	cursor: pointer;
 	float: left;
 	display: block;
-	width: 20px;
+	width: 2*$ten;
 	text-align: center;
-	margin-left: -10px;
-	margin-right: 10px;
-	padding: 0 10px;
+	margin-left: -1*$ten;
+	margin-right: $ten;
+	padding: 0 $ten;
+}
+
+
+.spacer {
+	margin: 5*$ten 0;
 }

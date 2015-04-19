@@ -1,5 +1,6 @@
 		
-		</div><!-- Ends Body Container here -->
+			</div><!-- Ends Body Container here -->
+		</div>
 
 		<footer class="footer">
 			<div class="container">

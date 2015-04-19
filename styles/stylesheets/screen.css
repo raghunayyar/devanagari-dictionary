@@ -126,6 +126,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 .home-page {
+  margin-top: -85px;
+  background-color: #fff;
+  height: 600px;
   background: url("../../images/home-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -133,12 +136,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 .home-page .home-search {
-  margin: 100px auto;
+  margin: 150px auto;
   padding: 50px;
   width: 800px;
 }
 .home-page .home-search .search-input {
   margin: 20px 0;
+}
+
+.home-content-area {
+  margin-bottom: 50px;
 }
 
 .page-header h1 {
@@ -806,4 +813,8 @@ input[type="email"]:focus {
   margin-left: -10px;
   margin-right: 10px;
   padding: 0 10px;
+}
+
+.spacer {
+  margin: 50px 0;
 }
