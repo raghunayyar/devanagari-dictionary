@@ -18,6 +18,7 @@ app.controller('SearchController', ['$scope',
 
 		$scope.listoflanguagetabs = [];
 		$scope.listofcombinationtabs = [];
+		$scope.languagearray = [];
 
 		/*
 			Reset checkboxes
@@ -44,34 +45,25 @@ app.controller('SearchController', ['$scope',
 
 		$scope.changelanguage = function (language,value,bool) {
 			if (bool === true) {
-				if ($scope.listoflanguagetabs.length === 0) {
+				if ($scope.languagearray.length === 0) {
+					$scope.languagearray.push(value);
 					$scope.listoflanguagetabs.push({
 						language: language,
 						value: value
 					});
 				} else {
-					for (var i=0; i<$scope.listoflanguagetabs.length;i++) {
-						if ($scope.listoflanguagetabs[i].value !== value) {
-							$scope.listoflanguagetabs.push({
-								language: language,
-								value: value
-							});	
-						} else {
-							$scope.listoflanguagetabs.splice(i,1);
-						}
-						console.log($scope.listoflanguagetabs);
+					if (jQuery.inArray(value,$scope.languagearray) === -1) {
+						$scope.languagearray.push(value);
+						$scope.listoflanguagetabs.push({
+							language: language,
+							value: value
+						});						
 					}
 				}
 			} else {
-				if ($scope.listoflanguagetabs.length === 1) {
-					$scope.listoflanguagetabs = [];
-				} else {
-					for (var j; j<$scope.listoflanguagetabs.length;j++) {
-						if ($scope.listoflanguagetabs[i].value === value) {
-							$scope.listoflanguagetabs.splice(i,1);
-						}
-					}
-				}
+				var p = jQuery.inArray(value,$scope.languagearray);
+				$scope.languagearray.splice(p,1);
+				$scope.listoflanguagetabs.splice(p,1);
 			}
 		};
 
