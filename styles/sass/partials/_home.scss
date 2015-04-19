@@ -10,8 +10,18 @@
 		padding: 50px;
 		width:8 * $hundred;
 
+		.search-form {
+			position: relative;
+		}
+
 		.search-input {
-			margin: 2 * $ten 0;
+			margin: 2*$ten 0;
+			background: url("../../images/search.svg") no-repeat scroll 2*$ten 1.5*$ten;
+			background-color: $white;
+			background-size: 2*$ten;
+			padding-left: 5*$ten;
+			padding-right: 5*$ten;
+			font-size: 16px;
 		}
 	}
 }

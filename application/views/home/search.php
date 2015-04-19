@@ -2,7 +2,10 @@
 	<div class="container-fluid">
 		<section class="home-jumbo home-search" ng-controller="SearchController">
 			<form class="form search-form" name="homesearchform">
-				<input type="text" class="input form-control input-lg" placeholder="Search.." ng-model="searchinput" required/>
+				<input type="text" class="input form-control input-lg search-input" placeholder="Search.." ng-model="searchinput" required/>
+				<button type="submit" class="btn input-button" ng-click="resetcheckboxes()">
+					<i class="fa fa-undo fa-1x"></i>
+				</button>				
 				<div class="row">
 					<div class="col-md-3">
 						<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
@@ -54,10 +57,8 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-				<button type="submit" class="btn btn-danger btn-lg" ng-click="resetcheckboxes()">
-					<i class="fa fa-undo fa-1x"></i>
-					Reset
-				</button>
+
+				<a href="#about" class="btn btn-primary" id="know-more">Know More</a>
 				<button type="submit" class="btn btn-success btn-lg" ng-disabled="homesearchform.$invalid">
 					<i class="fa fa-search fa-1x"></i>
 					Search

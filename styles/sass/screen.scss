@@ -5,6 +5,7 @@
 */
 
 @import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 
 @import "compass/reset";
 
@@ -42,6 +43,7 @@ body {
 	color: $default-font-color;
 	background-color: $default-background-color;
 	line-height:25px;
+	position: relative;
 }
 
 
@@ -217,6 +219,18 @@ input[type="email"] {
 	opacity: 0.9;
 	box-shadow:none;
 
+}
+
+.input-button {
+	background: transparent;
+	color: #555;
+	border: none;
+	box-shadow: none;
+	float: right;
+	position: absolute;
+	top:3px;
+	right:5px;
+	font-size: 20px;
 }
 
 .btn:focus {
