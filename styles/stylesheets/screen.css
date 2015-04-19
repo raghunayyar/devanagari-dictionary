@@ -197,6 +197,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 18px;
   font-family: Georgia;
 }
+.home-content-area hr {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+  margin-left: 170px;
+  margin-right: 170px;
+}
 
 .page-header h1 {
   font-weight: 700;
@@ -644,6 +652,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* Styles related to Footer */
+.footer {
+  margin: 20px 0;
+}
 .footer .attribution {
   text-align: center;
 }

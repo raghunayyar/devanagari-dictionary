@@ -12,6 +12,7 @@
 				<a href="<?php echo base_url() ?>index.php/home/about" class="btn btn-primary">
 					Know More
 				</a>
+				<hr />
 			</div>
 		</div>
 		<div class="clear"></div>
