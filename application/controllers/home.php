@@ -82,13 +82,34 @@ class Home extends CI_Controller {
 		$this->load->model("devanagari");
 
 		$matchedentry['staticquery'] = $this->input->post('searchinput');
-		$matchedentry['allcomb'] = $this->input->post('allcomb');
-		$matchedentry['twocomb'] = $this->input->post('twocomb');
-		$matchedentry['threecomb'] = $this->input->post('threecomb');
-		$matchedentry['fourcomb'] = $this->input->post('fourcomb');
 
-		$matchedentry['results'] = $this->devanagari->searchdevanagari(
-			$matchedentry);
+		/* DRY this out -> Bad Practice this is */
+		
+		if (!empty($this->input->post('language-1'))) {
+			$matchedentry['language1'] = $this->input->post('language-1');
+		}
+
+		if (!empty($this->input->post('language-2'))) {
+			$matchedentry['language2'] = $this->input->post('language-2');
+		}
+
+		if (!empty($this->input->post('language-3'))) {
+			$matchedentry['language3'] = $this->input->post('language-3');
+		}
+
+		if (!empty($this->input->post('combination-1'))) {
+			$matchedentry['combination1'] = $this->input->post('combination-1');
+		}
+
+		if (!empty($this->input->post('combination-1'))) {
+			$matchedentry['combination1'] = $this->input->post('combination-2');
+		}
+
+		if (!empty($this->input->post('combination-1'))) {
+			$matchedentry['combination1'] = $this->input->post('combination-3');
+		}
+
+		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('widgets/search');
