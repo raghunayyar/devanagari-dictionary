@@ -448,6 +448,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px 0;
 }
 
+.search-topbar {
+  z-index: 9999;
+}
+.search-topbar.sticky {
+  position: fixed;
+  top: 0;
+  height: 65px;
+  background: #fefefe;
+  box-shadow: 0 0 10px #fefefe;
+}
+.search-topbar.sticky .more-button {
+  display: block;
+  margin: 15px 0;
+}
+.search-topbar .more-button {
+  display: none;
+}
+
 .well.widget {
   border: 0;
   -webkit-border-radius: 0px;

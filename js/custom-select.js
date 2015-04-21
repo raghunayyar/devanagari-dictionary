@@ -70,6 +70,12 @@ $("#know-more").on('click', function(e) {
 });
 
 $(function() {
+
+	/*
+		This corresponds to the changing backgrounds on the homepage
+		TODO: Add keyframes and animations to show the background change
+		more effectively.
+	*/
 	var element = $('.home-page');
 	var backgrounds = new Array('#333', '#3e6373', '#564c4c');
 
@@ -83,4 +89,30 @@ $(function() {
 	
 	setTimeout(nextBackground, 7000);
 	element.css("background", backgrounds[0]);
+
+	/*
+		This corresponds to the topbar to be used in the search results page.
+		This gets fixed on top.
+	*/
+
+	var searchtopbar = $('.search-topbar');
+    var origOffsetY = searchtopbar.offset().top;
+
+    function scroll() {
+		if ($(window).scrollTop() >= origOffsetY) {
+			$('.search-topbar').addClass('sticky');
+		} else {
+			$('.search-topbar').removeClass('sticky');
+		}
+
+
+    }
+    document.onscroll = scroll;
+
+
+    /* This scrolls to the top of the page */
+    $('#scrolltotop').click( function () {
+    	$("html, body").animate({ scrollTop: 0 }, "slow");
+    	return false;
+    });
 });

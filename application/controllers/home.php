@@ -101,19 +101,23 @@ class Home extends CI_Controller {
 			$matchedentry['combination1'] = $this->input->post('combination-1');
 		}
 
-		if (!empty($this->input->post('combination-1'))) {
-			$matchedentry['combination1'] = $this->input->post('combination-2');
+		if (!empty($this->input->post('combination-2'))) {
+			$matchedentry['combination2'] = $this->input->post('combination-2');
 		}
 
-		if (!empty($this->input->post('combination-1'))) {
-			$matchedentry['combination1'] = $this->input->post('combination-3');
+		if (!empty($this->input->post('combination-3'))) {
+			$matchedentry['combination3'] = $this->input->post('combination-3');
 		}
+
+		if (!empty($this->input->post('combination-4'))) {
+			$matchedentry['combination4'] = $this->input->post('combination-3');
+		}		
 
 		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('widgets/search');
-		$this->load->view('partials/searchresults',$matchedentry);
+		$this->load->view('search/results',$matchedentry);
 		$this->load->view('templates/footer');
 
 	}
