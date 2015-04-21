@@ -151,7 +151,7 @@ class Home extends CI_Controller {
 		$matchedentry['result'] = $this->devanagari->get($uri);
 
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/conjunct', $matchedentry);
+		$this->load->view('pages/result', $matchedentry);
 		$this->load->view('templates/footer');
 	
 	}

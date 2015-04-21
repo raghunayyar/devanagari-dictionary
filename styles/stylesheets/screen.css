@@ -4,7 +4,7 @@
    it's respective partial.
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,500,600);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -206,131 +206,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 170px;
 }
 
-.page-header h1 {
-  font-weight: 700;
-  font-size: 36px;
-}
-
-.page-content h3 {
+/* Search Results Page */
+.resultcard {
+  font-family: "Ek Mukta", "lato", sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
   padding: 10px;
+  width: 23%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 80px;
+  max-height: 80px;
+  color: #3e6373;
+  border: 1px solid transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-out 0;
+  -moz-transition: 0.2s ease-out 0;
+  -ms-transition: 0.2s ease-out 0;
+  transition: 0.2s ease-out 0;
 }
-.page-content h3 span {
-  font-weight: 500;
-  margin-left: 10px;
+.resultcard .completealphabet {
+  font-size: 52px;
+  padding: 0px 0 5px;
+  margin: 0;
+  font-weight: 300;
+  display: block;
+  margin-left: -15px;
 }
-.page-content .table td {
-  border: none;
-}
-.page-content .people .thumbnail {
-  padding: 40px 0;
-  border: none;
-}
-.page-content .people .thumbnail img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-.page-content .people .thumbnail .caption {
-  margin: 10px 0;
-  text-align: center;
-  font-weight: 500;
-}
-.page-content .people .thumbnail .work {
-  text-align: center;
-  font-size: 12px;
-}
-.page-content .resultcard {
-  color: #333;
-  text-decoration: none;
-  background: #eee;
-  padding: 40px 20px;
-  text-align: center;
-  max-height: 380px;
-  width: 30%;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px transparent;
-  cursor: pointer;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-transition: 0.1s ease-out 0.1s;
-  -moz-transition: 0.1s ease-out 0.1s;
-  -ms-transition: 0.1s ease-out 0.1s;
-  transition: 0.1s ease-out 0.1s;
-}
-.page-content .resultcard .cardlabel {
-  font-style: italic;
-}
-.page-content .resultcard .cardheadholder {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-.page-content .resultcard .cardheadholder .completealphabet {
-  font-size: 128px;
-  padding: 60px 0;
-}
-.page-content .resultcard .separated {
-  margin: 5px 0;
-  font-size: 24px;
-}
-.page-content .resultcard .example-container {
+.resultcard .separated {
   display: none;
-  background: #1967BE;
-  position: absolute;
-  margin: -60px -20px;
-  height: 100px;
-  width: 100%;
-  color: #fefefe;
-  padding: 20px 0;
+  font-size: 36px;
+  padding: 18px;
+  position: relative;
 }
-.page-content .resultcard .example-container .examples {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.resultcard .separated .add {
+  font-size: 18px;
 }
-.page-content .resultcard:hover {
-  cursor: normal;
-  background: #ccc;
-  box-shadow: 0 0 5px #ddd;
-  -webkit-transition: 0.1s ease-out 0.1s;
-  -moz-transition: 0.1s ease-out 0.1s;
-  -ms-transition: 0.1s ease-out 0.1s;
-  transition: 0.1s ease-out 0.1s;
+.resultcard:hover {
+  color: #3e6373;
+  border: 1px solid #ececec;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-out 0;
+  -moz-transition: 0.2s ease-out 0;
+  -ms-transition: 0.2s ease-out 0;
+  transition: 0.2s ease-out 0;
 }
-.page-content .resultcard:hover .example-container {
+.resultcard:hover .completealphabet {
+  display: none;
+}
+.resultcard:hover .separated {
   display: block;
 }
-.page-content .cardspacer {
-  margin-bottom: 20px;
-  min-width: 200px;
-}
-.page-content #contactusform {
-  padding: 20px 0 20px 0;
-}
-.page-content #addresstable {
-  margin-top: 20px;
+.resultcard:active, .resultcard:focus {
+  color: #3e6373;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 992px) {
-  .resultcard {
-    width: 30%;
-  }
-
-  .cardspacer {
-    margin-left: 2.5%;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .cardspacer {
-    margin-left: 4%;
-  }
-}
 #terminologypage #accordion .panel {
   margin-bottom: -1px;
   padding: 0;
@@ -375,77 +311,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 20px;
 }
 
-#conjunctspage .massive {
-  font-size: 144px;
+/* One Conjunct Page */
+.resultpage .result-header .completealphabet {
+  margin-left: -20px;
 }
-#conjunctspage .primary-search-container {
-  background: #d1e3ec;
-  min-height: 290px;
+.resultpage .result-header .primary-details {
+  margin: 10px 0 45px 0;
 }
-#conjunctspage .primary-search-container .leftcontent {
-  margin-top: 15px;
+.resultpage .result-header .primary-details tr {
+  height: 50px;
 }
-#conjunctspage .primary-search-container .leftcontent .completealphabet {
-  padding: 20px;
-  text-align: center;
-  padding: 50px 10px;
-  margin: 0;
-  background: #ffffff;
-  color: #000000;
-}
-#conjunctspage .heading-column {
-  border-top: 1px solid #ddd;
-}
-#conjunctspage .heading-column .conjunct-heading {
-  padding: 0;
-  margin-left: -15px;
-  margin-top: 12px;
-}
-#conjunctspage .heading-column .conjunct-heading span {
-  background: #D0C697;
-  color: #ffffff;
-  padding: 10px;
-}
-#conjunctspage .combination-container {
-  min-height: 275px;
-}
-#conjunctspage .combination-container div {
-  margin-top: 15px;
-}
-#conjunctspage .combination-container .combination-possibility {
-  text-align: center;
-}
-#conjunctspage .examplealphabet {
-  padding: 20px 50px;
-  text-align: left;
-}
-#conjunctspage .primary-details {
-  margin-top: 35px;
-}
-#conjunctspage .primary-details .label {
-  color: #333;
+.resultpage .result-header .combination {
+  font-family: "Ek Mukta", "Lato", sans-serif;
   font-weight: 300;
   font-size: 24px;
 }
-#conjunctspage .primary-details tr td {
-  padding: 20px 0;
+.resultpage .result-header .language {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 1px;
 }
-#conjunctspage .primary-details tr td.name {
-  padding-right: 100px;
-}
-#conjunctspage .primary-details tr td.definition {
+.resultpage .result-header .language .h3 {
   font-weight: 300;
 }
-#conjunctspage .meaning-details {
-  margin-left: 60px;
+.resultpage .result-header .h3 {
+  font-weight: 200;
 }
-#conjunctspage .meaning-details .label {
-  color: #333;
-  font-weight: 500;
+.resultpage .label {
   font-size: 18px;
+  color: #333;
+  margin-left: 20px;
 }
-#conjunctspage .meaning-details tr td {
-  padding: 10px 0;
+.resultpage .completealphabet {
+  font-family: "Ek Mukta", "Lato", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  background: #f9f9f9;
+  padding: 40px 0;
+  border: 1px solid #ececec;
+  border-radius: 2px;
+}
+.resultpage .conjunct-heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3E6373;
+  margin-top: 0;
+}
+.resultpage .combination-possibility {
+  margin-left: 15px;
+}
+.resultpage .meaning-details tr {
+  height: 40px;
+}
+.resultpage .meaning-details .name {
+  width: 150px;
+  margin-left: -15px;
+}
+.resultpage .meaning-details .name span {
+  margin-left: 0;
+  padding-left: 0;
+}
+.resultpage .meaning-details .definition {
+  font-size: 20px;
+  font-weight: 200px;
+}
+.resultpage .contribute-jumbo {
+  padding: 50px 65px 15px 65px;
+  background: #f9f9f9;
+  margin-top: 25px;
+}
+.resultpage .contribute-jumbo .submit-button {
+  padding: 5px 25px;
+  color: #f9f9f9;
+}
+.resultpage hr {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .search-topbar {
@@ -453,14 +394,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .search-topbar.sticky {
   position: fixed;
+  width: 100%;
   top: 0;
   height: 65px;
   background: #fefefe;
-  box-shadow: 0 0 10px #fefefe;
+  box-shadow: 0 0 10px #ccc;
 }
 .search-topbar.sticky .more-button {
   display: block;
-  margin: 15px 0;
+  margin: 15px -20px 10px 0;
+}
+.search-topbar .search-topbar-interior h3 {
+  margin-left: -20px;
+  font-size: 28px;
 }
 .search-topbar .more-button {
   display: none;
@@ -708,14 +654,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Forms Base */
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea[name="feedbacktextarea"] {
   border-radius: 0;
   outline: none;
   border: 0;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+textarea[name="feedbacktextarea"]:focus {
   border: none;
   box-shadow: none;
 }
@@ -926,4 +874,17 @@ input[type="email"]:focus {
   right: 45px;
   top: 16px;
   z-index: 100;
+}
+
+/* Custom Font Sizes */
+.massive {
+  font-size: 144px;
+}
+
+.big {
+  font-size: 72px;
+}
+
+.add {
+  margin: 0 4px 10px 4px;
 }

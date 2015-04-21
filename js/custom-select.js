@@ -95,24 +95,26 @@ $(function() {
 		This gets fixed on top.
 	*/
 
-	var searchtopbar = $('.search-topbar');
-    var origOffsetY = searchtopbar.offset().top;
 
-    function scroll() {
-		if ($(window).scrollTop() >= origOffsetY) {
-			$('.search-topbar').addClass('sticky');
-		} else {
-			$('.search-topbar').removeClass('sticky');
+	if (window.location.href == 'http://localhost:8888/devanagari-dictionary/index.php/home/search') {
+		var searchtopbar = $('.search-topbar');
+		var origOffsetY = searchtopbar.offset().top;
+
+		function scroll() {
+			if ($(window).scrollTop() >= origOffsetY) {
+				$('.search-topbar').addClass('sticky');
+			} else {
+				$('.search-topbar').removeClass('sticky');
+			}
+
+
 		}
+		document.onscroll = scroll;
 
-
-    }
-    document.onscroll = scroll;
-
-
-    /* This scrolls to the top of the page */
-    $('#scrolltotop').click( function () {
-    	$("html, body").animate({ scrollTop: 0 }, "slow");
-    	return false;
-    });
+			/* This scrolls to the top of the page */
+		$('#scrolltotop').click( function () {
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+	}
 });

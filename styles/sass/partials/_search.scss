@@ -3,14 +3,21 @@
 	z-index: 9999;
 	&.sticky {
 		position: fixed;
-		top:0;
+		width: 100%;
+		top: 0;
 		height: 6.5*$ten;
-		background: #fefefe;
-		box-shadow: 0 0 $ten #fefefe;
-
+		background: rgba(254,254,254,1);
+		box-shadow: 0 0 $ten #ccc;
 		.more-button {
 			display: block;
-			margin:15px 0;
+			margin:1.5*$ten -2*$ten $ten 0;
+		}
+	}
+
+	.search-topbar-interior {
+		h3 {
+			margin-left: -20px;
+			font-size: 28px;
 		}
 	}
 

@@ -5,7 +5,7 @@
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,500,600);
 
 @import "compass/reset";
 
@@ -19,9 +19,9 @@
 
 @import "partials/navigation";
 @import "partials/home";
-@import "partials/page";
+@import "partials/results";
 @import "partials/terminology";
-@import "partials/conjuncts";
+@import "partials/result";
 @import "partials/search";
 @import "partials/widget";
 @import "partials/footer";
@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea[name="feedbacktextarea"] {
 	border-radius: 0;
 	outline: none;
 	border: 0;
@@ -301,4 +302,18 @@ input[type="email"] {
 	right: 45px;
 	top: 16px;
 	z-index: 100;
+}
+
+/* Custom Font Sizes */
+
+.massive {
+	font-size: 144px;
+}
+
+.big {
+	font-size: 72px;
+}
+
+.add {
+	margin: 0 4px 10px 4px;
 }
