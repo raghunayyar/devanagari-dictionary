@@ -89,30 +89,16 @@
 		}
 
 		/*
-			Returns Most Searched Results.
-		*/			
-
-		public function highestrated() {
-
-		}
-
-		/*
-			Returns a randomly selected row.
-		*/		
-
-		public function glyphofthedaymodel() {
-
-			$query = $this->db->query("SELECT * FROM devanagarimaintable ORDER BY RAND() LIMIT 1");
-			return $query->result();
-		}
-
-		/*
 			Returns the last 5 entries of the table.
+			TODO: Fix for the final rows, when there are no elements further.
 		*/		
 
-		public function recentlyadded() {
+		public function relatedsearch($sno) {
 
-			$query = $this->db->query("SELECT * from devanagarimaintable ORDER BY Sno DESC LIMIT 0,3");
+			$start = $sno+1;
+			$end = $sno+4;
+
+			$query = $this->db->query("SELECT * from devanagarimaintable WHERE Sno BETWEEN $start AND $end");
 			return $query->result();
 		}
 

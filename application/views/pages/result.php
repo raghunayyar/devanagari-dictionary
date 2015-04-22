@@ -1,4 +1,4 @@
-<div class="<?php echo $pageclass; ?>">
+<div class="<?php echo $pageclass; ?>" ng-controller="ResultController">
 	<div class="container-fluid">
 		<section class="page">
 		<!-- Search Results -->
@@ -53,6 +53,7 @@
 				<hr />
 
 				<div class="row">
+
 					<div class="col-md-12 heading-column">
 						<h2 class="h2 conjunct-heading">
 							<span>Alternate Form(s)</span>
@@ -86,44 +87,37 @@
 				<hr />
 
 				<div class="row">
+					<div class="col-md-12 heading-column">
+						<h2 class="h2 conjunct-heading">
+							<span>Example Usage</span>
+						</h2>
+					</div>
+					<div class="clear"></div>
 
 					<!-- 
 						A foreach here to iterate through the images :
 						currently I show the complete alphabet due to lack of 
 						data. -->
-					
-					<div class="row">
-						
-						<div class="col-md-12 heading-column">
-							<h2 class="h2 conjunct-heading">
-								<span>Example Usage</span>
-							</h2>
+					<div class="combination-container row">
+						<div class="col-md-4">
+							<h1 class="completealphabet big combination-possibility h1">
+								<?php echo $key->completealphabet; ?>
+							</h1>
 						</div>
-						<div class="clear"></div>
-
-						<!-- 
-							A foreach here to iterate through the images :
-							currently I show the complete alphabet due to lack of 
-							data. -->
-						<div class="combination-container row">
-							<div class="col-md-4">
-								<h1 class="completealphabet big combination-possibility h1">
-									<?php echo $key->completealphabet; ?>
-								</h1>
-							</div>
-							<div class="col-md-4">
-								<h1 class="completealphabet big combination-possibility h1">
-									<?php echo $key->completealphabet; ?>
-								</h1>
-							</div>
-							<div class="col-md-4">
-								<h1 class="completealphabet big combination-possibility h1">
-									<?php echo $key->completealphabet; ?>
-								</h1>
-							</div>
+						<div class="col-md-4">
+							<h1 class="completealphabet big combination-possibility h1">
+								<?php echo $key->completealphabet; ?>
+							</h1>
+						</div>
+						<div class="col-md-4">
+							<h1 class="completealphabet big combination-possibility h1">
+								<?php echo $key->completealphabet; ?>
+							</h1>
 						</div>
 					</div>
+				</div>
 
+				<div class="row">
 					<?php foreach ($result as $key) { ?>
 						<table class="col-md-12 meaning-details">
 							<tbody>
@@ -162,14 +156,42 @@
 					<?php } ?>
 				</div>
 
-				<hr />	
+				<hr />
+
+				<div class="row">
+					<div class="col-md-12 heading-column">
+						<h2 class="h2 conjunct-heading">
+							<span>Related Searches</span>
+						</h2>
+					</div>
+					<div class="clear"></div>
+
+					<!-- 
+						A foreach here to iterate through the images :
+						currently I show the complete alphabet due to lack of 
+						data. -->
+					<div class="combination-container row">
+						<?php foreach ($relatedsearchresult as $key) { ?>
+						<a class="col-md-3 resultcard cardspacer" href="<?php echo base_url(); ?>index.php/home/result/<?php echo $key->Sno; ?>">
+							<div class="cardheadholder">
+								<h3 class="completesmalleralphabet h3"><?php echo $key->completealphabet; ?></h3>
+							</div>
+							<p class="separated">
+								<?php echo str_replace(' ', '<strong class="add">+</strong>', $key->seperated); ?>
+							</p>
+						</a>
+						<?php  } ?>
+					</div>
+				</div>
+
+				<hr />
 					
 				<div class="row">
-					<button type="button" class="btn btn-primary btn-lg">
+					<button type="button" class="btn btn-primary btn-lg" ng-click="contributeclick()">
 						Contribute
 					</button>
 				</div>
-				<div class="row">
+				<div class="row temporaryhide" id="contributionform">
 					<?php
 						$formattributes = array('method' => 'POST', 'class' => 'form-horizontal contribute-form', 'id' => 'contributeform');
 				

@@ -3,6 +3,8 @@ var app = angular.module('DictionaryApp', ['ngRoute']);
 app.controller('SearchController', ['$scope',
 	function($scope) {
 
+		$scope.checker = false;
+
 		$scope.listoflanguages = [
 			{ language: 'Hindi', value: '1'},
 			{ language: 'Marathi', value: '2' },
@@ -84,5 +86,20 @@ app.controller('SearchController', ['$scope',
 			}
 		};
 
+	}
+]);
+
+app.controller('ResultController', ['$scope',
+	function ($scope) {
+
+		$scope.contributeclick = function () {
+			if ($scope.checker === false) {
+				$('#contributionform').delay(0).slideDown(500);
+				$scope.checker = true;
+			} else {
+				$('#contributionform').delay(0).slideUp(500);
+				$scope.checker = false;
+			}
+		};
 	}
 ]);

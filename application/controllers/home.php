@@ -122,25 +122,6 @@ class Home extends CI_Controller {
 
 	}
 
-	public function recentadditions() {
-		
-		$this->load->model("devanagari");
-		$result = $this->devanagari->recentlyadded();
-		return $result;
-	}
-
-	public function glyphoftheday() {
-
-		$this->load->model("devanagari");
-		$result = $this->devanagari->glyphofthedaymodel();
-		return $result;
-	}
-
-	public function topglyphs() {
-
-		$this->load->model("devanagari");
-	}
-
 	public function result() {
 
 		$data['title'] = 'Conjunct';
@@ -149,6 +130,8 @@ class Home extends CI_Controller {
 
 		$this->load->model("devanagari");
 		$matchedentry['result'] = $this->devanagari->get($uri);
+
+		$matchedentry['relatedsearchresult'] = $this->devanagari->relatedsearch($uri);
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('pages/result', $matchedentry);

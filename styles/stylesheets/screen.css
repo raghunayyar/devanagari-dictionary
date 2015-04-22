@@ -78,6 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
 }
 .navbar .navbar-brand {
+  margin-left: -30px !important;
   height: 65px;
   padding: 19.5px 15px;
   -webkit-transition: 0.05s ease-out 0.05s;
@@ -230,7 +231,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transition: 0.2s ease-out 0;
   transition: 0.2s ease-out 0;
 }
-.resultcard .completealphabet {
+.resultcard .completesmalleralphabet {
   font-size: 52px;
   padding: 0px 0 5px;
   margin: 0;
@@ -256,7 +257,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transition: 0.2s ease-out 0;
   transition: 0.2s ease-out 0;
 }
-.resultcard:hover .completealphabet {
+.resultcard:hover .completesmalleralphabet {
   display: none;
 }
 .resultcard:hover .separated {
@@ -313,7 +314,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* One Conjunct Page */
 .resultpage .result-header .completealphabet {
-  margin-left: -20px;
+  margin-left: -30px;
 }
 .resultpage .result-header .primary-details {
   margin: 10px 0 45px 0;
@@ -356,9 +357,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   color: #3E6373;
   margin-top: 0;
-}
-.resultpage .combination-possibility {
-  margin-left: 15px;
+  margin-left: -15px;
 }
 .resultpage .meaning-details tr {
   height: 40px;
@@ -651,6 +650,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
+.temporaryhide {
+  display: none;
+}
+
 /* Forms Base */
 input[type="text"],
 input[type="password"],
@@ -659,6 +662,7 @@ textarea[name="feedbacktextarea"] {
   border-radius: 0;
   outline: none;
   border: 0;
+  box-shadow: 0 0 0;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,

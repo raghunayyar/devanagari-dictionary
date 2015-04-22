@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 }
 
+.temporaryhide {
+	display: none;
+}
+
 
 /* Forms Base */
 
@@ -70,6 +74,7 @@ textarea[name="feedbacktextarea"] {
 	border-radius: 0;
 	outline: none;
 	border: 0;
+	box-shadow: 0 0 0;
 
 	&:focus {
 		border: none;

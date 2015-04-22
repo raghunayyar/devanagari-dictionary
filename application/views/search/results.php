@@ -26,7 +26,7 @@
 					data-id="<?php echo $key->Sno; ?>"
 					data-card="<?php echo $numberofcards; ?>">
 					<div class="cardheadholder">
-						<h3 class="completealphabet h3"><?php echo $key->completealphabet; ?></h1>
+						<h3 class="completesmalleralphabet h3"><?php echo $key->completealphabet; ?></h3>
 					</div>
 					<p class="separated">
 						<?php echo str_replace(' ', '<strong class="add">+</strong>', $key->seperated); ?>
