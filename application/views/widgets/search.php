@@ -1,196 +1,89 @@
-<!-- Todo : Implement Search Bar here -->
-<section class="well widget" id="searchwidget">
-
-		<?php
-			echo validation_errors();
-
-			$formattributes = array('method' => 'POST');
-			echo form_open('home/search', $formattributes, '');
-
-			$searchinput = array (
-				'name' => 'searchinput',
-				'type' => 'text',
-				'class' => 'form-control keyboardInput',
-				'placeholder' => 'Search for..'
-			);
-		?>
-
-		<div class="input-group">
-			<?php
-				$alllang = array (
-					'name'=> 'alllang',
-					'id' => 'alllang',
-					'value' => 'alllang',
-					'checked' => TRUE
-				);
-			?>
-			<?php echo form_checkbox($alllang); ?>
-			<?php echo form_label('All Languages', 'alllang'); ?>
-
-			<?php
-				$hindilang = array (
-					'name'=> 'hindilang',
-					'id' => 'hindilang',
-					'value' => 'hindilang',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($hindilang); ?>
-			<?php echo form_label('Hindi', 'hindilang'); ?>
-
-			<?php
-				$marathilang = array (
-					'name'=> 'marathilang',
-					'id' => 'marathilang',
-					'value' => 'marathilang',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($marathilang); ?>
-			<?php echo form_label('Marathi', 'marathilang'); ?>
-			
-			<?php
-				$palilang = array (
-					'name'=> 'palilang',
-					'id' => 'palilang',
-					'value' => 'palilang',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($palilang); ?>
-			<?php echo form_label('Pali', 'palilang'); ?>
-		</div>
-
-		<div class="input-group">
-			<?php
-				$allcomb = array (
-					'name'=> 'allcomb',
-					'id' => 'allcomb',
-					'value' => 'allcomb',
-					'checked' => TRUE
-				);
-			?>
-			<?php echo form_checkbox($allcomb); ?>
-			<?php echo form_label('All Combinations', 'allcomb'); ?>
-
-			<?php
-				$twocomb = array (
-					'name'=> 'twocomb',
-					'id' => 'twocomb',
-					'value' => 'twocomb',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($twocomb); ?>
-			<?php echo form_label('Combination of 2', 'twocomb'); ?>
-
-			<?php
-				$threecomb = array (
-					'name'=> 'threecomb',
-					'id' => 'threecomb',
-					'value' => 'threecomb',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($threecomb); ?>
-			<?php echo form_label('Combination of 3', 'threecomb'); ?>
-			
-			<?php
-				$fourcomb = array (
-					'name'=> 'fourcomb',
-					'id' => 'fourcomb',
-					'value' => 'fourcomb',
-					'checked' => FALSE
-				);
-			?>
-			<?php echo form_checkbox($fourcomb); ?>
-			<?php echo form_label('Combination of 4', 'fourcomb'); ?>
-		</div>
-		<div class="input-group">
-			<?php
-				echo form_input($searchinput, '', '');
-			?>
-
-			<span class="input-group-btn">
-				<?php
-					$searchbutton = array (
-						'class' => 'btn btn-primary',
-						'name' => 'searchbutton'
-					);
-
-					echo form_submit($searchbutton,'Search', '');
-				?>
-			</span>
-
-		</div>
-
-		<div class="more-options">
-			<p class="pull-left">Also Show: </h4>
-			<div>
-				<div class="btn btn-default btn-sm">
-					<?php
-						$voweloption = array (
-							'name'=> 'voweloption',
-							'id' => 'voweloption',
-							'value' => 'voweloption',
-							'checked' => TRUE
-						);
-					?>
-					<?php echo form_checkbox($voweloption); ?>
-					<?php echo form_label('Vowels', 'voweloption'); ?>
-				</div>
-
-				<div class="btn btn-default btn-sm">
-					<?php
-						$consonantsoption = array (
-							'name'=> 'consonantsoption',
-							'id' => 'consonantsoption',
-							'value' => 'consonantsoption',
-							'checked' => TRUE
-						);
-					?>
-					<?php echo form_checkbox($consonantsoption); ?>
-					<?php echo form_label('Consonants', 'consonantsoption'); ?>
-				</div>
-
-				<div class="btn btn-default btn-sm">
-					<?php
-						$numbersoption = array (
-							'name'=> 'numbersoption',
-							'id' => 'numbersoption',
-							'value' => 'numbersoption',
-							'checked' => FALSE
-						);
-					?>
-					<?php echo form_checkbox($numbersoption); ?>
-					<?php echo form_label('Numbers', 'numbersoption'); ?>
-				</div>
-
-				<div class="btn btn-default btn-sm">
-					<?php
-						$symbolsoption = array (
-							'name'=> 'symbolsoption',
-							'id' => 'symbolsoption',
-							'value' => 'symbolsoption',
-							'checked' => FALSE
-						);
-					?>
-					<?php echo form_checkbox($symbolsoption); ?>
-					<?php echo form_label('Symbols', 'symbolsoption'); ?>
-				</div>
-				<div class="btn btn-default btn-sm">
-					<?php
-						$consonentclustersoption = array (
-							'name'=> 'consonentclustersoption',
-							'id' => 'consonentclustersoption',
-							'value' => 'consonentclustersoption',
-							'checked' => FALSE
-						);
-					?>
-					<?php echo form_checkbox($consonentclustersoption); ?>
-					<?php echo form_label('Consonent Clusters', 'consonentclustersoption'); ?>
+<div class="searchwidget">
+	<div class="container-fluid">
+		<section>
+			<div class="row">
+				<div class="col-lg-12">
+					<input type="text" class="form-control input input-lg search-input" placeholder="Search..."/>
+				<a class="btn input-button" ng-click="resetcheckboxes()" href="#">
+					<i class="fa fa-undo fa-1x"></i>
+				</a>	
+					<div class="col-lg-3">				
+						<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
+							<ul class="dropdown">
+								<li ng-repeat="one in listoflanguages">
+									<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel" ng-change="changelanguage(one.language,one.value,one.languagemodel)" />
+									<label for="language-{{one.value}}">{{ one.language }}</label>
+								</li>
+							</ul>
+						</div>
+						<div id="combinationsearch" class="custom-dropdown-wrapper">Combination of
+							<ul class="dropdown">
+								<li ng-repeat="one in listofcombinations">
+									<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)">
+									<label for="combination-{{ one.value }}">{{ one.value }}</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<ul class="chosen-container">
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>Sanskrit</span>
+								</div>
+							</li>
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>Hindi</span>
+								</div>
+							</li>
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>Marathi</span>
+								</div>
+							</li>												
+						</ul>
+						<ul class="chosen-container">
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>1</span>
+								</div>
+							</li>
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>2</span>
+								</div>
+							</li>
+							<li class="custom-chosen">
+								<div class="custom-chosen-interior">
+									<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<i class="fa fa-1x fa-close"></i>
+									</div>
+									<span>3</span>
+								</div>
+							</li>
+						</ul>		
+					</div>
+					<div class="col-lg-2">
+					<input type="submit" class="btn btn-success btn-lg search-button" value="Submit" />
+					</div>
 				</div>
 			</div>
-		</div>
-		<?php echo form_close(); ?>
-</section>
+		</section>
+	</div>
+</div>
