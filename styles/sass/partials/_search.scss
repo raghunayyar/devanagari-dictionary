@@ -1,9 +1,27 @@
-.more-options {
-	width: 100%;
-	display: block;
-	padding: $padding-standard 0;
+.search-topbar {
 
-	p {
-		margin: 4px 10px 4px 0;
+	z-index: 9999;
+	&.sticky {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		height: 6.5*$ten;
+		background: rgba(254,254,254,1);
+		box-shadow: 0 0 $ten #ccc;
+		.more-button {
+			display: block;
+			margin:1.5*$ten -2*$ten $ten 0;
+		}
 	}
+
+	.search-topbar-interior {
+		h3 {
+			margin-left: -20px;
+			font-size: 28px;
+		}
+	}
+
+	.more-button {
+		display: none;
+	} 
 }

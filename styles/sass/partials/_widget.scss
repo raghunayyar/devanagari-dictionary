@@ -1,243 +1,34 @@
 // All Widget Styles go here
 
-.well.widget {
+.searchwidget {
+	background: #333;
+	padding: 125px 0 50px 0;
+	margin-top: -65px;
 
-	border: 0;
-	@include border-radius(0px);
-	.widget-header {
-		h3 {
-			color: $white;
-		}
-		background: #374256;
-		float: $right;
-		display: block;
-		margin: -19px;
-		padding: 5px;
-		text-transform: capitalize;
-	}
-
-	.widget-link {
-		color: $black;
-		display: block;
-		float: left;
-		width: 100%;
-		padding: 10px 0;
-		height: 115px;
-	}
-
-	.widget-header.widget-header-custom {
+	.custom-chosen {
 		float: none;
-	}
-
-	.widget-content {
-		padding: 15px;
-		margin: 20px 0;
-		.widget-subheading {
-			font-size: 24px;
-			font-weight: 600;
+		&:first-child {
+			margin-top: -6px;
 		}
 	}
 
-	.widget-element-list {
-		margin-top: $padding-standard;
-		li {
-			float: left;
-			display: block;
-			width: 100%;
-			border-bottom: 1px solid #ccc;
-		}
+	.input-button {
+		right: 20px;
+		top: -30px;
 	}
 
-	.label {
-		color: $default-font-color;
-		font-size: $default-font-size;
-		text-transform: capitalize;
-		font-weight: 200;
+	.search-button {
+		margin: 10px;
+		float: right;
+		margin-right: -15px;
+		padding: 8px 40px;
 	}
 
-	.separated {
-		font-size: 24px;
+	.custom-dropdown-wrapper {
+		margin-left: -20px;
 	}
 
-	.completealphabet {
-		font-size: 32px;
-		text-align: center;
-		padding: 25px 0;
-		background: #fefefe;
-		height: 75px;
-		width: 75px;
-	}
-
-	.widgetgroup {
-		.label {
-			padding: 0;
-		}
-	}
-
-	&.widget-left {
-		padding-bottom: 0;
-		background: $left-widget-background-box;
-
-		.completealphabet {
-			border: 2px solid $left-widget-border;
-		}
-
-		.widget-header {
-			background: $left-widget-background-header;
-		}
-
-		.widget-element-list {
-			background: $left-widget-background-box;
-			margin-left: -19px;
-			margin-right: -19px;
-
-			li {
-
-				@include transition(0.05s,0.05s);
-
-				&:hover {
-					background: $left-widget-background-hover;
-					@include transition(0.05s,0.05s);
-				}
-			}
-		}
-	}
-
-	&.widget-right {
-		padding-bottom: 0;
-		background: $right-widget-background-box;
-
-		.completealphabet {
-			border: 2px solid $right-widget-border;
-		}
-
-		.widget-header {
-			background: $right-widget-background-header;
-		}
-
-		.widget-element-list {
-			background: $right-widget-background-box;
-			margin-left: -19px;
-			margin-right: -19px;
-
-			li {
-
-				@include transition(0.05s,0.05s);
-
-				&:hover {
-					background: $right-widget-background-hover;
-					@include transition(0.05s,0.05s);
-				}
-			}
-		}
-	}
-
-	&.widget-bottom {
-
-		background: $bottom-widget-background-box;
-
-		.widget-header {
-			background: $bottom-widget-background-header;
-		}
-
-		.widget-subheading {
-			margin-bottom: 17px;
-		}
-
-		.widget-readmore {
-
-			float: left;
-			margin:$padding-standard/2 0;
-			border: 2px solid $dark-grey;
-			background: transparent;
-			color: $dark-grey;
-			@include transition(0.05s,0.05s);
-			
-			&:hover {
-				background: $dark-grey;
-				color: $white;
-				@include transition(0.05s,0.05s);
-			}
-		}
-	}
-
-	&.widget-top {
-
-		background: $top-widget-background-box;
-
-		.leftcontent {
-
-			.completealphabet {
-				font-size: 72px;
-				height: auto;
-				width: 185px;
-				padding: 75px 0 30px 0;
-
-				 h1 {
-				 	margin-bottom: 30px;
-				 }
-			}
-		}
-
-		.widget-header {
-			background: $top-widget-background-header;
-		}
-
-		.spacer {
-			margin-bottom: 30px;
-		}
-
-		.imagearea {
-			height: 115px;
-			
-			.moreforms {
-				color: $medium-grey;
-				position: absolute;
-				bottom: 0;
-				margin-bottom: 8px;
-				margin-left: 10px;
-				@extend .italicise;
-			}
-		}
-	}
-}
-
-#ofthedaywidget, #recentglyphwidget, #popularglyphwidget {
-
-	.leftcontent {
-		margin-top:10px;
-		margin-bottom: 10px;
-	}
-	.rightcontent {
-		.imagearea {
-			.label {
-				display: block;
-				width: 100%;
-				text-align: left;
-			}
-			img {
-				display: block;
-				float: left;
-				margin:10px;
-			}
-		}
-	}
-}
-
-/* The classes for the image for the keyboard */
-.keyboardInputInitiator {
-  position: absolute;
-  right: 90px;
-  top: 15px;
-  z-index: 100;
-}
-
-@media screen and (min-width: 992px) {
-	.widget-half {
-		width:49%;
-	}
-
-	#popularglyphwidget {
-		margin-left: 2%;
+	.search-input {
+		margin-top: -35px;
 	}
 }

@@ -1,16 +1,22 @@
 /* Styles related to Navigation Bar */
 
 .navbar {
-	background: $navbar-background-color;
+	z-index: 9999;
+	background: transparent;
 	min-height: $navigation-height;
-	color: $navbar-font-color;
 	border-radius:0;
 	box-shadow:none;
 	border:none;
 
 	.navbar-brand {
+		margin-left: -20px !important;
 		height: $navigation-height;
 		padding: 19.5px 15px;
+		@include transition(0.05s, 0.05s);
+		
+		&:hover {
+			@include transition(0.05s, 0.05s);
+		}
 	}
 
 	.navbar-toggle {
@@ -39,6 +45,17 @@
 			a {
 				padding-right: 0;
 			}
+		}
+	}
+}
+
+.home {
+	.navbar-brand {
+
+		color: rgba(238,238,238,1);
+
+		&:hover {
+			color: rgba(238,238,238, 0.7);
 		}
 	}
 }
