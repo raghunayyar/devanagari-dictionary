@@ -15,15 +15,6 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	public function terminologies() {
-
-		$data['title'] = 'Learn More';
-		$data['pageclass'] = 'terminologies';
-		$this->load->view('templates/header', $data);
-		$this->load->view('partials/terminology');
-		$this->load->view('templates/footer');
-	}
-
 	public function about() {
 
 		$data['title'] = 'About Us';
@@ -71,7 +62,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Credits';
 		$data['pageclass'] = 'credits';
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/credit');
+		$this->load->view('partials/credits');
 		$this->load->view('templates/footer');
 	}
 
