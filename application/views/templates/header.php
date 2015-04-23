@@ -41,5 +41,13 @@
 							</button>
 							<a class="navbar-brand" href="<?php echo base_url() ?>">Glyph Diares</a>
 						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="<?php echo base_url() ?>index.php/home/about">About</a></li>
+								<li><a href="<?php echo base_url() ?>index.php/home/terminologies">Rare Glyphs</a></li>
+								<li><a href="<?php echo base_url() ?>index.php/home/contact">Contact</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->			
 					</div>
 				</nav>

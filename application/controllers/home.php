@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'About Us';
 		$data['pageclass'] = 'aboutus';
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/about');
+		$this->load->view('pages/about');
 		$this->load->view('templates/footer');
 	}
 
@@ -29,7 +29,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Contact Us';
 		$data['pageclass'] = 'contactus';
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/contact');
+		$this->load->view('pages/contact');
 		$this->load->view('templates/footer');
 	}
 
@@ -62,7 +62,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'Credits';
 		$data['pageclass'] = 'credits';
 		$this->load->view('templates/header', $data);
-		$this->load->view('partials/credits');
+		$this->load->view('pages/credits');
 		$this->load->view('templates/footer');
 	}
 

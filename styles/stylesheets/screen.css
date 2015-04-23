@@ -98,7 +98,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .navbar li {
   font-size: 14px;
-  text-transform: uppercase;
   border-bottom: 0 solid transparent;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
@@ -120,7 +119,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .navbar li:hover {
   background: transparent !important;
-  text-decoration: underline;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
@@ -136,13 +134,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .home .navbar-brand:hover {
   color: rgba(238, 238, 238, 0.7);
 }
-
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 21.5px;
-    padding-bottom: 21.5px;
-  }
+.home .navbar li a {
+  color: #eeeeee;
 }
+.home .navbar li a:hover {
+  color: rgba(238, 238, 238, 0.9);
+}
+
 .home-page {
   margin-top: -85px;
   background-color: #333333;
@@ -260,50 +258,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .resultcard:active, .resultcard:focus {
   color: #3e6373;
   text-decoration: none;
-}
-
-#terminologypage #accordion .panel {
-  margin-bottom: -1px;
-  padding: 0;
-}
-#terminologypage #accordion .panel a {
-  display: block;
-  padding: 10px;
-}
-#terminologypage #accordion .panel-heading {
-  padding: 0;
-  border-bottom: none;
-}
-#terminologypage #accordion .panel-heading a {
-  text-decoration: none;
-}
-#terminologypage #accordion .panel-heading a i {
-  margin-left: 2px;
-  margin-right: 10px;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-  -webkit-transition: 0.05s ease-out 0.05s;
-  -moz-transition: 0.05s ease-out 0.05s;
-  -ms-transition: 0.05s ease-out 0.05s;
-  transition: 0.05s ease-out 0.05s;
-}
-#terminologypage #accordion .panel-heading a:hover i {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transition: 0.05s ease-out 0.05s;
-  -moz-transition: 0.05s ease-out 0.05s;
-  -ms-transition: 0.05s ease-out 0.05s;
-  transition: 0.05s ease-out 0.05s;
-}
-#terminologypage #accordion .panel-body {
-  padding: 0;
-}
-#terminologypage #accordion .panel-body ul {
-  padding-left: 20px;
 }
 
 /* One Conjunct Page */
@@ -432,6 +386,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .searchwidget .search-input {
   margin-top: -35px;
+}
+
+.thumbnail {
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.thumbnail .caption, .thumbnail .work {
+  text-align: center;
+}
+.thumbnail .work {
+  margin-top: -15px;
+}
+.thumbnail .caption {
+  font-weight: 700;
+}
+.thumbnail img {
+  border-radius: 50%;
+}
+
+.aboutus .img {
+  height: 200px;
+  border: 1px solid #f9f9f9;
+}
+
+.contentarea {
+  margin: 20px 0;
 }
 
 /* Styles related to Footer */
@@ -711,6 +692,10 @@ textarea[name="feedbacktextarea"]:focus {
 
 .add {
   margin: 0 4px 10px 4px;
+}
+
+.center {
+  text-align: center;
 }
 
 .search-input {

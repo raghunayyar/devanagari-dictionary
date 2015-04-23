@@ -9,7 +9,7 @@
 					<span> | </span>
 					<span><a href="<?php echo base_url() ?>index.php/home/credit">Credits</a></span>
 					<span> | </span>
-					<span><a href="<?php echo base_url() ?>index.php/home/contact">Feedback</a></span>
+					<span><a href="<?php echo base_url() ?>index.php/home/contributors">Contributors</a></span>
 				</p>
 			</div>
 		</footer>

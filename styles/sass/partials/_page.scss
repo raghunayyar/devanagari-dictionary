@@ -1,0 +1,32 @@
+.thumbnail {
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	.caption, .work {
+		text-align: center;
+	}
+
+	.work {
+		margin-top: -15px;
+	}
+	
+	.caption {
+		font-weight: 700;
+	}
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+.aboutus {
+	.img {
+		height: 200px;
+		border: 1px solid #f9f9f9;
+	}
+}
+
+.contentarea {
+	margin: 20px 0;
+}

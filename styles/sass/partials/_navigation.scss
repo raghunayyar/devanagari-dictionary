@@ -26,7 +26,6 @@
 
 	li {
 		font-size: 14px;
-		text-transform: uppercase;
 		border-bottom: 0 solid transparent;
 		@include transition(0.05s, 0.05s);
 		a {
@@ -38,7 +37,6 @@
 		}
 		&:hover {
 			background: transparent !important;
-			text-decoration: underline;
 			@include transition(0.05s, 0.05s);
 		}
 		&:last-child {
@@ -58,11 +56,16 @@
 			color: rgba(238,238,238, 0.7);
 		}
 	}
-}
 
-@media (min-width: 768px) {
-	.navbar-nav > li > a {
-		padding-top: 21.5px;
-		padding-bottom: 21.5px;
+	.navbar {
+		li {
+			a {
+				color: rgba(238,238,238,1);
+
+				&:hover {
+					color: rgba(238,238,238, 0.9);
+				}
+			}
+		}
 	}
 }
