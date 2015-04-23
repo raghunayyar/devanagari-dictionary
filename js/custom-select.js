@@ -37,11 +37,7 @@ DropDown.prototype = {
 
 $(function() {
 
-	var dd1 = new DropDown($('#languagesearch'));
-	var dd2 = new DropDown($('#combinationsearch'));
-
 	$(document).click(function() {
-		// all dropdowns
 		$('.custom-dropdown-wrapper').removeClass('active');
 	});
 
@@ -70,25 +66,6 @@ $("#know-more").on('click', function(e) {
 });
 
 $(function() {
-
-	/*
-		This corresponds to the changing backgrounds on the homepage
-		TODO: Add keyframes and animations to show the background change
-		more effectively.
-	*/
-	var element = $('.home-page');
-	var backgrounds = new Array('#333', '#3e6373', '#564c4c');
-
-	var current = 0;
-
-	function nextBackground() {
-		element.css("background", backgrounds[current = ++current % backgrounds.length]);
-
-		setTimeout(nextBackground, 7000);
-	}
-	
-	setTimeout(nextBackground, 7000);
-	element.css("background", backgrounds[0]);
 
 	/*
 		This corresponds to the topbar to be used in the search results page.

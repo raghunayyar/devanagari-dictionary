@@ -13,7 +13,7 @@
 	);
 	
 ?>
-<div class="searchwidget">
+<div class="searchwidget" ng-controller="SearchWidgetController">
 	<div class="container-fluid">
 		<section>
 			<?php echo form_open('home/search', $formattributes, ''); ?>
@@ -43,58 +43,27 @@
 						</div>
 						<div class="col-lg-7">
 							<ul class="chosen-container">
-								<li class="custom-chosen">
+								<li class="custom-chosen" ng-repeat="tab in listoflanguagetabs">
 									<div class="custom-chosen-interior">
 										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
 											<i class="fa fa-1x fa-close"></i>
 										</div>
-										<span>Sanskrit</span>
+										<span>{{ tab.language }}</span>
 									</div>
 								</li>
-								<li class="custom-chosen">
-									<div class="custom-chosen-interior">
-										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
-											<i class="fa fa-1x fa-close"></i>
-										</div>
-										<span>Hindi</span>
-									</div>
-								</li>
-								<li class="custom-chosen">
-									<div class="custom-chosen-interior">
-										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
-											<i class="fa fa-1x fa-close"></i>
-										</div>
-										<span>Marathi</span>
-									</div>
-								</li>												
 							</ul>
 							<ul class="chosen-container">
-								<li class="custom-chosen">
+								<li class="custom-chosen" ng-repeat="tab in listofcombinationtabs">
 									<div class="custom-chosen-interior">
-										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
+										<div class="delete-tab" ng-click="deletecombinationtab(tab)">
 											<i class="fa fa-1x fa-close"></i>
 										</div>
-										<span>1</span>
-									</div>
-								</li>
-								<li class="custom-chosen">
-									<div class="custom-chosen-interior">
-										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
-											<i class="fa fa-1x fa-close"></i>
-										</div>
-										<span>2</span>
-									</div>
-								</li>
-								<li class="custom-chosen">
-									<div class="custom-chosen-interior">
-										<div class="delete-tab" ng-click="deletelanguagetab(tab)">
-											<i class="fa fa-1x fa-close"></i>
-										</div>
-										<span>3</span>
+										<span>Comb. {{ tab }}</span>
 									</div>
 								</li>
 							</ul>		
 						</div>
+						
 						<div class="col-lg-2">
 						<input type="submit" class="btn btn-success btn-lg search-button" value="Submit" />
 						</div>
