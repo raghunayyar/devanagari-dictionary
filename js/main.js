@@ -48,19 +48,22 @@ app.controller('SearchController', ['$scope',
 		*/
 
 		$scope.changelanguage = function (language,value,bool) {
+			console.log('yolo');
 			if (bool === true) {
 				if ($scope.languagearray.length === 0) {
 					$scope.languagearray.push(value);
 					$scope.listoflanguagetabs.push({
 						language: language,
-						value: value
+						value: value,
+						bool: true
 					});
 				} else {
 					if (jQuery.inArray(value,$scope.languagearray) === -1) {
 						$scope.languagearray.push(value);
 						$scope.listoflanguagetabs.push({
 							language: language,
-							value: value
+							value: value,
+							bool: true
 						});						
 					}
 				}
@@ -85,6 +88,16 @@ app.controller('SearchController', ['$scope',
 				$scope.listofcombinationtabs.splice(p,1);
 			}
 		};
+
+		$scope.deletelanguagetab = function(tab) {
+			var falsecheck = false;
+			$scope.changelanguage(tab.language, tab.value, falsecheck);
+		};
+
+		$scope.deletecombinationtab = function(tab) {
+			var falsecheck = false;
+			$scope.changecombination(tab.value,falsecheck);
+		};		
 
 
 		var dd1 = new DropDown($('#languagesearch'));
@@ -179,6 +192,15 @@ app.controller('SearchWidgetController', ['$scope',
 			}
 		};
 
+		$scope.deletelanguagetab = function(tab) {
+			var falsecheck = false;
+			$scope.changelanguage(tab.language, tab.value, falsecheck);
+		};
+
+		$scope.deletecombinationtab = function(tab) {
+			var falsecheck = false;
+			$scope.changecombination(tab.value,falsecheck);
+		};		
 
 		var dd1 = new DropDown($('#languagesearch'));
 		var dd2 = new DropDown($('#combinationsearch'));
