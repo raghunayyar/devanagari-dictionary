@@ -7,9 +7,9 @@
 				<p class="attribution">
 					<span>&copy; IDC, IIT Bombay - 2015</span>
 					<span> | </span>
-					<span><a href="<?php echo base_url() ?>index.php/home/credit">Credits</a></span>
+					<span><a href="<?php echo base_url() ?>home/credit">Credits</a></span>
 					<span> | </span>
-					<span><a href="<?php echo base_url() ?>index.php/home/contributors">Contributors</a></span>
+					<span><a href="<?php echo base_url() ?>home/contributors">Contributors</a></span>
 				</p>
 			</div>
 		</footer>

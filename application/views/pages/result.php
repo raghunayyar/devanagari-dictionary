@@ -162,7 +162,7 @@
 						data. -->
 					<div class="combination-container row">
 						<?php foreach ($relatedsearchresult as $key) { ?>
-						<a class="col-md-3 resultcard cardspacer" href="<?php echo base_url(); ?>index.php/home/result/<?php echo $key->Sno; ?>">
+						<a class="col-md-3 resultcard cardspacer" href="<?php echo base_url(); ?>home/result/<?php echo $key->Sno; ?>">
 							<div class="cardheadholder">
 								<h3 class="completesmalleralphabet h3"><?php echo $key->completealphabet; ?></h3>
 							</div>

@@ -21,7 +21,7 @@
 					foreach ($results as $key) {
 					$numberofcards++;
 				?>
-				<a href="<?php echo base_url(); ?>index.php/home/result/<?php echo $key->Sno; ?>"
+				<a href="<?php echo base_url(); ?>home/result/<?php echo $key->Sno; ?>"
 					class='col-lg-3 resultcard cardspacer'
 					data-id="<?php echo $key->Sno; ?>"
 					data-card="<?php echo $numberofcards; ?>">
