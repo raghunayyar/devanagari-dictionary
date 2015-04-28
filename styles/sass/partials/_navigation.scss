@@ -9,12 +9,13 @@
 	border:none;
 
 	.navbar-brand {
-		margin-left: -20px !important;
+		color: $palette-mocha;
 		height: $navigation-height;
 		padding: 19.5px 15px;
 		@include transition(0.05s, 0.05s);
 		
 		&:hover {
+			color: $palette-mocha-light;
 			@include transition(0.05s, 0.05s);
 		}
 	}
@@ -29,6 +30,7 @@
 		border-bottom: 0 solid transparent;
 		@include transition(0.05s, 0.05s);
 		a {
+			color: $palette-mocha !important;
 			background: transparent;
 			@include transition(0.05s, 0.05s);
 			&:hover {
@@ -36,35 +38,13 @@
 			}
 		}
 		&:hover {
+			color: $palette-mocha-light !important;
 			background: transparent !important;
 			@include transition(0.05s, 0.05s);
 		}
 		&:last-child {
 			a {
 				padding-right: 0;
-			}
-		}
-	}
-}
-
-.home {
-	.navbar-brand {
-
-		color: $palette-mocha;
-
-		&:hover {
-			color: $palette-mocha-light;
-		}
-	}
-
-	.navbar {
-		li {
-			a {
-				color: $palette-mocha;
-
-				&:hover {
-					color: $palette-mocha-light;
-				}
 			}
 		}
 	}

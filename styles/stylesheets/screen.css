@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
 }
 .navbar .navbar-brand {
-  margin-left: -20px !important;
+  color: #9d8f8d;
   height: 45px;
   padding: 19.5px 15px;
   -webkit-transition: 0.05s ease-out 0.05s;
@@ -88,6 +88,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar .navbar-brand:hover {
+  color: #d8c4c2;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
@@ -106,6 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li a {
+  color: #9d8f8d !important;
   background: transparent;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
@@ -119,6 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.05s ease-out 0.05s;
 }
 .navbar li:hover {
+  color: #d8c4c2 !important;
   background: transparent !important;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
@@ -127,19 +130,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .navbar li:last-child a {
   padding-right: 0;
-}
-
-.home .navbar-brand {
-  color: #9d8f8d;
-}
-.home .navbar-brand:hover {
-  color: #d8c4c2;
-}
-.home .navbar li a {
-  color: #9d8f8d;
-}
-.home .navbar li a:hover {
-  color: #d8c4c2;
 }
 
 .home-page {
@@ -364,9 +354,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .searchwidget {
-  background: #333;
+  background: #372f2f;
   padding: 125px 0 50px 0;
-  margin-top: -65px;
+  margin-top: -70px;
 }
 .searchwidget .custom-chosen {
   float: none;
@@ -383,6 +373,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: right;
   margin-right: -15px;
   padding: 8px 40px;
+  background: #9d8f8d;
 }
 .searchwidget .custom-dropdown-wrapper {
   margin-left: -20px;
@@ -708,4 +699,5 @@ textarea[name="feedbacktextarea"]:focus {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 16px;
+  background-color: #f3eeed;
 }
