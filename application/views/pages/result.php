@@ -66,21 +66,15 @@
 						currently I show the complete alphabet due to lack of 
 						data. -->
 					<div class="combination-container row">
-						<div class="col-md-4">
-							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
-							</h1>
-						</div>
-						<div class="col-md-4">
-							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
-							</h1>
-						</div>
-						<div class="col-md-4">
-							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
-							</h1>
-						</div>
+						<?php foreach ($result as $key) { ?>
+							<?php for ($i=1; $i <= $key->numberofglyphs; $i++) { ?>
+								<div class="col-md-4">
+									<h1 class="completealphabet big combination-possibility h1">
+										<img src="<?php echo base_url(); ?>images/<?php echo $key->Sno ?>/<?php echo $key->Sno; ?>.<?php echo $i; ?>.png" />
+									</h1>
+								</div>
+							<?php } ?>
+						<?php } ?>
 					</div>
 				</div>
 

@@ -81,7 +81,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .navbar .navbar-brand {
   color: #9d8f8d;
   height: 45px;
-  padding: 19.5px 15px;
   -webkit-transition: 0.05s ease-out 0.05s;
   -moz-transition: 0.05s ease-out 0.05s;
   -ms-transition: 0.05s ease-out 0.05s;
@@ -132,6 +131,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 0;
 }
 
+.aboutus .navbar, .contactus .navbar, .resultpage .navbar {
+  background: #372f2f;
+}
+.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle {
+  background: none;
+  border: none;
+  color: #f9f9f9;
+  padding: 10px;
+}
+.aboutus.page, .contactus.page, .resultpage.page {
+  margin-top: -20px;
+}
+
 .home-page {
   margin-top: -85px;
   background-color: #372f2f;
@@ -177,7 +189,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 50px;
 }
 .home-content-area .h3 {
-  color: #3E6373;
+  color: #372f2f;
 }
 .home-content-area p {
   font-size: 18px;
@@ -297,7 +309,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .resultpage .conjunct-heading {
   font-size: 24px;
   font-weight: 400;
-  color: #3E6373;
+  color: #372f2f;
   margin-top: 0;
   margin-left: -15px;
 }
