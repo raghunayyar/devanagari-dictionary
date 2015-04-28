@@ -50,20 +50,20 @@
 .home {
 	.navbar-brand {
 
-		color: rgba(238,238,238,1);
+		color: $palette-mocha;
 
 		&:hover {
-			color: rgba(238,238,238, 0.7);
+			color: $palette-mocha-light;
 		}
 	}
 
 	.navbar {
 		li {
 			a {
-				color: rgba(238,238,238,1);
+				color: $palette-mocha;
 
 				&:hover {
-					color: rgba(238,238,238, 0.9);
+					color: $palette-mocha-light;
 				}
 			}
 		}

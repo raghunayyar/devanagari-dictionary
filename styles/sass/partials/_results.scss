@@ -12,7 +12,7 @@
 	margin-bottom: $ten;
 	min-height: 80px;
 	max-height: 80px;
-	color: #3e6373;
+	color: $palette-dark-brown;
 	border: 1px solid transparent;
 	@include border-radius(2px);
 	@include transition(0.2s,0);
@@ -36,7 +36,7 @@
 		}
 	}
 	&:hover {
-		color: #3e6373;
+		color: $palette-dark-brown;
 		border: 1px solid darken(#f9f9f9, 5%);
 		text-decoration: none;
 		@include transition(0.2s,0);
@@ -49,7 +49,7 @@
 		}
 	}
 	&:active, &:focus {
-		color: #3e6373;
+		color: $palette-dark-brown;
 		text-decoration: none;
 	}
 }
