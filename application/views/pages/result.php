@@ -20,7 +20,7 @@
 										</td>
 										<td class="definition">
 											<span class="combination h2">
-												<?php echo str_replace(' ', '<span class="add">+</span>', $key->seperated); ?>
+												<?php echo str_replace(' ', '&#2381<span class="add">+</span>', $key->seperated); ?>
 											</span>
 										</td>
 									</tr>
@@ -80,7 +80,7 @@
 
 				<hr />
 
-				<div class="row">
+				<!--<div class="row">
 					<div class="col-md-12 heading-column">
 						<h2 class="h2 conjunct-heading">
 							<span>Example Usage</span>
@@ -88,10 +88,6 @@
 					</div>
 					<div class="clear"></div>
 
-					<!-- 
-						A foreach here to iterate through the images :
-						currently I show the complete alphabet due to lack of 
-						data. -->
 					<div class="combination-container row">
 						<div class="col-md-4">
 							<h1 class="completealphabet big combination-possibility h1">
@@ -150,7 +146,7 @@
 					<?php } ?>
 				</div>
 
-				<hr />
+				<hr /> -->
 
 				<div class="row">
 					<div class="col-md-12 heading-column">
@@ -171,7 +167,7 @@
 								<h3 class="completesmalleralphabet h3"><?php echo $key->completealphabet; ?></h3>
 							</div>
 							<p class="separated">
-								<?php echo str_replace(' ', '<strong class="add">+</strong>', $key->seperated); ?>
+								<?php echo str_replace(' ', '&#2381<strong class="add">+</strong>', $key->seperated); ?>
 							</p>
 						</a>
 						<?php  } ?>

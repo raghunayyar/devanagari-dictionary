@@ -29,7 +29,7 @@
 						<h3 class="completesmalleralphabet h3"><?php echo $key->completealphabet; ?></h3>
 					</div>
 					<p class="separated">
-						<?php echo str_replace(' ', '<strong class="add">+</strong>', $key->seperated); ?>
+						<?php echo str_replace(' ', '&#2381<strong class="add">+</strong>', $key->seperated); ?>
 					</p>
 				</a>
 				<?php } ?>
