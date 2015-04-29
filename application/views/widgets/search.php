@@ -7,7 +7,7 @@
 	$searchinput = array (
 		'name' => 'searchinput',
 		'type' => 'text',
-		'class' => 'form-control input input-lg search-input',
+		'class' => 'form-control input input-lg search-input keyboardInput',
 		'placeholder' => 'Search for...',
 		'ng-model' => 'searchinput'
 	);

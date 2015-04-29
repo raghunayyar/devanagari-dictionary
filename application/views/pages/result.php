@@ -217,7 +217,7 @@
 						);									
 
 						$feedback = array (
-							'class' => 'form-control',
+							'class' => 'form-control keyboardInput',
 							'rows' => '5',
 							'name' => 'feedbacktextarea',
 							'placeholder' => 'Suggestions...'

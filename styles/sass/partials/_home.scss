@@ -24,6 +24,14 @@
 			padding: 8px 40px;
 			background: $palette-mocha;
 		}
+
+		/* The classes for the image for the keyboard */
+		.keyboardInputInitiator {
+			position: absolute;
+			right: 45px;
+			top: 16px;
+			z-index: 100;
+		}
 	}
 
 	.welcome-message {
