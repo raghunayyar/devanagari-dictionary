@@ -73,7 +73,7 @@ $(function() {
 	*/
 
 
-	if (window.location.href == 'http://localhost:8888/devanagari-dictionary/index.php/home/search') {
+	if (window.location.href == 'http://localhost:8888/devanagari-dictionary/home/search') {
 		var searchtopbar = $('.search-topbar');
 		var origOffsetY = searchtopbar.offset().top;
 

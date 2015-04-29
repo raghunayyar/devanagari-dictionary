@@ -121,6 +121,7 @@ class Home extends CI_Controller {
 
 		$this->load->model("devanagari");
 		$matchedentry['result'] = $this->devanagari->get($uri);
+		print_r($matchedentry['result']);
 
 		$matchedentry['relatedsearchresult'] = $this->devanagari->relatedsearch($uri);
 

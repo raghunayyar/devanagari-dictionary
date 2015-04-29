@@ -14,18 +14,53 @@
 
 			$query = $this->db->query("SELECT * from devanagarimaintable WHERE  Sno = $id ");
 
-			return $query->result();
+			$conjunct = $query->result();
+			$languages = $this->getlanguages($conjunct);
+			$parsedresult = $this->parseresults($conjunct,$languages);
+			return $parsedresult;
 		}
 
 		/*
 			Returns everything
 		*/
+
+		public function parseresults($conjunct,$languages) {
+			$parsedresult = array(
+				'sno' => $conjunct[0]->Sno,
+				'completealphabet' => $conjunct[0]->completealphabet,
+				'seperated' => $conjunct[0]->seperated,
+				'languages' => implode(", ",$languages),
+				'examples' => $conjunct[0]->sanskrit, // replace by examples when girish is done.
+				'meaning' => $conjunct[0]->meaning,
+				'tip' => $conjunct[0]->tip,
+				'numberofglyphs' => $conjunct[0]->numberofglyphs
+			);
+
+			return $parsedresult;
+
+		}
+ 
 		public function getAll() {
 
 			$query = $this->db->query("SELECT * from devanagarimaintable");
 
 			return $query->result();
 		}
+
+		public function getlanguages($conjunct) {
+			$languages = array();
+			if (strlen($conjunct[0]->sanskrit) > 0) {
+				array_push($languages, 'Sanskrit');
+			}
+			if (strlen($conjunct[0]->hindi) > 0) {
+				array_push($languages, 'Hindi');
+			}
+
+			if (strlen($conjunct[0]->marathi) > 0) {
+				array_push($languages, 'Marathi');
+			}
+			return $languages;
+		}		
 
 		/*
 			Returns search results.

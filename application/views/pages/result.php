@@ -4,50 +4,47 @@
 		<!-- Search Results -->
 			<div class="page-content">
 				<div class="row">
-
-					<?php foreach ($result as $key) { ?>
-						<div class="result-header col-md-12">
-							<div class="col-md-5">
-								<h1 class="completealphabet massive h1">
-									<?php echo $key->completealphabet; ?>
-								</h1>
-							</div>
-							<table class="col-md-7 primary-details">
-								<tbody>
-									<tr>
-										<td class="name">
-											<span class="label">Split:</span>
-										</td>
-										<td class="definition">
-											<span class="combination h2">
-												<?php echo str_replace(' ', '&#2381<span class="add">+</span>', $key->seperated); ?>
-											</span>
-										</td>
-									</tr>
-									<tr>
-										<td class="name">
-											<span class="label">Language:</span>
-										</td>
-										<td class="definition">
-											<h3 class="language h3">
-												<span>Hindi, Marathi (static)</span>
-											</h3>
-										</td>
-									</tr>
-									<tr>
-										<td class="name">
-											<span class="label">Use Case:</span>
-										</td>
-										<td class="definition">
-											<span class="examples h3">
-												<span><?php echo $key->sanskrit; ?></span>
-											</span>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+					<div class="result-header col-md-12">
+						<div class="col-md-5">
+							<h1 class="completealphabet massive h1">
+								<?php echo $result['completealphabet']; ?>
+							</h1>
 						</div>
-					<?php } ?>
+						<table class="col-md-7 primary-details">
+							<tbody>
+								<tr>
+									<td class="name">
+										<span class="label">Split:</span>
+									</td>
+									<td class="definition">
+										<span class="combination h2">
+											<?php echo str_replace(' ', '&#2381<span class="add">+</span>', $result['seperated']); ?>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="name">
+										<span class="label">Language:</span>
+									</td>
+									<td class="definition">
+										<h3 class="language h3">
+											<span><?php echo $result['languages']; ?></span>
+										</h3>
+									</td>
+								</tr>
+								<tr>
+									<td class="name">
+										<span class="label">Use Case:</span>
+									</td>
+									<td class="definition">
+										<span class="examples h3">
+											<span><?php echo $result['examples']; ?></span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 
 				<hr />
@@ -66,15 +63,13 @@
 						currently I show the complete alphabet due to lack of 
 						data. -->
 					<div class="combination-container row">
-						<?php foreach ($result as $key) { ?>
-							<?php for ($i=1; $i <= $key->numberofglyphs; $i++) { ?>
+							<?php for ($i=1; $i <= $result['numberofglyphs']; $i++) { ?>
 								<div class="col-md-4">
 									<h1 class="completealphabet big combination-possibility h1">
-										<img src="<?php echo base_url(); ?>images/<?php echo $key->Sno ?>/<?php echo $key->Sno; ?>.<?php echo $i; ?>.png" />
+										<img src="<?php echo base_url(); ?>images/<?php echo $result['sno'] . '/' . $result['sno'] . '.' . $i . '.png' ?>" />
 									</h1>
 								</div>
 							<?php } ?>
-						<?php } ?>
 					</div>
 				</div>
 
@@ -91,17 +86,17 @@
 					<div class="combination-container row">
 						<div class="col-md-4">
 							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
+								<?php echo $result['completealphabet']; ?>
 							</h1>
 						</div>
 						<div class="col-md-4">
 							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
+								<?php echo $result['completealphabet']; ?>
 							</h1>
 						</div>
 						<div class="col-md-4">
 							<h1 class="completealphabet big combination-possibility h1">
-								<?php echo $key->completealphabet; ?>
+								<?php echo $result['completealphabet']; ?>
 							</h1>
 						</div>
 					</div>
