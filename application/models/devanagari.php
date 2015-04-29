@@ -15,8 +15,12 @@
 			$query = $this->db->query("SELECT * from devanagarimaintable WHERE  Sno = $id ");
 
 			$conjunct = $query->result();
-			$languages = $this->getlanguages($conjunct);
-			$parsedresult = $this->parseresults($conjunct,$languages);
+			if (sizeof($conjunct) > 0) {
+				$languages = $this->getlanguages($conjunct);
+				$parsedresult = $this->parseresults($conjunct,$languages);				
+			} else {
+				$parsedresult = array();
+			}
 			return $parsedresult;
 		}
 

@@ -122,10 +122,16 @@ class Home extends CI_Controller {
 		$this->load->model("devanagari");
 		$matchedentry['result'] = $this->devanagari->get($uri);
 		$matchedentry['relatedsearchresult'] = $this->devanagari->relatedsearch($uri);
-
 		$this->load->view('templates/header', $data);
-		$this->load->view('pages/result', $matchedentry);
+		
+		if (sizeof($matchedentry['result']) > 0) {
+			$this->load->view('pages/result', $matchedentry);
+		} else {
+			$this->load->view('pages/404');
+		}
 		$this->load->view('templates/footer');
+		
+		
 	
 	}
 

@@ -451,6 +451,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 600;
 }
 
+.error404 .home-page-button {
+  margin: 40px 0;
+}
+
 .resultpage .contribution-button {
   background: #9d8f8d;
 }
