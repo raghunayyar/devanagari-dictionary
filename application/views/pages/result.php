@@ -186,14 +186,21 @@
 				</div>
 				<div class="row temporaryhide" id="contributionform">
 					<?php
-						$formattributes = array('method' => 'POST', 'class' => 'form-horizontal contribute-form', 'id' => 'contributeform');
+						$formattributes = array (
+							'method' => 'POST',
+							'class' => 'form-horizontal contribute-form',
+							'id' => 'contributeform',
+							'name' => 'contributeform'
+						);
 				
 						$name = array (
 							'name' => 'name',
 							'type' => 'text',
 							'class' => 'form-control',
 							'placeholder' => 'Name...',
-							'autocomplete' => 'off'
+							'autocomplete' => 'off',
+							'ng-model' => 'contributor.name',
+							'required' => true
 						);		
 
 						$email = array (
@@ -201,7 +208,9 @@
 							'type' => 'email',
 							'class' => 'form-control',
 							'placeholder' => 'Email...',
-							'autocomplete' => 'off'
+							'autocomplete' => 'off',
+							'ng-model' => 'contributor.email',
+							'required' => true
 						);
 
 						$url = array (
@@ -220,13 +229,16 @@
 							'class' => 'form-control keyboardInput',
 							'rows' => '5',
 							'name' => 'feedbacktextarea',
-							'placeholder' => 'Suggestions...'
+							'placeholder' => 'Suggestions...',
+							'ng-model' => 'contributor.suggestions',
+							'required' => true
 						);
 
 
 						$submitbutton = array (
 							'type' => 'submit',
 							'class' => 'btn btn-success pull-right submit-button',
+							'ng-disabled' => 'contributeform.$invalid'
 						);
 
 					?>
@@ -234,11 +246,15 @@
 					<?php echo form_open('home/contribute', $formattributes, ''); ?>
 
 					<div class="col-lg-12 contribute-jumbo">
-						<div class="form-group">
+						<div class="form-group" ng-class="{
+							'has-error': contributeform.name.$invalid && contributeform.name.$dirty
+						}">
 							<?php echo form_input($name, '', ''); ?>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group" ng-class="{
+							'has-error': contributeform.email.$invalid && contributeform.email.$dirty
+						}">
 							<?php echo form_input($email, '', ''); ?>
 						</div>
 						
