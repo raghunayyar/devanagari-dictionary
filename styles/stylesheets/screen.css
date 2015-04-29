@@ -265,6 +265,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-decoration: none;
 }
 
+.noresults {
+  margin: 30px 0;
+}
+
 /* One Conjunct Page */
 .resultpage .result-header .completealphabet {
   margin-left: -30px;

@@ -63,6 +63,7 @@
 						currently I show the complete alphabet due to lack of 
 						data. -->
 					<div class="combination-container row">
+						<?php if ($result['numberofglyphs'] > 0 ) { ?>
 							<?php for ($i=1; $i <= $result['numberofglyphs']; $i++) { ?>
 								<div class="col-md-4">
 									<h1 class="completealphabet big combination-possibility h1">
@@ -70,6 +71,13 @@
 									</h1>
 								</div>
 							<?php } ?>
+						<?php } else { ?>
+							<div class="col-md-12">
+								<div class="panel" role="alert">
+									<h1 class="h2 center">Coming Soon! :)</h4>
+								</div>
+							</div>
+						<?php } ?>
 					</div>
 				</div>
 
