@@ -28,7 +28,7 @@
 									</td>
 									<td class="definition">
 										<h3 class="language h3">
-											<span><?php echo $result['languages']; ?></span>
+											<span style="font-weight: 500;"><?php echo $result['languages']; ?></span>
 										</h3>
 									</td>
 								</tr>
@@ -81,9 +81,9 @@
 					</div>
 				</div>
 
-				<hr />
+				<!--<hr />
 
-				<!--<div class="row">
+				<div class="row">
 					<div class="col-md-12 heading-column">
 						<h2 class="h2 conjunct-heading">
 							<span>Example Usage</span>
@@ -180,7 +180,7 @@
 				<hr />
 					
 				<div class="row">
-					<button type="button" class="btn btn-primary btn-lg" ng-click="contributeclick()">
+					<button type="button" class="btn btn-primary btn-lg contribution-button" ng-click="contributeclick()">
 						Contribute
 					</button>
 				</div>

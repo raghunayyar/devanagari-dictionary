@@ -69,7 +69,7 @@
 
 		public function searchdevanagari($searchedresult) {
 
-			$searchedtext = $searchedresult['staticquery'];
+			$searchedtext = $searchedresult['inputquery'];
 
 			$hindi = isset($searchedresult['language1']);
 			$marathi = isset($searchedresult['language2']);

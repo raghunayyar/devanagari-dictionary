@@ -72,7 +72,7 @@ class Home extends CI_Controller {
 		$data['pageclass'] = 'searchresults';
 		$this->load->model("devanagari");
 
-		$matchedentry['staticquery'] = $this->input->post('searchinput');
+		$matchedentry['inputquery'] = $this->input->post('searchinput');
 
 		/* DRY this out -> Bad Practice this is */
 		

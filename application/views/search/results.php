@@ -2,7 +2,7 @@
 	<div class="search-topbar">
 		<div class="container-fluid">
 			<div class="col-lg-9 search-topbar-interior">
-				<h3 class="h3">Search Results for '<?php echo $staticquery; ?>'</h3>
+				<h3 class="h3">Search Results for '<?php echo $inputquery; ?>'</h3>
 			</div>
 			<div class="col-lg-3 search-topbar-interior">
 				<button class="btn btn-primary pull-right more-button" id="scrolltotop">Search More...</a>

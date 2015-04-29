@@ -30,3 +30,32 @@
 .contentarea {
 	margin: 20px 0;
 }
+
+.contactus {
+	.page-content {
+		margin-top: -15px;
+	}
+	.spacer {
+		margin: -5px 0 20px 0;
+	}
+}
+
+.contributors {
+	table {
+		thead {
+			th {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.resultpage {
+	.contribution-button {
+		background: $palette-mocha;
+	}
+
+	.submit-button {
+		background: $palette-mocha;
+	}
+}

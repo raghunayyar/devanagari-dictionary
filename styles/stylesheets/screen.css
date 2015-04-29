@@ -131,16 +131,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 0;
 }
 
-.aboutus .navbar, .contactus .navbar, .resultpage .navbar {
+.aboutus .navbar, .contactus .navbar, .resultpage .navbar, .credits .navbar, .contactus .navbar, .contributors .navbar {
   background: #372f2f;
 }
-.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle {
+.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle, .credits .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .contributors .navbar .navbar-toggle {
   background: none;
   border: none;
   color: #f9f9f9;
   padding: 10px;
 }
-.aboutus.page, .contactus.page, .resultpage.page {
+.aboutus.page, .contactus.page, .resultpage.page, .credits.page, .contactus.page, .contributors.page {
   margin-top: -20px;
 }
 
@@ -218,8 +218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #f9f9f9;
   padding: 10px;
   width: 23%;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2%;
   margin-top: 10px;
   margin-bottom: 10px;
   min-height: 80px;
@@ -278,7 +277,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* One Conjunct Page */
 .resultpage .result-header .completealphabet {
-  margin-left: -30px;
+  margin-left: -15px;
 }
 .resultpage .result-header .primary-details {
   margin: 10px 0 45px 0;
@@ -322,7 +321,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   color: #372f2f;
   margin-top: 0;
-  margin-left: -15px;
 }
 .resultpage .meaning-details tr {
   height: 40px;
@@ -442,6 +440,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 20px 0;
 }
 
+.contactus .page-content {
+  margin-top: -15px;
+}
+.contactus .spacer {
+  margin: -5px 0 20px 0;
+}
+
+.contributors table thead th {
+  font-weight: 600;
+}
+
+.resultpage .contribution-button {
+  background: #9d8f8d;
+}
+.resultpage .submit-button {
+  background: #9d8f8d;
+}
+
 /* Styles related to Footer */
 .footer {
   margin: 20px 0;
@@ -480,6 +496,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .temporaryhide {
   display: none;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* Forms Base */

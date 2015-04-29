@@ -1,7 +1,7 @@
 <div class="<?php echo $pageclass ?> page">
 	<div class="container-fluid">
 		<div class="page-header">
-			<h1 class="h1">Credits</h1>
+			<h3 class="h3">Credits</h3>
 		</div>
 		<div class="page-content">
 			<div class="col-sm-12 people">

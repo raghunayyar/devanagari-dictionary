@@ -1,7 +1,9 @@
-<div class="<?php echo $pageclass; ?> class">
+<div class="<?php echo $pageclass; ?>">
 	<div class="container-fluid">
-		<div class="page-header col-lg-12">
-			<h1 class="h1">Contributors</h1>
+		<div class="row">
+			<div class="page-header col-lg-12">
+				<h3 class="h3">Contributors</h3>
+			</div>
 		</div>
 		<div class="page-content col-lg-12">
 			<table class="table table-hover">
