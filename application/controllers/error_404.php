@@ -3,8 +3,12 @@
 class Error_404 extends CI_Controller {
 	
 	public function index()
-	{
+	{	
+		$data['title'] = 'Error 404';
+		$data['pageclass'] = 'error404';
+		$this->load->view('templates/header', $data);
 		$this->load->view('404');
+		$this->load->view('templates/footer');
 	}
 }
 

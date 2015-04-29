@@ -131,16 +131,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 0;
 }
 
-.aboutus .navbar, .contactus .navbar, .resultpage .navbar, .credits .navbar, .contactus .navbar, .contributors .navbar {
+.aboutus .navbar, .contactus .navbar, .resultpage .navbar, .credits .navbar, .contactus .navbar, .contributors .navbar, .rareglyphs .navbar {
   background: #372f2f;
 }
-.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle, .credits .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .contributors .navbar .navbar-toggle {
+.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle, .credits .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .contributors .navbar .navbar-toggle, .rareglyphs .navbar .navbar-toggle {
   background: none;
   border: none;
   color: #f9f9f9;
   padding: 10px;
 }
-.aboutus.page, .contactus.page, .resultpage.page, .credits.page, .contactus.page, .contributors.page {
+.aboutus.page, .contactus.page, .resultpage.page, .credits.page, .contactus.page, .contributors.page, .rareglyphs.page {
   margin-top: -20px;
 }
 
@@ -451,7 +451,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 600;
 }
 
-.error404 .home-page-button {
+.error404 .home-page-button, .rareglyphs .home-page-button {
   margin: 40px 0;
 }
 

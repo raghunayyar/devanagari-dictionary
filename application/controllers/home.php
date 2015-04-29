@@ -24,6 +24,14 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function rareglyphs() {
+
+		$data['title'] = 'Rare Glyphs';
+		$data['pageclass'] = 'rareglyphs';
+		$this->load->view('templates/header', $data);
+		$this->load->view('pages/rareglyphs');
+		$this->load->view('templates/footer');
+	}
 	public function contact() {
 
 		$data['title'] = 'Contact Us';
@@ -127,7 +135,7 @@ class Home extends CI_Controller {
 		if (sizeof($matchedentry['result']) > 0) {
 			$this->load->view('pages/result', $matchedentry);
 		} else {
-			$this->load->view('pages/404');
+			$this->load->view('404');
 		}
 		$this->load->view('templates/footer');
 		
