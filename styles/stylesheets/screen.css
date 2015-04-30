@@ -131,16 +131,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 0;
 }
 
-.aboutus .navbar, .contactus .navbar, .resultpage .navbar, .credits .navbar, .contactus .navbar, .contributors .navbar, .rareglyphs .navbar, .error404 .navbar {
+.aboutus .navbar, .contactus .navbar, .resultpage .navbar, .credits .navbar, .contactus .navbar, .contributors .navbar, .rareglyphs .navbar, .error404 .navbar, .home .navbar {
   background: #372f2f;
 }
-.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle, .credits .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .contributors .navbar .navbar-toggle, .rareglyphs .navbar .navbar-toggle, .error404 .navbar .navbar-toggle {
+.aboutus .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .resultpage .navbar .navbar-toggle, .credits .navbar .navbar-toggle, .contactus .navbar .navbar-toggle, .contributors .navbar .navbar-toggle, .rareglyphs .navbar .navbar-toggle, .error404 .navbar .navbar-toggle, .home .navbar .navbar-toggle {
   background: none;
   border: none;
   color: #f9f9f9;
   padding: 10px;
 }
-.aboutus.page, .contactus.page, .resultpage.page, .credits.page, .contactus.page, .contributors.page, .rareglyphs.page, .error404.page {
+.aboutus.page, .contactus.page, .resultpage.page, .credits.page, .contactus.page, .contributors.page, .rareglyphs.page, .error404.page, .home.page {
   margin-top: -20px;
 }
 
@@ -438,6 +438,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .contentarea {
   margin: 20px 0;
+}
+.contentarea p {
+  font-size: 16px;
+  font-family: Georgia;
 }
 
 .contactus .page-content {

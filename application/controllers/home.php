@@ -110,7 +110,7 @@ class Home extends CI_Controller {
 
 		if (!empty($this->input->post('combination-4'))) {
 			$matchedentry['combination4'] = $this->input->post('combination-3');
-		}		
+		}
 
 		$matchedentry['results'] = $this->devanagari->searchdevanagari($matchedentry);
 
