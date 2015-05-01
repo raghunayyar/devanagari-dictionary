@@ -33,7 +33,7 @@
 						<div id="languagesearch" class="custom-dropdown-wrapper" style="z-index: 1000;">Language
 							<ul class="dropdown">
 								<li ng-repeat="one in listoflanguages">
-									<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel" ng-change="changelanguage(one.language,one.value,one.languagemodel)" />
+									<input type="checkbox" id="language-{{one.value}}" name="language-{{one.value}}" value="{{ one.language }}" ng-model="one.languagemodel" ng-change="changelanguage(one.language,one.value,one.languagemodel)" ng-checked="one.checked"/>
 									<label for="language-{{one.value}}">{{ one.language }}</label>
 								</li>
 							</ul>
@@ -43,7 +43,7 @@
 						<div id="combinationsearch" class="custom-dropdown-wrapper">Combination of
 							<ul class="dropdown">
 								<li ng-repeat="one in listofcombinations">
-									<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)">
+									<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)" ng-checked="one.checked">
 									<label for="combination-{{ one.value }}">{{ one.value }}</label>
 								</li>
 							</ul>

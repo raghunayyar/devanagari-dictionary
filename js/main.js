@@ -6,21 +6,25 @@ app.controller('SearchController', ['$scope',
 		$scope.checker = false;
 
 		$scope.listoflanguages = [
-			{ language: 'Hindi', value: '1'},
-			{ language: 'Marathi', value: '2' },
-			{ language: 'Sanskrit', value: '3'}
+			{ language: 'Hindi', value: '1', checked: false },
+			{ language: 'Marathi', value: '2', checked: false },
+			{ language: 'Sanskrit', value: '3', checked: true }
 		];
 
 		$scope.listofcombinations = [
-			{ value: '1' },
-			{ value: '2' },
-			{ value: '3' },
-			{ value: '4' }
+			{ value: '1', checked: false },
+			{ value: '2', checked: true },
+			{ value: '3', checked: false },
+			{ value: '4', checked: false }
 		];
 
-		$scope.listoflanguagetabs = [];
-		$scope.listofcombinationtabs = [];
-		$scope.languagearray = [];
+		$scope.listoflanguagetabs = [{
+			language: 'Sanskrit',
+			value: '3',
+			checked: true
+		}];
+		$scope.listofcombinationtabs = ['2'];
+		$scope.languagearray = ['3'];
 
 		/*
 			Reset checkboxes
@@ -48,14 +52,13 @@ app.controller('SearchController', ['$scope',
 		*/
 
 		$scope.changelanguage = function (language,value,bool) {
-			console.log('yolo');
 			if (bool === true) {
 				if ($scope.languagearray.length === 0) {
 					$scope.languagearray.push(value);
 					$scope.listoflanguagetabs.push({
 						language: language,
 						value: value,
-						bool: true
+						checked: true
 					});
 				} else {
 					if (jQuery.inArray(value,$scope.languagearray) === -1) {
@@ -63,7 +66,7 @@ app.controller('SearchController', ['$scope',
 						$scope.listoflanguagetabs.push({
 							language: language,
 							value: value,
-							bool: true
+							checked: true
 						});						
 					}
 				}

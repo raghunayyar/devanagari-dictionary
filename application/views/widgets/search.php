@@ -35,7 +35,7 @@
 							<div id="combinationsearch" class="custom-dropdown-wrapper">Combination of
 								<ul class="dropdown">
 									<li ng-repeat="one in listofcombinations">
-										<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)">
+										<input type="checkbox" id="combination-{{ one.value }}" name="combination-{{ one.value }}" value="{{ one.value }}" ng-model="one.combinationmodel" ng-change="changecombination(one.value,one.combinationmodel)" />
 										<label for="combination-{{ one.value }}">{{ one.value }}</label>
 									</li>
 								</ul>
