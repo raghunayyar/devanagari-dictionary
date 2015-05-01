@@ -9,10 +9,10 @@
 		}
 
 		.primary-details {
-			margin: 10px 0 45px 0;
+			margin: $ten 0 4.5*$ten 0;
 
 			tr {
-				height: 50px;
+				height: 5*$ten;
 			}
 		}
 
@@ -40,7 +40,7 @@
 	.label {
 		font-size: 18px;
 		color: #333;
-		margin-left: 20px;
+		margin-left: 2*$ten;
 	}
 
 	.completealphabet {
@@ -68,7 +68,7 @@
 
 		.name {
 			width: 15*$ten;
-			margin-left: -15px;
+			margin-left: -1.5*$ten;
 			span {
 				margin-left: 0;
 				padding-left: 0;

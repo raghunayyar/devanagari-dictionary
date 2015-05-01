@@ -4,6 +4,9 @@ class Admin extends CI_Controller {
 
 	public function signin () {
 
+		$data['bodyclass'] = 'admin-page';
+		$data['pageclass'] = 'admin';
+
 		$data['title'] = 'Admin Panel';
 		$this->load->model('AdminModel');
 		$query = $this->AdminModel->initsession();
@@ -38,6 +41,10 @@ class Admin extends CI_Controller {
 	}
 
 	public function dashboard () {
+
+		$data['bodyclass'] = 'admin-page';
+		$data['pageclass'] = 'admin';
+
 		$data['title'] = 'Dashboard';
 		$this->load->model('AdminModel');
 		$query = $this->AdminModel->initsession();
@@ -56,6 +63,12 @@ class Admin extends CI_Controller {
 	public function signout() {
 		$this->session->sess_destroy();
 		redirect('admin/signin');
+	}
+
+	public function accept() {
+		$this->load->model('AdminModel');
+		$this->AdminModel->acceptAll();
+		redirect('admin/dashboard');
 	}
 
 }

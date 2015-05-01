@@ -43,6 +43,7 @@
 			$query = $this->db->get('devanagaricontributions');
 			$allcontributors = $query->result();
 			$unacceptednumber = 0;
+			$unacceptedlist = array ();
 			foreach ($allcontributors as $i) {
 				if ($i->acception == '0') {
 					$unacceptednumber++;
@@ -61,6 +62,10 @@
 
 		public function postcontribute($contributedresult) {
 			print_r($contributedresult);
+		}
+
+		public function acceptAll() {
+			$this->db->query("UPDATE `devanagaricontributions` SET `acception`=1 WHERE `acception` = 0");
 		}
 
 	}
