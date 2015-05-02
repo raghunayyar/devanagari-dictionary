@@ -45,7 +45,6 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="<?php echo base_url() ?>home/about">About</a></li>
-								<li><a href="<?php echo base_url() ?>home/rareglyphs">Rare Glyphs</a></li>
 								<li><a href="<?php echo base_url() ?>home/contact">Contact</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->			
