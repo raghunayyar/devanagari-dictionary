@@ -4,10 +4,11 @@
 			<div class="col-md-12" id="about">
 				<h3 class="h3">About Devanagari Conjuncts</h3>
 				<p class="small-spacer">
-					Lorem ipsum dolor sit amet, consectetusgue. Naorem lacibero sed arcu vehicula
-					consectetusgue. Naorem lacibero sed arcu vehicula consectetusgue. Naorem
-					lacibero sed arcu consectetusgue. Naorem lacibero sed arcu vehicula 
-					ultricies a non tortor. 
+					Consonant-clusters (संयुक्ताक्षर / जोडाक्षरे ) are interesting visual 
+					forms found within the Devanagari Script. Two or more consonants come 
+					together to form a Samyuktakshar. This combination of  letters creates a 
+					unique visual representation and often there are more than one ways to 
+					represent a cluster. 
 				</p>
 				<a href="<?php echo base_url() ?>index.php/home/about" class="btn btn-primary">
 					Know More
