@@ -4,15 +4,14 @@
 
 			
 			<div class="alert alert-success">
-				<h4>
-					<strong class="bold">Login Details:</strong>
-					<span><?php echo $name; ?></span>
-				</h4>	
+				<strong class="bold">Login Details:</strong>
+				<p><?php echo $name; ?></p>
 			</div>
 
 			<?php
 
 				$formattributes = array('method' => 'POST', 'class' => 'col-sm-2');
+				$rejectform = array('method' => 'POST', 'class' => '');
 				$allclearsignout = array('method' => 'POST', 'class' => '');
 				$signoutbutton = array (
 					'type' => 'submit',
@@ -48,9 +47,11 @@
 							<td><?php echo $key->conjuctcontribution; ?></td>
 							<td><?php echo $key->feedback; ?></td>
 							<td>
-								<button type="submit" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#rejectmodal">
-									<i class="fa fa-trash fa-1x"></i>
-								</button>
+								<?php echo form_open('admin/reject', $formattributes, ''); ?>
+									<button type="submit" class="btn btn-danger btn-xs" value="<?php echo $key->SNo; ?>">
+										<i class="fa fa-trash fa-1x"></i>
+									</button>
+								<?php echo form_close(); ?>
 							</td>
 						</tr>
 						<?php } ?>

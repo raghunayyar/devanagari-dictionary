@@ -26,16 +26,22 @@
 				<div class="col-sm-6">
 					<h3 class="h3">Glyph Diaries</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. 
-						Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur 
-						ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. 
-						Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur 
-						ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. 
-						Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur 
-						ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis.
-					</p>					
+						Over the last few years I have been collecting various visual forms 
+						(consonant clusters/consonants/vowels/symbols etc.) found in the 
+						Devanagari script. This collection has been in the form of physical 
+						diaries, where I have documented the visual form, and the context of 
+						use. Several colleges had suggested that I compile it and present it 
+						in a more accessible format to a larger audience. Foremost among these 
+						is Prof. Santosh Kshirsagar, who himself has been suggesting the 
+						development of a “अक्षरकोश” a dictionary of Devanagari glyphs. 
+						The presented volume is a diverse collection, and it has been subsequently 
+						been worked upon by several individuals. It does not, in any which way 
+						claim to comprehensive or exhaustive, and we hope update it from time 
+						to time. The larger hope is that this volume will prove to be a helpful 
+						resource to both seasoned designers and those who have just started the 
+						study of the Devanagari letters.
+					</p>
+					<p class="pull-right"><span>- </span><strong class="bold">Dr. Girish Dalvi</strong></p>				
 				</div>
 				<div class="col-sm-6">
 					<h3 class="h3">Samyuktakashar</h3>
