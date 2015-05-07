@@ -6,7 +6,7 @@
 		<div class="page-content">
 			<div class="col-sm-12 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Girish Dalvi" />
+					<img src="<?php echo base_url(); ?>images/credits/GirishDalvi.png" alt="Girish Dalvi" />
 					<div class="caption">
 						<h4>Dr. Girish Dalvi</h4>
 					</div>
@@ -39,7 +39,7 @@
 			</div>
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Pradnya Naik" />
+					<img src="<?php echo base_url(); ?>images/credits/pradnyanaik.png" alt="Pradnya Naik" />
 					<div class="caption">
 						<h4>Pradnya Naik</h4>
 					</div>
