@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 30px;
 }
 
+p {
+	color: lighten(#000,20%);
+}
+
 .container-fluid {
 	max-width: $default-container-width;
 }

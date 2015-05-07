@@ -201,6 +201,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .home-content-area p {
   font-size: 18px;
   font-family: Georgia;
+  color: #333333;
 }
 .home-content-area hr {
   margin-top: 50px;
@@ -209,6 +210,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: 1px solid #e8e8e8;
   margin-left: 170px;
   margin-right: 170px;
+}
+.home-content-area .know-more-button {
+  background: #9d8f8d;
 }
 
 /* Search Results Page */
@@ -499,6 +503,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
+}
+
+p {
+  color: #333333;
 }
 
 .container-fluid {

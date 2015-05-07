@@ -10,7 +10,7 @@
 					unique visual representation and often there are more than one ways to 
 					represent a cluster. 
 				</p>
-				<a href="<?php echo base_url() ?>index.php/home/about" class="btn btn-primary">
+				<a href="<?php echo base_url() ?>index.php/home/about" class="btn btn-primary know-more-button">
 					Know More
 				</a>
 				<hr />

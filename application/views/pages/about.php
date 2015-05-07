@@ -45,7 +45,7 @@
 						resource to both seasoned designers and those who have just started the 
 						study of the Devanagari letters.
 					</p>
-					<p class="pull-right"><span>- </span><strong class="bold">Dr. Girish Dalvi</strong></p>				
+					<p><span>- </span><strong class="bold">Dr. Girish Dalvi</strong></p>				
 				</div>
 				<div class="col-sm-6">
 					<h3 class="h3">Samyuktakashar</h3>

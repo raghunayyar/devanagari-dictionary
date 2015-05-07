@@ -67,7 +67,7 @@
 							<?php for ($i=1; $i <= $result['numberofglyphs']; $i++) { ?>
 								<div class="col-md-4">
 									<h1 class="completealphabet big combination-possibility h1">
-										<img src="<?php echo base_url(); ?>images/<?php echo $result['sno'] . '/' . $result['sno'] . '.' . $i . '.png' ?>" />
+										<img src="<?php echo base_url(); ?>images/calligraphy/<?php echo $result['sno'] . '/' . $result['sno'] . '.' . $i . '.png' ?>" />
 									</h1>
 								</div>
 							<?php } ?>
