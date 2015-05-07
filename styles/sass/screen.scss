@@ -285,6 +285,7 @@ textarea[name="feedbacktextarea"] {
 	opacity: 0.9;
 	font-weight: 100;
 	font-size:14px;
+	@include border-radius(2px);
 }
 
 .delete-tab {
