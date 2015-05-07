@@ -81,16 +81,6 @@
 					</div>			
 				</div>
 			</div>
-			<div class="col-sm-4 people">
-				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Samruddhi Varade" />
-					<div class="caption">
-						<h4>Samruddhi Varade</h4>
-					</div>
-					<div class="work">
-						<h4>Calligraphy</h4>
-					</div>			
-				</div>
 			</div>
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
