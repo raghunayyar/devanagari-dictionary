@@ -28,7 +28,7 @@
 			</div>			
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Raghu Nayyar" />
+					<img src="<?php echo base_url(); ?>images/credits/raghunayyar.png" alt="Raghu Nayyar" />
 					<div class="caption">
 						<h4>Raghu Nayyar</h4>
 					</div>
@@ -50,7 +50,7 @@
 			</div>
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Kanchan Gokhale" />
+					<img src="<?php echo base_url(); ?>images/credits/KanchanGokhale.png" alt="Kanchan Gokhale" />
 					<div class="caption">
 						<h4>Kanchan Gokhale</h4>
 					</div>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Pallavi Shedge" />
+					<img src="<?php echo base_url(); ?>images/credits/PallaviShedge.png" alt="Pallavi Shedge" />
 					<div class="caption">
 						<h4>Pallavi Shedge</h4>
 					</div>
@@ -72,9 +72,9 @@
 			</div>
 			<div class="col-sm-4 people">
 				<div class="thumbnail">
-					<img src="http://placehold.it/150x150" alt="Yashada Kanakar" />
+					<img src="<?php echo base_url(); ?>images/credits/YashadaKanekar.png" alt="Yashada Kanakar" />
 					<div class="caption">
-						<h4>Yashada Kanakar</h4>
+						<h4>Yashada Kanekar</h4>
 					</div>
 					<div class="work">
 						<h4>Calligraphy</h4>
