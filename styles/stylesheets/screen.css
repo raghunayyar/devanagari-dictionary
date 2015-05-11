@@ -176,6 +176,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   right: 45px;
   top: 16px;
   z-index: 100;
+  width: 30px;
+  opacity: 0.4;
+  top: 14px;
+}
+.home-page .home-search .keyboardInputInitiator:hover {
+  opacity: 0.7;
 }
 .home-page .welcome-message {
   text-align: center;
@@ -356,6 +362,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   right: 55px;
   top: 160px;
+  z-index: 100;
+  width: 30px;
+  opacity: 0.4;
+}
+.resultpage .keyboardInputInitiator:hover {
+  opacity: 0.7;
 }
 
 .search-topbar {
@@ -405,7 +417,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #9d8f8d;
 }
 .searchwidget .custom-dropdown-wrapper {
-  margin-left: -20px;
+  margin-left: -15px;
 }
 .searchwidget .search-input {
   margin-top: -35px;
@@ -413,7 +425,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .searchwidget .keyboardInputInitiator {
   position: absolute;
   right: 60px;
-  top: -16px;
+  top: -20px;
+  position: absolute;
+  z-index: 100;
+  width: 30px;
+  opacity: 0.4;
+}
+.searchwidget .keyboardInputInitiator:hover {
+  opacity: 0.7;
 }
 
 .thumbnail {
@@ -512,6 +531,28 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #333333;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f096";
+  letter-spacing: 10px;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+input[type=checkbox]:checked + label:after {
+  content: "\f046";
+  letter-spacing: 10px;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 6px;
 }
 
 .container-fluid {
@@ -623,7 +664,6 @@ textarea[name="feedbacktextarea"]:focus {
 }
 .custom-dropdown-wrapper .dropdown li input[type="checkbox"] {
   position: absolute;
-  display: block;
   right: 10px;
   top: 50%;
   margin-top: -8px;

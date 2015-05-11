@@ -56,6 +56,30 @@ p {
 	color: lighten(#000,20%);
 }
 
+input[type=checkbox] {
+	display: none;
+
+	+ label:after {
+		font-family: FontAwesome;
+		display: inline-block;
+		content: "\f096";
+		letter-spacing: 10px;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 6px;
+	}
+
+	&:checked + label:after {
+		content: "\f046";
+		letter-spacing: 10px;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 6px;		
+	}
+}
+
 .container-fluid {
 	max-width: $default-container-width;
 }
@@ -167,7 +191,6 @@ textarea[name="feedbacktextarea"] {
 
 			input[type="checkbox"] {
 				position: absolute;
-				display: block;
 				right: 10px;
 				top: 50%;
 				margin-top: -8px;
