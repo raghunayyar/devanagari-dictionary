@@ -65,7 +65,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* All your variable names will go here */
 /* Dimensions and Positioning */
 /* Navigation Related Colors */
-/* Widget specific Variables */
 /* Color Pelette */
 /* All mixins go here */
 /* File wise imports happen here */
@@ -380,6 +379,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .search-topbar .more-button {
   display: none;
+  background-color: #9d8f8d;
 }
 
 .searchwidget {
@@ -586,7 +586,6 @@ textarea[name="feedbacktextarea"]:focus {
   outline: none;
   color: #f3eeed;
   margin: 10px 0px;
-  opacity: 0.8;
   z-index: 999;
 }
 .custom-dropdown-wrapper .dropdown {
@@ -633,11 +632,9 @@ textarea[name="feedbacktextarea"]:focus {
   border: none;
   border-radius: 0 0 2px 2px;
 }
-.custom-dropdown-wrapper .dropdown li:hover label {
+.custom-dropdown-wrapper .dropdown li:hover {
+  opacity: 0.8;
   background: #372f2f;
-}
-.custom-dropdown-wrapper:hover {
-  opacity: 0.9;
 }
 .custom-dropdown-wrapper:after {
   content: "\f107";
@@ -648,7 +645,6 @@ textarea[name="feedbacktextarea"]:focus {
 }
 .custom-dropdown-wrapper.active {
   border-radius: 2px 2px 0 0;
-  opacity: 0.9;
 }
 .custom-dropdown-wrapper.active .dropdown {
   opacity: 1;
@@ -777,6 +773,10 @@ textarea[name="feedbacktextarea"]:focus {
   padding-right: 50px;
   font-size: 16px;
   background-color: #f3eeed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .has-error .form-control {

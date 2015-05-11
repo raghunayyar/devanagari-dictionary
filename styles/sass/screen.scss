@@ -131,7 +131,6 @@ textarea[name="feedbacktextarea"] {
 	outline: none;
 	color: $palette-background;
 	margin: $ten 0px;
-	opacity:0.8;
 	z-index: 999;
 
 	.dropdown {
@@ -182,15 +181,10 @@ textarea[name="feedbacktextarea"] {
 			}
 
 			&:hover {
-				label {
-					background: $palette-dark-brown;
-				}
+				opacity: 0.8;
+				background: $palette-dark-brown;
 			}
 		}
-	}
-
-	&:hover {
-		opacity:0.9;
 	}
 
 	&:after {
@@ -203,7 +197,6 @@ textarea[name="feedbacktextarea"] {
 
 	&.active {
 		border-radius: 2px 2px 0 0;
-		opacity:0.9;
 
 		.dropdown {
 			opacity: 1;
@@ -336,6 +329,7 @@ textarea[name="feedbacktextarea"] {
 	padding-right: 5*$ten;
 	font-size: 16px;
 	background-color: $palette-background;
+	@include border-radius(2px);
 }
 
 .has-error .form-control {

@@ -42,6 +42,16 @@
 										</span>
 									</td>
 								</tr>
+								<tr>
+									<td class="name">
+										<span class="label">Tip:</span>
+									</td>
+									<td class="definition">
+										<span class="examples h3">
+											<span><?php if (empty($result['tip'])) { echo '-'; } else { echo $result['tip']; } ?></span>
+										</span>
+									</td>
+								</tr>								
 							</tbody>
 						</table>
 					</div>
